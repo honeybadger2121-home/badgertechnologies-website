@@ -97,69 +97,65 @@ Write-Host "🎯 CA Status Check Complete" -ForegroundColor Green
 Set-Content -Path "$ScriptsPath\ca-status.ps1" -Value $StatusScript
 
 # Create certificate renewal script
-$RenewalScript = @"
 # Certificate Renewal Monitor for Badger Technologies CA
 param(
-    [int]`$DaysBeforeExpiry = 30,
-    [switch]`$EmailAlert
+    [int]$DaysBeforeExpiry = 30,
+    [switch]$EmailAlert
 )
 
-`$CAPath = "C:\BadgerCA"
-`$CertPath = "`$CAPath\certs"
+$CAPath = "C:\BadgerCA"
+$CertPath = "$CAPath\certs"
 
-Write-Host "🔄 Checking certificates expiring within `$DaysBeforeExpiry days..." -ForegroundColor Green
+Write-Host "🔄 Checking certificates expiring within $DaysBeforeExpiry days..." -ForegroundColor Green
 
-`$ExpiringCerts = @()
+$ExpiringCerts = @()
 
-Get-ChildItem -Path `$CertPath -Filter "*.cert.pem" | Where-Object { `$_.Name -ne "ca.cert.pem" } | ForEach-Object {
-    `$CertFile = `$_.FullName
+Get-ChildItem -Path $CertPath -Filter "*.cert.pem" | Where-Object { $_.Name -ne "ca.cert.pem" } | ForEach-Object {
+    $CertFile = $_.FullName
     try {
-        `$CertInfo = openssl x509 -in `$CertFile -noout -dates -subject
-        `$Subject = (`$CertInfo | Select-String "subject=").ToString().Split("=")[-1]
-        `$ExpiryLine = `$CertInfo | Select-String "notAfter="
+        $CertInfo = openssl x509 -in $CertFile -noout -dates -subject
+        $Subject = ($CertInfo | Select-String "subject=").ToString().Split("=")[-1]
+        $ExpiryLine = $CertInfo | Select-String "notAfter="
         
-        if (`$ExpiryLine) {
-            `$ExpiryDateStr = `$ExpiryLine.ToString().Split("=", 2)[1].Trim()
-            `$ExpiryDate = [DateTime]::ParseExact(`$ExpiryDateStr, "MMM dd HH:mm:ss yyyy GMT", `$null)
-            `$DaysLeft = (`$ExpiryDate - (Get-Date)).Days
+        if ($ExpiryLine) {
+            $ExpiryDateStr = $ExpiryLine.ToString().Split("=", 2)[1].Trim()
+            $ExpiryDate = [DateTime]::ParseExact($ExpiryDateStr, "MMM dd HH:mm:ss yyyy GMT", $null)
+            $DaysLeft = ($ExpiryDate - (Get-Date)).Days
             
-            if (`$DaysLeft -le `$DaysBeforeExpiry) {
-                `$ExpiringCert = [PSCustomObject]@{
-                    File = `$_.Name
-                    Subject = `$Subject
-                    ExpiryDate = `$ExpiryDate
-                    DaysLeft = `$DaysLeft
+            if ($DaysLeft -le $DaysBeforeExpiry) {
+                $ExpiringCert = [PSCustomObject]@{
+                    File = $_.Name
+                    Subject = $Subject
+                    ExpiryDate = $ExpiryDate
+                    DaysLeft = $DaysLeft
                 }
-                `$ExpiringCerts += `$ExpiringCert
+                $ExpiringCerts += $ExpiringCert
                 
-                if (`$DaysLeft -le 0) {
-                    Write-Host "  🔴 EXPIRED: `$(`$_.BaseName) - `$Subject" -ForegroundColor Red
-                } elseif (`$DaysLeft -le 7) {
-                    Write-Host "  🟠 CRITICAL: `$(`$_.BaseName) expires in `$DaysLeft days - `$Subject" -ForegroundColor Red
+                if ($DaysLeft -le 0) {
+                    Write-Host "  🔴 EXPIRED: $($_.BaseName) - $Subject" -ForegroundColor Red
+                } elseif ($DaysLeft -le 7) {
+                    Write-Host "  🟠 CRITICAL: $($_.BaseName) expires in $DaysLeft days - $Subject" -ForegroundColor Red
                 } else {
-                    Write-Host "  🟡 WARNING: `$(`$_.BaseName) expires in `$DaysLeft days - `$Subject" -ForegroundColor Yellow
+                    Write-Host "  🟡 WARNING: $($_.BaseName) expires in $DaysLeft days - $Subject" -ForegroundColor Yellow
                 }
             }
         }
     } catch {
-        Write-Host "  ❌ Error reading `$(`$_.Name): `$(`$_.Exception.Message)" -ForegroundColor Red
+        Write-Host "  ❌ Error reading $($_.Name): $($_.Exception.Message)" -ForegroundColor Red
     }
 }
 
-if (`$ExpiringCerts.Count -eq 0) {
-    Write-Host "✅ No certificates expiring within `$DaysBeforeExpiry days" -ForegroundColor Green
+if ($ExpiringCerts.Count -eq 0) {
+    Write-Host "✅ No certificates expiring within $DaysBeforeExpiry days" -ForegroundColor Green
 } else {
     Write-Host ""
     Write-Host "📧 Consider renewing these certificates:" -ForegroundColor Yellow
-    `$ExpiringCerts | ForEach-Object {
-        Write-Host "   - `$(`$_.File): `$(`$_.Subject) (expires `$(`$_.ExpiryDate.ToString('yyyy-MM-dd')))" -ForegroundColor Gray
+    $ExpiringCerts | ForEach-Object {
+        Write-Host "   - $($_.File): $($_.Subject) (expires $($_.ExpiryDate.ToString('yyyy-MM-dd')))" -ForegroundColor Gray
     }
 }
 
-return `$ExpiringCerts
-"@
-
-Set-Content -Path "$ScriptsPath\check-renewals.ps1" -Value $RenewalScript
+return $ExpiringCerts
 
 Write-Host "✅ Certificate management scripts created:" -ForegroundColor Green
 Write-Host "  📄 create-ssl-cert.ps1 - Create SSL/TLS certificates"

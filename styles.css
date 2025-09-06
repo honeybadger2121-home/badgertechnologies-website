@@ -78,6 +78,17 @@ p {
     transform: scale(1.05);
 }
 
+.nav-logo .logo-placeholder {
+    font-size: 2rem;
+    margin-right: 12px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+}
+
+.nav-logo .logo-placeholder:hover {
+    transform: scale(1.05);
+}
+
 .nav-logo i {
     margin-right: 10px;
     font-size: 1.8rem;

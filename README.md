@@ -1,178 +1,112 @@
-# Badger Technologies - IT Services Website
+# Badger Technologies - Professional IT Services
 
-A modern, responsive website for Badger Technologies IT Services company.
+A modern, responsive website for Badger Technologies IT Services with integrated Certificate Authority functionality.
 
-## Features
+## 🌐 Website Features
 
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **Modern UI/UX**: Clean, professional design with smooth animations
 - **SEO Optimized**: Proper meta tags, structured data, and semantic HTML
+- **Contact Form**: Netlify-powered contact form with email notifications
 - **Fast Loading**: Optimized CSS and JavaScript for performance
-- **Contact Form**: Interactive contact form with validation
-- **Professional Sections**:
-  - Hero section with compelling messaging
-  - Services showcase (Cloud, Cybersecurity, Network, Support, Data, Development)
-  - Industry solutions
-  - Company statistics
-  - About section
-  - Contact information
 
-## Technologies Used
+## 🔐 Certificate Authority Features
 
-- HTML5
-- CSS3 (Modern Flexbox & Grid)
-- Vanilla JavaScript
-- Font Awesome Icons
-- Google Fonts (Inter)
+- **Complete Windows 11 CA**: Self-hosted certificate authority
+- **SSL/TLS Certificates**: Create certificates for websites and services
+- **Client Authentication**: Generate client certificates for secure access
+- **Code Signing**: Create certificates for application signing
+- **Automated Monitoring**: Certificate expiry tracking and alerts
 
-## File Structure
+## 🚀 Quick Start
+
+### Website Deployment
+1. **Local Testing**: Run `python server.py` for local development
+2. **Live Deployment**: Deploy to Netlify using the included configuration
+
+### Certificate Authority Setup
+1. **Run Setup**: Execute `.\setup-ca-clean.ps1` as Administrator
+2. **Create Certificates**: Use the scripts in `C:\BadgerCA\scripts\`
+3. **Monitor Status**: Run `.\ca-status.ps1` to check system health
+
+## 📁 File Structure
 
 ```
 badgertechnologies.it.com/
-├── index.html          # Main HTML file
-├── styles.css          # All CSS styles
-├── script.js           # JavaScript functionality
-├── robots.txt          # SEO robots file
-├── sitemap.xml         # XML sitemap for search engines
-├── README.md           # This file
-└── server.py           # Simple Python server (optional)
+├── 🌐 Website Files
+│   ├── index.html              # Main website
+│   ├── thank-you.html          # Contact form success page  
+│   ├── styles.css              # All styling
+│   ├── script.js               # Website functionality
+│   ├── manifest.json           # PWA configuration
+│   ├── robots.txt              # SEO configuration
+│   ├── sitemap.xml             # Search engine sitemap
+│   └── netlify.toml            # Netlify deployment config
+│
+├── 🔐 Certificate Authority
+│   ├── setup-ca-clean.ps1      # Main CA setup script
+│   ├── badger-ca.conf          # OpenSSL CA configuration
+│   ├── create-ssl-simple.ps1   # SSL certificate creator
+│   ├── create-client-cert.ps1  # Client certificate creator
+│   ├── create-codesign-cert.ps1 # Code signing certificate creator
+│   ├── check-renewals.ps1      # Certificate expiry monitor
+│   ├── ca-status.ps1           # CA system status checker
+│   ├── ca-system-check.ps1     # Complete system verification
+│   ├── ca-operations-guide.ps1 # Automated monitoring setup
+│   └── ca-web-interface.html   # Web management interface
+│
+└── 📚 Documentation
+    ├── README.md               # This file
+    ├── DEPLOYMENT.md           # Website deployment guide
+    ├── GIT-SETUP.md           # Git integration guide
+    ├── NETLIFY-DEPLOYMENT.md  # Netlify-specific deployment
+    └── WINDOWS-11-STANDALONE-CA-COMPLETE.md # CA setup guide
 ```
 
-## Quick Start
+## 🛠️ Technologies Used
 
-### Option 1: Python Server (Recommended)
-```bash
-# Navigate to the project directory
-cd badgertechnologies.it.com
+**Website:**
+- HTML5, CSS3, JavaScript
+- Netlify Forms for contact functionality
+- Font Awesome icons, Google Fonts
 
-# Run the Python server
-python server.py
+**Certificate Authority:**
+- OpenSSL 3.5.2
+- PowerShell automation scripts
+- Windows Task Scheduler for monitoring
+- IIS for web interface (optional)
 
-# Open your browser and go to:
-# http://localhost:8000
+## 📋 Certificate Authority Usage
+
+### Create SSL Certificate
+```powershell
+cd C:\BadgerCA\scripts
+.\create-ssl-simple.ps1 -CommonName "your-domain.com"
 ```
 
-### Option 2: Simple HTTP Server
-```bash
-# Navigate to the project directory
-cd badgertechnologies.it.com
-
-# Python 3
-python -m http.server 8000
-
-# Or Python 2
-python -m SimpleHTTPServer 8000
-
-# Open your browser and go to:
-# http://localhost:8000
+### Create Client Certificate  
+```powershell
+.\create-client-cert.ps1 -ClientName "John Doe" -EmailAddress "john@company.com"
 ```
 
-### Option 3: Live Server (VS Code)
-1. Install the "Live Server" extension in VS Code
-2. Right-click on `index.html`
-3. Select "Open with Live Server"
+### Check System Status
+```powershell
+.\ca-status.ps1
+```
 
-## Customization
+### Monitor Certificate Expiry
+```powershell
+.\check-renewals.ps1 -DaysBeforeExpiry 30
+```
 
-### Colors
-The website uses a professional color scheme. Main colors:
-- Primary Blue: `#2563eb`
-- Dark Blue: `#1e293b`
-- Gold Accent: `#ffd700`
-- Success Green: `#10b981`
-- Background Gray: `#f8fafc`
+## 🎯 Live Website
 
-### Content
-- Update company information in `index.html`
-- Modify services in the services section
-- Change contact details in the contact section
-- Update social media links in the footer
+Visit: **https://badgertechnologies.us**
 
-### Styling
-- All styles are in `styles.css`
-- Responsive breakpoints: 1024px, 768px, 480px
-- Uses CSS Grid and Flexbox for layouts
+## 🔧 Support
 
-## Features in Detail
-
-### Navigation
-- Fixed navigation bar with smooth scrolling
-- Mobile-responsive hamburger menu
-- Active section highlighting
-
-### Services Section
-- 6 main service categories
-- Detailed service descriptions
-- Hover effects and animations
-
-### Contact Form
-- Client-side validation
-- Loading states
-- Success/error notifications
-- Required field validation
-- Email format validation
-
-### Animations
-- Scroll-triggered animations
-- Hover effects on cards
-- Loading animations
-- Smooth transitions
-
-## SEO Features
-
-- Semantic HTML structure
-- Meta tags for social media sharing
-- Structured data markup ready
-- XML sitemap included
-- Robots.txt configured
-- Fast loading times
-- Mobile-friendly design
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## Performance
-
-- Optimized CSS with efficient selectors
-- Minimal JavaScript for core functionality
-- Web fonts loaded efficiently
-- Images optimized (when added)
-- Gzip compression ready
-
-## Deployment
-
-### Static Hosting (Recommended)
-The website is ready to deploy to any static hosting service:
-- Netlify
-- Vercel
-- GitHub Pages
-- AWS S3 + CloudFront
-- Firebase Hosting
-
-### Web Hosting
-Can be uploaded to any web hosting service that supports static files.
-
-### Domain Setup
-1. Purchase the domain `badgertechnologies.it.com`
-2. Point DNS to your hosting service
-3. Upload files to the web root directory
-4. Configure SSL certificate for HTTPS
-
-## License
-
-This project is proprietary to Badger Technologies.
-
-## Support
-
-For support or questions about this website, please contact:
-- Email: badgertechnologies.it@gmail.com
-- Phone: +1 (555) 123-4567
+For technical support or questions about the Certificate Authority setup, refer to the comprehensive documentation in `WINDOWS-11-STANDALONE-CA-COMPLETE.md`.
 
 ---
 
-Built with ❤️ for Badger Technologies
+**Built with ❤️ for professional IT services and enterprise certificate management.**

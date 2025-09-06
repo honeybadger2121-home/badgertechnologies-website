@@ -8,13 +8,19 @@ Badger Technologies is launching as a new IT services company specializing in:
 - **Cybersecurity Assessments** - Vulnerability scanning and security reviews
 - **IT Infrastructure Analysis** - Network performance and system health checks  
 - **Cloud Migration Planning** - Azure cloud readiness assessments
-- **Healthcare IT Compliance** - HIPAA-focused technology reviews
+- **IT Compliance Reviews** - Industry-standard technology compliance
 
 ### Target Market:
-- Behavioral health organizations
-- Clinical practices
-- Healthcare technology environments
-- Growing medical practices
+- Small to medium businesses across industries
+- Organizations with complex IT infrastructure
+- Companies planning cloud migrations
+- Businesses seeking cybersecurity assessments
+
+### Experience Background:
+- Healthcare IT environments and compliance
+- Hospitality IT systems and operations
+- Cross-industry technology assessment methodologies
+- Professional cybersecurity tools and practices
 
 ### Professional Approach:
 - Enterprise-grade assessment tools and methodologies

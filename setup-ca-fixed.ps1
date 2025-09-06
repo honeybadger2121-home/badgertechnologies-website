@@ -13,7 +13,7 @@ $isAdmin = $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::A
 if (-not $isAdmin) {
     Write-Host "❌ This script must be run as Administrator!" -ForegroundColor Red
     Write-Host "   Right-click PowerShell and select 'Run as Administrator'" -ForegroundColor Yellow
-    pause
+    Read-Host "Press Enter to exit"
     exit 1
 }
 
@@ -31,17 +31,19 @@ try {
     }
 } catch {
     Write-Host "❌ Phase 1 failed: $($_.Exception.Message)" -ForegroundColor Red
-    pause
+    Read-Host "Press Enter to exit"
     exit 1
 }
 
 # Check if restart is needed
 Write-Host ""
 Write-Host "⚠️  Some Windows features may require a restart." -ForegroundColor Yellow
-$restart = Read-Host "Do you need to restart now? (y/n)"
+Write-Host "If you just enabled Windows features for the first time, you should restart." -ForegroundColor Yellow
+Write-Host "Otherwise, you can continue with the setup." -ForegroundColor Yellow
+$restart = Read-Host "Do you need to restart now? Enter 'y' for yes or 'n' for no"
 if ($restart -eq 'y' -or $restart -eq 'Y') {
     Write-Host "Please restart your computer and run this script again." -ForegroundColor Yellow
-    pause
+    Read-Host "Press Enter to exit"
     exit 0
 }
 
@@ -57,7 +59,7 @@ try {
     }
 } catch {
     Write-Host "❌ Phase 2 failed: $($_.Exception.Message)" -ForegroundColor Red
-    pause
+    Read-Host "Press Enter to exit"
     exit 1
 }
 
@@ -76,7 +78,7 @@ try {
     }
 } catch {
     Write-Host "❌ Phase 3 failed: $($_.Exception.Message)" -ForegroundColor Red
-    pause
+    Read-Host "Press Enter to exit"
     exit 1
 }
 
@@ -142,4 +144,4 @@ Write-Host ".\create-codesign-cert.ps1 -DeveloperName 'BadgerTech'" -ForegroundC
 Write-Host ".\ca-status.ps1" -ForegroundColor White
 Write-Host ""
 Write-Host "Press any key to exit..." -ForegroundColor Yellow
-pause
+Read-Host "Press Enter to continue"

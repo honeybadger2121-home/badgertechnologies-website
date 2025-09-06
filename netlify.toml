@@ -1,0 +1,24 @@
+# Netlify Forms Configuration
+# This file configures form handling and email notifications
+
+# Form submissions will be sent to: info@badgertechnologies.us
+# Netlify will automatically detect the contact form and send emails
+
+[build]
+  # No build process needed for static site
+  publish = "."
+
+[[redirects]]
+  # Handle form submissions
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+
+# Additional security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

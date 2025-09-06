@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://badgertechnologies.us/sitemap.xml
+
+# Disallow admin or sensitive areas (when they exist)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/

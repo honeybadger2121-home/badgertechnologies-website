@@ -956,3 +956,199 @@ section {
         margin-top: 0;
     }
 }
+
+/* Free Assessment Section */
+.free-assessment {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+}
+
+.assessment-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.assessment-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.assessment-value {
+    font-size: 1.3rem;
+    color: #ffd700;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.assessment-benefits h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+}
+
+.benefits-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.benefit-item i {
+    font-size: 1.25rem;
+    color: #ffd700;
+    min-width: 1.25rem;
+}
+
+.benefit-item span {
+    font-size: 1rem;
+}
+
+.assessment-guarantee {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.assessment-guarantee i {
+    color: #ffd700;
+    margin-right: 0.5rem;
+}
+
+.assessment-cta {
+    text-align: center;
+}
+
+.btn-large {
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-urgency {
+    color: #ffd700;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.assessment-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assessment-graphic {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.assessment-graphic > i {
+    font-size: 6rem;
+    color: white;
+    opacity: 0.9;
+}
+
+.floating-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-icons i {
+    position: absolute;
+    font-size: 2rem;
+    color: #ffd700;
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-icons i:nth-child(1) {
+    top: 20%;
+    right: 20%;
+    animation-delay: 0s;
+}
+
+.floating-icons i:nth-child(2) {
+    bottom: 30%;
+    left: 15%;
+    animation-delay: 1s;
+}
+
+.floating-icons i:nth-child(3) {
+    top: 60%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive Design for Assessment Section */
+@media (max-width: 1024px) {
+    .assessment-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .assessment-graphic {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .assessment-graphic > i {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .assessment-text h2 {
+        font-size: 2rem;
+    }
+    
+    .assessment-value {
+        font-size: 1.1rem;
+    }
+    
+    .benefit-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .assessment-graphic {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .assessment-graphic > i {
+        font-size: 3rem;
+    }
+    
+    .floating-icons i {
+        font-size: 1.5rem;
+    }
+}

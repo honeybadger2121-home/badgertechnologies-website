@@ -9,6 +9,7 @@ Badger Technologies is launching as a comprehensive IT services company. We're s
 - **IT Infrastructure Analysis** - Network performance and system health checks  
 - **Cloud Migration Planning** - Azure cloud readiness assessments
 - **IT Compliance Reviews** - Industry-standard technology compliance
+- **Vendor Management** - Technology vendor assessment, contract support, and relationship management
 
 ### Long-term Vision - Full IT Services:
 - Managed IT services and ongoing support

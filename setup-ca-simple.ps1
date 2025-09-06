@@ -38,7 +38,9 @@ try {
     choco install openssl -y
     
     # Refresh environment variables
-    $env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("PATH","User")
+    $machinePath = [System.Environment]::GetEnvironmentVariable("PATH", "Machine")
+    $userPath = [System.Environment]::GetEnvironmentVariable("PATH", "User")
+    $env:PATH = "$machinePath;$userPath"
     
     Write-Host "✅ Phase 1 completed successfully" -ForegroundColor Green
 } catch {
@@ -64,7 +66,12 @@ foreach ($Dir in $Directories) {
 }
 
 # Set secure permissions on private directory
-icacls "$CAPath\private" /grant:r "$($env:USERNAME):(F)" /inheritance:r | Out-Null
+try {
+    icacls "$CAPath\private" /grant:r "$($env:USERNAME):(F)" /inheritance:r | Out-Null
+    Write-Host "✅ Permissions set on private directory"
+} catch {
+    Write-Host "⚠️ Could not set permissions on private directory" -ForegroundColor Yellow
+}
 
 # Initialize CA database files
 if (-not (Test-Path "$CAPath\index.txt")) {

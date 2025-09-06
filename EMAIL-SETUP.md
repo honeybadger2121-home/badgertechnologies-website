@@ -26,7 +26,7 @@ After your site is live:
 3. **Go to "Forms" tab** (you'll see this after first form submission)
 4. **Click "Settings & notifications"**
 5. **Add email notification:**
-   - **Email to notify:** `info@badgertechnologies.us`
+   - **Email to notify:** `benjamin@badgertechnologies.us`
    - **Subject line:** `New contact form submission from badgertechnologies.us`
    - **Save settings**
 
@@ -40,7 +40,7 @@ After your site is live:
 
 1. **User fills form** on your website
 2. **Netlify receives** the form data
-3. **Email is sent** to `info@badgertechnologies.us` with all details:
+3. **Email is sent** to `benjamin@badgertechnologies.us` with all details:
    - Name
    - Email address
    - Phone number
@@ -91,7 +91,7 @@ IP Address: 192.168.1.100
 Your website is now ready with full email functionality. When you deploy to Netlify:
 
 1. **Forms will work immediately**
-2. **Emails will be sent to info@badgertechnologies.us**
+2. **Emails will be sent to benjamin@badgertechnologies.us**
 3. **Customers see professional thank you page**
 4. **You get all form submissions in your email**
 

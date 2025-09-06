@@ -53,10 +53,29 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Contact form handling - Let Netlify handle the submission natively
-// Removed JavaScript intervention to allow proper Netlify form processing
+// Contact form handling - Simple Netlify form submission
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        // Validate form before submission
+        if (!validateForm(this)) {
+            e.preventDefault();
+            showNotification('Please fill in all required fields correctly.', 'error');
+            return;
+        }
+        
+        // Show loading state
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        // Let Netlify handle the rest - form will submit naturally
+        // The action="/thank-you.html" will redirect after submission
+    });
+}
 
-// Form validation (runs before submission)
+// Form validation function
 function validateForm(form) {
     const requiredFields = form.querySelectorAll('[required]');
     let isValid = true;
@@ -85,19 +104,6 @@ function validateForm(form) {
     });
     
     return isValid;
-}
-
-// Add form validation on submit (but don't prevent submission)
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        // Only validate, don't prevent submission
-        if (!validateForm(this)) {
-            e.preventDefault();
-            showNotification('Please fill in all required fields correctly.', 'error');
-        }
-        // If validation passes, let Netlify handle the rest
-    });
 }
 
 // Notification system

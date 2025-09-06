@@ -67,6 +67,17 @@ p {
     color: #2563eb;
 }
 
+.nav-logo .logo-image {
+    height: 40px;
+    width: auto;
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo .logo-image:hover {
+    transform: scale(1.05);
+}
+
 .nav-logo i {
     margin-right: 10px;
     font-size: 1.8rem;

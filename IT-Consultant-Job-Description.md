@@ -1,7 +1,7 @@
 # IT Consultant - Job Description
 
-<div align="right">
-  <img src="images/badger-logo-cybersecurity.png" alt="Badger Technologies Logo" width="150" height="150">
+<div align="center">
+  <img src="images/badger-logo-banner.png" alt="Badger Technologies Logo" width="200" height="100">
 </div>
 
 ## Position Overview

@@ -49,7 +49,14 @@ We are seeking an entrepreneurial IT Consultant to join our founding team as we 
 - **Build and maintain a pipeline of prospects and sales opportunities**
 - **Convert prospects into paying clients through professional consultation**
 
-### 🔧 **Technical Tools & Platforms**
+### � **Help Desk & Client Support**
+- Provide technical support and help desk services to clients as needed
+- Handle initial client IT issues and troubleshooting requests
+- Coordinate with third-party vendors and service providers on client behalf
+- Maintain client satisfaction through responsive support (until dedicated help desk team is hired)
+- Document support requests and resolutions for client records
+
+### �🔧 **Technical Tools & Platforms**
 - Deploy and configure monitoring tools (PRTG Network Monitor)
 - Utilize network analysis tools (Wireshark) for deep packet inspection
 - Operate vulnerability scanning platforms and interpret results

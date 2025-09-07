@@ -16,6 +16,7 @@ We're a **pre-revenue startup** (currently $0 revenue) launching IT cybersecurit
 - Perform vulnerability scans and compliance reviews (HIPAA, PCI-DSS)
 - Create professional reports and client presentations
 - Support cloud migration planning and network analysis
+- **Provide help desk support to clients until dedicated team is hired**
 
 **Business Development (40%):**
 - **Door-to-door prospecting** and community outreach

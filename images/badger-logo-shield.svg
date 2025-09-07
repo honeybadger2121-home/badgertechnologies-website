@@ -1,0 +1,31 @@
+<!-- Shield-style Badger Logo -->
+<svg width="120" height="120" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background -->
+  <path d="M150 20 L260 80 L260 150 L260 200 L150 280 L40 200 L40 150 L40 80 Z" fill="#1e3a5f" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Blue accent sections -->
+  <path d="M150 20 L200 50 L200 100 L150 120 Z" fill="#2563eb"/>
+  <path d="M150 120 L100 100 L100 50 L150 20 Z" fill="#16a34a"/>
+  
+  <!-- Badger head -->
+  <ellipse cx="150" cy="140" rx="60" ry="45" fill="#ffffff"/>
+  <path d="M150 110 L180 125 L185 150 L180 180 L150 190 L120 180 L115 150 L120 125 Z" fill="#1a1a2e"/>
+  
+  <!-- White stripe -->
+  <path d="M150 110 L165 120 L168 145 L165 175 L150 185 L135 175 L132 145 L135 120 Z" fill="#ffffff"/>
+  
+  <!-- Eyes -->
+  <circle cx="140" cy="145" r="5" fill="#00bfff"/>
+  <circle cx="160" cy="145" r="5" fill="#00bfff"/>
+  
+  <!-- Nose -->
+  <ellipse cx="150" cy="160" rx="4" ry="3" fill="#1a1a2e"/>
+  
+  <!-- Tech elements -->
+  <g stroke="#00bfff" stroke-width="1.5" fill="none">
+    <path d="M90 120 L110 120 L110 140"/>
+    <path d="M210 120 L190 120 L190 140"/>
+    <path d="M90 180 L110 180 L110 160"/>
+    <path d="M210 180 L190 180 L190 160"/>
+  </g>
+</svg>

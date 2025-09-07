@@ -8,24 +8,75 @@
     <meta name="keywords" content="IT services, cloud computing, cybersecurity, technology consulting, network solutions, software development">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modern-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Quick fix styles to ensure the page displays */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background: #0f172a;
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            padding-top: 80px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" style="display: none;">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="images/badger-logo-main.png" alt="Badger Technologies">
+            </div>
+            <div class="loading-animation">
+                <div class="loading-bar"></div>
+            </div>
+            <p>Securing Tomorrow's Technology Today</p>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar glass-navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <div class="nav-logo" data-aos="fade-right">
                 <img src="images/badger-logo-main.png" alt="Badger Technologies" class="logo-image">
                 <div class="logo-text">
                     <span class="company-name">Badger Technologies</span>
                     <span class="tagline">Securing Tomorrow's Technology Today</span>
                 </div>
             </div>
+            
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="assessment.html" class="nav-link">Free Assessment</a></li>
                 <li class="nav-item"><a href="#solutions" class="nav-link">Solutions</a></li>
@@ -33,6 +84,14 @@
                 <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            
+            <div class="nav-actions">
+                <a href="assessment.html" class="btn btn-primary btn-nav">Get Assessment</a>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            
             <div class="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -42,40 +101,263 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero modern-hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-grid"></div>
+        </div>
+        
         <div class="hero-container">
-            <div class="hero-content">
-                <p class="hero-tagline">Securing Tomorrow's Technology Today</p>
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="300">
+                <div class="hero-badge" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Enterprise-Grade Security</span>
+                </div>
+                
                 <h1 class="hero-title">
-                    Launching Professional 
-                    <span class="highlight">IT Services Company</span>
+                    <span class="title-line" data-aos="fade-up" data-aos-delay="400">Securing Tomorrow's</span>
+                    <span class="title-highlight" data-aos="fade-up" data-aos-delay="500">Technology Today</span>
                 </h1>
-                <p class="hero-description">
-                    We're launching a comprehensive IT services company. Starting with cybersecurity assessments, vulnerability scanning, and cloud migration planning to build our client base. Bringing healthcare and hospitality IT experience to serve businesses across industries.
+                
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
+                    Professional cybersecurity assessments, cloud migration planning, and comprehensive IT consulting 
+                    for businesses ready to build secure, scalable technology foundations.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Request Assessment</a>
-                    <a href="#services" class="btn btn-secondary">Learn More</a>
+                
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="700">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100" data-suffix="+">0</div>
+                        <div class="stat-label">Vulnerabilities Detected</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Security Monitoring</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">5-Day</div>
+                        <div class="stat-label">Assessment Process</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                    <a href="assessment.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Assessment
+                    </a>
+                    <a href="#services" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                
+                <div class="hero-features" data-aos="fade-up" data-aos-delay="900">
+                    <div class="feature-badge">
+                        <i class="fas fa-check"></i>
+                        <span>No Long-Term Contracts</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check"></i>
+                        <span>Healthcare & HIPAA Expertise</span>
+                    </div>
+                    <div class="feature-badge">
+                        <i class="fas fa-check"></i>
+                        <span>Professional-Grade Tools</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-graphic">
-                    <img src="images/badger-logo-cybersecurity.png" alt="Badger Technologies Cybersecurity" class="hero-logo">
-                    <i class="fas fa-cloud"></i>
-                    <i class="fas fa-shield-alt"></i>
-                    <i class="fas fa-network-wired"></i>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                <div class="security-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">
+                            <i class="fas fa-shield-check"></i>
+                            Security Dashboard
+                        </div>
+                        <div class="dashboard-status online">
+                            <div class="status-dot"></div>
+                            Live Monitoring
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-metrics">
+                        <div class="metric-card threat-level">
+                            <div class="metric-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="metric-info">
+                                <div class="metric-value" data-target="3">0</div>
+                                <div class="metric-label">Critical Threats</div>
+                            </div>
+                            <div class="metric-trend down">
+                                <i class="fas fa-arrow-down"></i>
+                                -67%
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card security-score">
+                            <div class="metric-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="metric-info">
+                                <div class="metric-value" data-target="94" data-suffix="%">0</div>
+                                <div class="metric-label">Security Score</div>
+                            </div>
+                            <div class="metric-trend up">
+                                <i class="fas fa-arrow-up"></i>
+                                +12%
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card network-health">
+                            <div class="metric-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="metric-info">
+                                <div class="metric-value" data-target="99" data-suffix=".9%">0</div>
+                                <div class="metric-label">Network Uptime</div>
+                            </div>
+                            <div class="metric-trend stable">
+                                <i class="fas fa-minus"></i>
+                                Stable
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-chart">
+                        <div class="chart-header">
+                            <h4>Threat Detection Timeline</h4>
+                            <div class="chart-legend">
+                                <span class="legend-item">
+                                    <div class="legend-color threats"></div>
+                                    Threats Blocked
+                                </span>
+                                <span class="legend-item">
+                                    <div class="legend-color resolved"></div>
+                                    Issues Resolved
+                                </span>
+                            </div>
+                        </div>
+                        <div class="chart-bars">
+                            <div class="bar-group">
+                                <div class="bar threats" style="height: 60%;"></div>
+                                <div class="bar resolved" style="height: 80%;"></div>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar threats" style="height: 45%;"></div>
+                                <div class="bar resolved" style="height: 90%;"></div>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar threats" style="height: 30%;"></div>
+                                <div class="bar resolved" style="height: 95%;"></div>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar threats" style="height: 20%;"></div>
+                                <div class="bar resolved" style="height: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="floating-cards">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-lock"></i>
+                        <div class="card-content">
+                            <div class="card-title">SSL Certificate</div>
+                            <div class="card-status secured">Secured</div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card card-2">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <div class="card-content">
+                            <div class="card-title">Cloud Backup</div>
+                            <div class="card-status active">Active</div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card card-3">
+                        <i class="fas fa-user-shield"></i>
+                        <div class="card-content">
+                            <div class="card-title">User Access</div>
+                            <div class="card-status monitored">Monitored</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features">
+    <section class="features modern-features">
         <div class="container">
             <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>24/7 Support</h3>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Enterprise Security</h3>
+                        <p>Professional-grade security tools and methodologies used by Fortune 500 companies.</p>
+                    </div>
+                    <div class="feature-metric">
+                        <span class="metric-value">99.9%</span>
+                        <span class="metric-label">Protection Rate</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Rapid Response</h3>
+                        <p>5-day comprehensive assessments with immediate priority findings delivered within 24 hours.</p>
+                    </div>
+                    <div class="feature-metric">
+                        <span class="metric-value">24hr</span>
+                        <span class="metric-label">Initial Response</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Proven Results</h3>
+                        <p>Track record of reducing security incidents by 85% and improving system performance by 40%.</p>
+                    </div>
+                    <div class="feature-metric">
+                        <span class="metric-value">85%</span>
+                        <span class="metric-label">Risk Reduction</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Certified Expertise</h3>
+                        <p>Industry certifications in cybersecurity, cloud platforms, and compliance frameworks.</p>
+                    </div>
+                    <div class="feature-metric">
+                        <span class="metric-value">15+</span>
+                        <span class="metric-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
                     <p>Round-the-clock technical support to keep your business running smoothly.</p>
                 </div>
                 <div class="feature-card">
@@ -471,6 +753,356 @@
         </div>
     </footer>
 
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Modern JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            setTimeout(() => {
+                loadingScreen.classList.add('fade-out');
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000);
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            if (themeToggle) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+        }
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDarkMode = body.classList.contains('dark-mode');
+                
+                themeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        }
+
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation link based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Animated counters for statistics
+        function animateCounter(element, target, duration = 2000) {
+            const start = performance.now();
+            const startValue = 0;
+            
+            function update(currentTime) {
+                const elapsed = currentTime - start;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                const currentValue = Math.floor(easeOutCubic * target);
+                
+                element.textContent = currentValue + (element.dataset.suffix || '');
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            
+            requestAnimationFrame(update);
+        }
+
+        // Initialize counters when they come into view
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
+                    const target = parseInt(entry.target.dataset.target);
+                    animateCounter(entry.target, target);
+                    entry.target.setAttribute('data-animated', 'true');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all counter elements
+        document.querySelectorAll('.stat-number, .metric-value').forEach(counter => {
+            if (counter.dataset.target) {
+                counterObserver.observe(counter);
+            }
+        });
+
+        // Dashboard chart animation
+        function animateChart() {
+            const bars = document.querySelectorAll('.bar');
+            bars.forEach((bar, index) => {
+                setTimeout(() => {
+                    bar.style.opacity = '1';
+                    bar.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        }
+
+        // Initialize chart animation when dashboard comes into view
+        const dashboardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.hasAttribute('data-animated')) {
+                    animateChart();
+                    entry.target.setAttribute('data-animated', 'true');
+                }
+            });
+        }, observerOptions);
+
+        const dashboard = document.querySelector('.security-dashboard');
+        if (dashboard) {
+            dashboardObserver.observe(dashboard);
+        }
+
+        // Floating cards animation
+        function createFloatingAnimation() {
+            const cards = document.querySelectorAll('.floating-card');
+            cards.forEach((card, index) => {
+                const randomDelay = Math.random() * 2;
+                const randomDuration = 4 + Math.random() * 4;
+                card.style.animationDelay = randomDelay + 's';
+                card.style.animationDuration = randomDuration + 's';
+            });
+        }
+
+        // Initialize floating cards
+        setTimeout(createFloatingAnimation, 1000);
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = body.classList.contains('dark-mode') 
+                    ? 'rgba(15, 23, 42, 0.95)' 
+                    : 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(20px)';
+            } else {
+                navbar.style.background = body.classList.contains('dark-mode') 
+                    ? 'rgba(15, 23, 42, 0.9)' 
+                    : 'rgba(255, 255, 255, 0.9)';
+            }
+        });
+
+        // Parallax effect for hero background
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero-background');
+            if (parallax) {
+                const speed = scrolled * 0.5;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Service card hover effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const glow = this.querySelector('.card-glow');
+                if (glow) {
+                    glow.style.opacity = '0.1';
+                }
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                const glow = this.querySelector('.card-glow');
+                if (glow) {
+                    glow.style.opacity = '0';
+                }
+            });
+        });
+
+        // Tooltip functionality
+        function createTooltip(element, text) {
+            const tooltip = document.createElement('div');
+            tooltip.className = 'tooltip';
+            tooltip.textContent = text;
+            document.body.appendChild(tooltip);
+            
+            element.addEventListener('mouseenter', function(e) {
+                tooltip.style.display = 'block';
+                tooltip.style.left = e.pageX + 10 + 'px';
+                tooltip.style.top = e.pageY + 10 + 'px';
+            });
+            
+            element.addEventListener('mousemove', function(e) {
+                tooltip.style.left = e.pageX + 10 + 'px';
+                tooltip.style.top = e.pageY + 10 + 'px';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                tooltip.style.display = 'none';
+            });
+        }
+
+        // Initialize tooltips
+        document.querySelectorAll('[data-tooltip]').forEach(element => {
+            createTooltip(element, element.dataset.tooltip);
+        });
+
+        // Lazy loading for images
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+
+        // Performance optimization - debounce scroll events
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Debounced scroll handler
+        const debouncedScrollHandler = debounce(() => {
+            // Add any performance-critical scroll handlers here
+        }, 16); // 60fps
+
+        window.addEventListener('scroll', debouncedScrollHandler);
+
+        // Preload critical resources
+        function preloadCriticalResources() {
+            const criticalImages = [
+                'images/badger-logo-main.png',
+                'images/hero-bg.jpg'
+            ];
+            
+            criticalImages.forEach(src => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
+            });
+        }
+
+        // Initialize preloading
+        preloadCriticalResources();
+
+        // Error handling for missing elements
+        function safeQuerySelector(selector) {
+            try {
+                return document.querySelector(selector);
+            } catch (error) {
+                console.warn(`Element not found: ${selector}`);
+                return null;
+            }
+        }
+
+        // Form validation and submission (if forms exist)
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic form validation
+                const requiredFields = form.querySelectorAll('[required]');
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('error');
+                    } else {
+                        field.classList.remove('error');
+                    }
+                });
+                
+                if (isValid) {
+                    // Form is valid, handle submission
+                    console.log('Form submitted successfully');
+                    // Add your form submission logic here
+                }
+            });
+        });
+    </script>
+    
     <script src="script.js"></script>
 </body>
 </html>

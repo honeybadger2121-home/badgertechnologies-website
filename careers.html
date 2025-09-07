@@ -126,14 +126,26 @@
         
         /* Hero Section */
         .hero {
-            min-height: 70vh;
+            min-height: 80vh;
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
             display: flex;
             align-items: center;
             color: white;
             position: relative;
             overflow: hidden;
-            padding-top: 6rem;
+            padding-top: 8rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .hero {
+                padding-top: 9rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 10rem;
+            }
         }
         
         .hero::before {
@@ -449,30 +461,32 @@
         }
         
         /* Contact */
-        .careers-contact {
-            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-            text-align: center;
-        }
-        
         .contact-options {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 2rem auto;
         }
         
         .contact-option {
-            background: white;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(59, 130, 246, 0.05);
             padding: 2rem;
             border-radius: 1.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-option:hover {
+            transform: translateY(-5px);
         }
         
         .contact-option i {
             font-size: 3rem;
             color: #3b82f6;
-            margin-bottom: 1rem;
         }
         
         .contact-option h3 {
@@ -484,6 +498,21 @@
             color: #3b82f6;
             text-decoration: none;
             font-weight: 600;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
         }
         
         /* Footer */
@@ -586,7 +615,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav>
         <div class="nav-container">
             <div class="nav-logo">
                 <img src="images/badger-logo-main.png" alt="Badger Technologies" class="logo-image">
@@ -598,38 +627,39 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="assessment.html" class="nav-link">Assessment</a></li>
                 <li class="nav-item"><a href="solutions.html" class="nav-link">Solutions</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="careers.html" class="nav-link active">Careers</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <a href="assessment.html" class="btn btn-primary">
+                Get Assessment
+            </a>
         </div>
     </nav>
 
-    <!-- Careers Hero Section -->
-    <section class="careers-hero">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="careers-hero-content">
-                <h1>Join Our Growing Team</h1>
-                <p class="careers-subtitle">Be part of building something from the ground up. We're a pre-revenue startup launching innovative IT services and looking for entrepreneurial team members to join our founding team.</p>
+            <div class="hero-content">
                 <div class="startup-badge">
                     <i class="fas fa-rocket"></i>
                     <span>Early-Stage Startup - Ground Floor Opportunity</span>
                 </div>
+                <h1>Join Our <span class="hero-highlight">Growing Team</span></h1>
+                <p class="hero-subtitle">Be part of building something from the ground up. We're a pre-revenue startup launching innovative IT services and looking for entrepreneurial team members to join our founding team.</p>
             </div>
         </div>
     </section>
 
     <!-- Current Openings -->
-    <section class="careers-openings">
+    <section class="section section-light">
         <div class="container">
-            <h2 class="section-title">Current Openings</h2>
-            <p class="section-subtitle">We're actively hiring for these founding team positions</p>
+            <div class="section-header">
+                <h2 class="section-title">Current Openings</h2>
+                <p class="section-subtitle">We're actively hiring for these founding team positions</p>
+            </div>
             
             <div class="jobs-grid">
                 <!-- IT Consultant Position -->
@@ -773,9 +803,11 @@
     </section>
 
     <!-- Why Join Us Section -->
-    <section class="why-join-us">
+    <section class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Why Join Badger Technologies?</h2>
+            <div class="section-header">
+                <h2 class="section-title">Why Join Badger Technologies?</h2>
+            </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">
@@ -829,9 +861,11 @@
     </section>
 
     <!-- Application Process -->
-    <section class="application-process">
+    <section class="section section-light">
         <div class="container">
-            <h2 class="section-title">Our Application Process</h2>
+            <div class="section-header">
+                <h2 class="section-title">Our Application Process</h2>
+            </div>
             <div class="process-steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -869,92 +903,89 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="careers-contact">
+    <section class="section section-dark">
         <div class="container">
-            <div class="contact-content">
-                <h2>Ready to Join Our Team?</h2>
-                <p>We're looking for entrepreneurial, motivated individuals who want to build something great from the ground up.</p>
-                
-                <div class="contact-options">
-                    <div class="contact-option">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>General Applications</h3>
-                            <a href="mailto:careers@badgertechnologies.us">careers@badgertechnologies.us</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-option">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div>
-                            <h3>Internship Applications</h3>
-                            <a href="mailto:internships@badgertechnologies.us">internships@badgertechnologies.us</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-option">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <a href="tel:+18153676989">(815) 367-6989</a>
-                        </div>
+            <div class="section-header">
+                <h2 class="section-title">Ready to Join Our Team?</h2>
+                <p class="section-subtitle">We're looking for entrepreneurial, motivated individuals who want to build something great from the ground up.</p>
+            </div>
+            
+            <div class="contact-options">
+                <div class="contact-option">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>General Applications</h3>
+                        <a href="mailto:careers@badgertechnologies.us">careers@badgertechnologies.us</a>
                     </div>
                 </div>
                 
-                <div class="cta-section">
-                    <p class="cta-text">Questions about our positions or company culture?</p>
-                    <a href="mailto:careers@badgertechnologies.us" class="btn btn-primary btn-large">
-                        <i class="fas fa-comments"></i> Get In Touch
-                    </a>
+                <div class="contact-option">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h3>Internship Applications</h3>
+                        <a href="mailto:internships@badgertechnologies.us">internships@badgertechnologies.us</a>
+                    </div>
                 </div>
+                
+                <div class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <a href="tel:+18153676989">(815) 367-6989</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <p class="cta-text">Questions about our positions or company culture?</p>
+                <a href="mailto:careers@badgertechnologies.us" class="btn btn-primary btn-large">
+                    <i class="fas fa-comments"></i> Get In Touch
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="images/badger-logo-main.png" alt="Badger Technologies" class="footer-logo-image">
-                        <span>Badger Technologies</span>
+                        <img src="images/badger-logo-main.png" alt="Badger Technologies">
+                        <span>Badger</span>
                     </div>
-                    <p class="footer-description">Professional IT services and cybersecurity solutions for growing businesses.</p>
+                    <p>Professional IT services and cybersecurity solutions for growing businesses.</p>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html#services">Cybersecurity Assessment</a></li>
-                        <li><a href="index.html#services">Cloud Migration</a></li>
-                        <li><a href="index.html#services">Network Monitoring</a></li>
-                        <li><a href="index.html#services">Vendor Management</a></li>
+                    <ul>
+                        <li><a href="services.html">Cybersecurity Assessment</a></li>
+                        <li><a href="services.html">Cloud Migration</a></li>
+                        <li><a href="services.html">Network Monitoring</a></li>
+                        <li><a href="services.html">Vendor Management</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html#about">About Us</a></li>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="careers.html">Careers</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Contact</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> careers@badgertechnologies.us</p>
-                        <p><i class="fas fa-phone"></i> (815) 367-6989</p>
-                        <p><i class="fas fa-globe"></i> badgertechnologies.us</p>
-                    </div>
+                    <p><i class="fas fa-envelope"></i> careers@badgertechnologies.us</p>
+                    <p><i class="fas fa-phone"></i> (815) 367-6989</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Badger Technologies. All rights reserved. | Equal Opportunity Employer</p>
+                <p>&copy; 2025 Badger Technologies. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1113,366 +1144,6 @@
     </script>
 
     <style>
-        /* Careers specific styles */
-        .careers-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 120px 0 80px;
-            text-align: center;
-        }
-
-        .careers-hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .careers-subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .startup-badge {
-            display: inline-flex;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 12px 24px;
-            border-radius: 50px;
-            backdrop-filter: blur(10px);
-            font-weight: 600;
-        }
-
-        .startup-badge i {
-            margin-right: 8px;
-            font-size: 1.2rem;
-        }
-
-        .careers-openings {
-            padding: 80px 0;
-            background: #f8faff;
-        }
-
-        .jobs-grid {
-            display: grid;
-            gap: 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .job-card {
-            background: white;
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .job-card.featured {
-            border-color: #667eea;
-            transform: scale(1.02);
-        }
-
-        .job-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
-
-        .job-header {
-            margin-bottom: 1.5rem;
-        }
-
-        .job-title-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #2d3748;
-        }
-
-        .job-badges {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .featured-badge {
-            background: #667eea;
-            color: white;
-        }
-
-        .equity-badge {
-            background: #48bb78;
-            color: white;
-        }
-
-        .intern-badge {
-            background: #ed8936;
-            color: white;
-        }
-
-        .credit-badge {
-            background: #805ad5;
-            color: white;
-        }
-
-        .job-meta {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            color: #718096;
-            font-size: 0.9rem;
-        }
-
-        .job-meta span {
-            display: flex;
-            align-items: center;
-        }
-
-        .job-meta i {
-            margin-right: 6px;
-        }
-
-        .job-summary {
-            margin-bottom: 1.5rem;
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        .job-highlights h4 {
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-        }
-
-        .job-highlights ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .job-highlights li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 0.5rem;
-            color: #4a5568;
-        }
-
-        .job-highlights i {
-            color: #667eea;
-            margin-right: 8px;
-            margin-top: 2px;
-            min-width: 16px;
-        }
-
-        .job-requirements {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .req-column h4 {
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-        }
-
-        .req-column ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .req-column li {
-            color: #4a5568;
-            margin-bottom: 0.3rem;
-            padding-left: 1rem;
-            position: relative;
-        }
-
-        .req-column li::before {
-            content: "•";
-            color: #667eea;
-            position: absolute;
-            left: 0;
-        }
-
-        .compensation-highlight {
-            background: #f7fafc;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-        }
-
-        .compensation-highlight h4 {
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-        }
-
-        .job-actions {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn i {
-            margin-right: 8px;
-        }
-
-        .btn-primary {
-            background: #667eea;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #5a67d8;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #667eea;
-            border: 2px solid #667eea;
-        }
-
-        .btn-secondary:hover {
-            background: #667eea;
-            color: white;
-        }
-
-        .why-join-us {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .benefit-card {
-            text-align: center;
-            padding: 2rem;
-            border-radius: 12px;
-            background: #f8faff;
-            transition: transform 0.3s ease;
-        }
-
-        .benefit-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .benefit-icon {
-            background: #667eea;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.5rem;
-        }
-
-        .application-process {
-            padding: 80px 0;
-            background: #f8faff;
-        }
-
-        .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .step {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .step-number {
-            background: #667eea;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .careers-contact {
-            padding: 80px 0;
-            background: white;
-            text-align: center;
-        }
-
-        .contact-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .contact-option {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.5rem;
-            background: #f8faff;
-            border-radius: 12px;
-        }
-
-        .contact-option i {
-            color: #667eea;
-            font-size: 2rem;
-        }
-
-        .contact-option h3 {
-            margin-bottom: 0.5rem;
-            color: #2d3748;
-        }
-
-        .contact-option a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
-        .cta-section {
-            margin-top: 3rem;
-        }
-
-        .btn-large {
-            padding: 16px 32px;
-            font-size: 1.1rem;
-        }
-
         /* Modal styles */
         .modal {
             display: none;
@@ -1522,12 +1193,8 @@
             margin-bottom: 1rem;
         }
 
-        /* Responsive design */
+        /* Additional responsive styles */
         @media (max-width: 768px) {
-            .careers-hero h1 {
-                font-size: 2rem;
-            }
-
             .job-requirements {
                 grid-template-columns: 1fr;
             }

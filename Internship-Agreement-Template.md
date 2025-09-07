@@ -7,7 +7,7 @@
 **Address:** [Company Address]  
 **Contact Person:** [Your Name & Title]  
 **Email:** careers@badgertechnologies.us  
-**Phone:** (779) 356-5377  
+**Phone:** (815) 367-6989  
 
 ## INTERN INFORMATION
 **Intern:** [Intern's Full Name]  

@@ -269,7 +269,7 @@ Best regards,
 [Your name]
 Benjamin
 Badger Technologies
-+1 (779) 356-5377
++1 (815) 367-6989
 ```
 
 ## 💼 Follow-up and Next Steps

@@ -60,7 +60,7 @@ We are seeking an entrepreneurial IT Consultant to join our founding team as we 
 
 ### **Education & Experience**
 - Associates or Bachelor's degree in Information Technology, Computer Science, or related field **OR equivalent experience**
-- **1-3 years** of experience in IT consulting, systems administration, or cybersecurity 
+- **6 months - 3 years** of experience in IT consulting, systems administration, or cybersecurity 
 - **Sales experience preferred but not required** - we value hustle over experience
 - Demonstrated interest in cybersecurity and technology assessment
 - **Entrepreneurial experience or startup background strongly preferred**

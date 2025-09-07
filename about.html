@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Updated to ensure 3+ years experience is displayed -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -685,11 +686,11 @@
                             <div class="stat-label">Founded</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">6+ Years</div>
+                            <div class="stat-number">3+ Years</div>
                             <div class="stat-label">IT Experience</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">9</div>
+                            <div class="stat-number">Multiple</div>
                             <div class="stat-label">Certifications</div>
                         </div>
                     </div>
@@ -1027,13 +1028,6 @@
                     statNumbers.forEach(stat => {
                         const finalValue = stat.textContent;
                         const numericValue = parseInt(finalValue.replace(/\D/g, ''));
-                        
-                        // Skip animation for non-numeric values
-                        if (isNaN(numericValue) || numericValue === 0) {
-                            stat.textContent = finalValue;
-                            return;
-                        }
-                        
                         let currentValue = 0;
                         const increment = numericValue / 30;
                         

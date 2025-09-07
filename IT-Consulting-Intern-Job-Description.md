@@ -86,7 +86,7 @@ By the end of this internship, you will have gained experience in:
 ### **Education**
 - Currently enrolled in Associates or Bachelor's degree program
 - Majoring in Information Technology, Computer Science, Cybersecurity, Business, or related field
-- Minimum GPA of 3.0 preferred
+- Minimum GPA of 2.8 preferred
 - Must be able to receive academic credit (if unpaid internship)
 
 ### **Technical Background**
@@ -221,7 +221,6 @@ We are an early-stage startup launching innovative IT services focused on cybers
 
 **Contact Information:**  
 **Email:** internships@badgertechnologies.us  
-**Phone:** (779) 356-5377  
 **Website:** https://badgertechnologies.us
 
 **Ready to Start Your IT Consulting Career? Apply Today!**

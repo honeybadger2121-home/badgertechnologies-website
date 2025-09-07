@@ -9,7 +9,7 @@
 **Position:** Founding IT Consultant / Sales Representative  
 **Department:** Operations (Founding Team Member)  
 **Reports To:** Founder / CEO  
-**Employment Type:** Equity Partnership / Commission-Based / Performance-Based  
+**Employment Type:** Equity Partnership / Commission-Based / Performance-Based 
 
 ## Position Summary
 We are seeking an entrepreneurial IT Consultant to join our founding team as we launch our technology services startup. This is a ground-floor opportunity for someone who combines technical expertise with aggressive business development capabilities. As our first consultant, you'll be responsible for building our client base from zero while delivering exceptional IT assessments and cybersecurity services. This role requires a "founder mentality" - someone willing to do whatever it takes to establish our market presence through community outreach, door-to-door prospecting, and relationship building. Perfect for someone who wants equity upside and the opportunity to build something from the ground up.

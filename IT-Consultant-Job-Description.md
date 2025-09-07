@@ -1,7 +1,7 @@
 # IT Consultant - Job Description
 
 <div align="center">
-  <img src="images/badger-logo-banner.png" alt="Badger Technologies Logo" width="820"height="312">
+  <img src="images/badger-logo-banner.png" alt="Badger Technologies Logo" width="820" height="312">
 </div>
 
 ## Position Overview
@@ -59,8 +59,8 @@ We are seeking an entrepreneurial IT Consultant to join our founding team as we 
 ## Required Qualifications
 
 ### **Education & Experience**
-- Bachelor's degree in Information Technology, Computer Science, or related field **OR equivalent experience**
-- **1-3 years** of experience in IT consulting, systems administration, or cybersecurity (willing to train the right person)
+- Associates or Bachelor's degree in Information Technology, Computer Science, or related field **OR equivalent experience**
+- **1-3 years** of experience in IT consulting, systems administration, or cybersecurity 
 - **Sales experience preferred but not required** - we value hustle over experience
 - Demonstrated interest in cybersecurity and technology assessment
 - **Entrepreneurial experience or startup background strongly preferred**
@@ -85,11 +85,12 @@ We are seeking an entrepreneurial IT Consultant to join our founding team as we 
 - **Persuasive communication and relationship-building abilities**
 - **Resourcefulness:** Ability to succeed with minimal tools and support
 - Professional demeanor suitable for client-facing interactions
-- **Startup Mentality:** Ready to do whatever it takes to succeed**
+- **Startup Mentality:** Ready to do whatever it takes to succeed
 
 ## Preferred Qualifications
 
-### **Certifications**
+### **Certifications (Preferred, Not Required)**
+*We prefer skills & experience over certifications*
 - CompTIA Security+, Network+, or equivalent
 - CISSP, CISM, or other advanced security certifications
 - Microsoft Azure certifications (AZ-900, AZ-104, AZ-500)
@@ -143,7 +144,7 @@ We are seeking an entrepreneurial IT Consultant to join our founding team as we 
 - **Client Retention:** Ensure early clients become advocates and referral sources
 - **Pipeline Building:** Maintain robust prospect pipeline to support sustainable growth
 - **Technical Delivery:** Maintain high service quality to build company reputation
-- **Business Development:** Identify new service opportunities and market segments**
+- **Business Development:** Identify new service opportunities and market segments
 
 ## Application Process
 
@@ -177,6 +178,5 @@ We are an early-stage startup launching innovative IT services focused on cybers
 **Equal Opportunity Employer:** Badger Technologies is committed to creating a diverse and inclusive workplace and is an equal opportunity employer.
 
 **Contact Information:**  
-**Email:** careers@badgertechnologies.us  
-**Phone:** (779) 356-5377  
+**Email:** careers@badgertechnologies.us
 **Website:** https://badgertechnologies.us

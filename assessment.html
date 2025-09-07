@@ -429,55 +429,327 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav>
         <div class="nav-container">
             <div class="nav-logo">
                 <img src="images/badger-logo-main.png" alt="Badger Technologies" class="logo-image">
-                <div class="logo-text">
-                    <span class="company-name">Badger Technologies</span>
-                    <span class="tagline">Securing Tomorrow's Technology Today</span>
+                <div>
+                    <div class="company-name">Badger Technologies</div>
+                    <div class="tagline">Securing Tomorrow's Technology Today</div>
                 </div>
             </div>
+            
             <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="assessment.html" class="nav-link active">Free Assessment</a></li>
-                <li class="nav-item"><a href="index.html#solutions" class="nav-link">Solutions</a></li>
-                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="careers.html" class="nav-link">Careers</a></li>
-                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="assessment.html" class="nav-link active">Assessment</a></li>
+                <li><a href="index.html#solutions" class="nav-link">Solutions</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            
+            <a href="#assessment-form" class="btn btn-primary">Get Started</a>
         </div>
     </nav>
 
     <!-- Assessment Hero -->
-    <section class="hero assessment-hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Comprehensive 
-                    <span class="highlight">IT Assessment Process</span>
-                </h1>
-                <p class="hero-description">
-                    Professional technology health checks for businesses across industries. 
-                    Identify risks, optimize performance, and ensure compliance with industry standards.
-                </p>
-            </div>
-            <div class="hero-image">
-                <div class="hero-graphic">
-                    <img src="images/badger-logo-tech-enhanced.png" alt="Badger Technologies Assessment" class="hero-logo">
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>
+                        <span>Comprehensive</span>
+                        <span class="hero-highlight">IT Assessment Process</span>
+                    </h1>
+                    <p class="hero-description">
+                        Professional technology health checks for businesses across industries. 
+                        Identify risks, optimize performance, and ensure compliance with industry standards.
+                    </p>
+                    <a href="#assessment-form" class="btn btn-primary">Start Your Assessment</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="card" style="max-width: 400px; margin: 0 auto;">
+                        <div class="card-icon">🛡️</div>
+                        <h3>5-Day Assessment</h3>
+                        <p>Comprehensive evaluation with immediate priority findings delivered within 24 hours.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Assessment Overview -->
-    <section class="services">
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">🔍 Our Methodology</div>
+                <h2 class="section-title">Assessment Process</h2>
+                <p class="section-description">
+                    A systematic approach to evaluating your IT infrastructure, security posture, and cloud readiness
+                </p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Vulnerability Scan</h3>
+                    <p>Identify exploitable weaknesses across systems, applications, and configurations using industry-standard tools.</p>
+                    <ul>
+                        <li>External & Internal Scanning</li>
+                        <li>CVSS Risk Prioritization</li>
+                        <li>Remediation Roadmap</li>
+                        <li>Compliance Assessment</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Performance Analysis</h3>
+                    <p>Assess latency, throughput, bottlenecks, and reliability to ensure optimal system performance.</p>
+                    <ul>
+                        <li>Baseline Metrics Collection</li>
+                        <li>Peak Load Testing</li>
+                        <li>Traffic Analysis</li>
+                        <li>Infrastructure Optimization</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Readiness Report</h3>
+                    <p>Evaluate infrastructure, data, and workflows for Azure cloud migration suitability and planning.</p>
+                    <ul>
+                        <li>Application Dependency Mapping</li>
+                        <li>Cost Modeling</li>
+                        <li>Security & Compliance Review</li>
+                        <li>Migration Roadmap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Report -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sample Assessment Report</h2>
+                <p class="section-description">
+                    Our comprehensive reports provide clear, actionable insights with visual risk indicators and prioritized recommendations.
+                </p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>Critical Risks</h3>
+                    <p><strong>Outdated firewall, unverified backups</strong></p>
+                    <p>Immediate attention required for security vulnerabilities that could compromise business operations.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Moderate Concerns</h3>
+                    <p><strong>Network latency, MFA gaps</strong></p>
+                    <p>Performance and security improvements that should be addressed in the next 30-60 days.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <h3>Strengths</h3>
+                    <p><strong>Encrypted endpoints, HIPAA policies</strong></p>
+                    <p>Well-implemented security measures that provide good foundation for further improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Intake Form -->
+    <section id="assessment-form" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Request Your Free Assessment</h2>
+                <p class="section-description">Complete our technology snapshot form to get started</p>
+            </div>
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div class="contact-info">
+                    <h3>What We'll Evaluate:</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-server"></i>
+                        <div>
+                            <strong>Infrastructure Assessment</strong>
+                            <p>Server hardware, network equipment, and system configurations</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-lock"></i>
+                        <div>
+                            <strong>Security Analysis</strong>
+                            <p>Vulnerability scanning, access controls, and compliance status</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-cloud"></i>
+                        <div>
+                            <strong>Cloud Readiness</strong>
+                            <p>Migration planning, cost analysis, and optimization opportunities</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <strong>Performance Review</strong>
+                            <p>System performance, bottlenecks, and improvement recommendations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="assessment-form">
+                    <form id="assessmentForm" name="assessment" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="industry">Industry</label>
+                            <select id="industry" name="industry">
+                                <option value="">Select Industry</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="retail">Retail</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="education">Education</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="employees">Number of Employees</label>
+                            <select id="employees" name="employees">
+                                <option value="">Select Range</option>
+                                <option value="1-10">1-10</option>
+                                <option value="11-50">11-50</option>
+                                <option value="51-200">51-200</option>
+                                <option value="200+">200+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="current-challenges">Current IT Challenges</label>
+                            <textarea id="current-challenges" name="current-challenges" placeholder="Describe your main IT concerns or challenges..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Assessment Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">When would you like to start?</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="within-week">Within 1 week</option>
+                                <option value="within-month">Within 1 month</option>
+                                <option value="planning-stage">Just planning ahead</option>
+                            </select>
+                        </div>
+                        
+                        <div data-netlify-recaptcha="true"></div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Request Free Assessment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Badger Technologies</h4>
+                    <p>Professional IT assessment services helping businesses identify risks, optimize performance, and plan for growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Assessment Services</h4>
+                    <ul>
+                        <li><a href="#assessment-form">Security Vulnerability Scan</a></li>
+                        <li><a href="#assessment-form">Network Performance Analysis</a></li>
+                        <li><a href="#assessment-form">Cloud Readiness Report</a></li>
+                        <li><a href="#assessment-form">Compliance Review</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="sla.html">SLA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Badger Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(15, 23, 42, 0.98)';
+            } else {
+                nav.style.background = 'rgba(15, 23, 42, 0.95)';
+            }
+        });
+
+        // Form submission
+        document.getElementById('assessmentForm').addEventListener('submit', function(e) {
+            // Let Netlify handle the form submission
+            console.log('Assessment form submitted');
+        });
+    </script>
+</body>
+</html>
         <div class="container">
             <div class="section-header">
                 <h2>Our Assessment Methodology</h2>

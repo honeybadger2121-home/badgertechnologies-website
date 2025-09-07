@@ -39,6 +39,7 @@
             backdrop-filter: blur(20px);
             z-index: 1000;
             padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
         .nav-container {
@@ -144,7 +145,7 @@
             color: white;
             position: relative;
             overflow: hidden;
-            padding-top: 6rem;
+            padding-top: 8rem;
         }
         
         .hero::before {
@@ -540,10 +541,30 @@
             color: rgba(255, 255, 255, 0.7);
         }
         
+        /* Medium screens */
+        @media (max-width: 1024px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .hero {
+                padding-top: 9rem;
+            }
+        }
+        
         /* Mobile */
         @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            
             .nav-menu {
                 display: none;
+            }
+            
+            .hero {
+                padding-top: 10rem;
             }
             
             .hero-container {

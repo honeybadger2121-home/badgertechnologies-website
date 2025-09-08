@@ -1,54 +1,46 @@
-# Cloudflare Bulk DNS Import for badgertechnologies.us
-# Copy and paste this into Cloudflare DNS import tool
+# Cloudflare DNS Records for badgertechnologies.us
+# Format: Type,Name,Content,TTL,Proxy
 
 # A Records
-A,@,75.2.60.5,1,false
+A,@,75.2.60.5,300,true
 
 # AAAA Records  
-AAAA,@,2600:1f18:16e:df01::258,1,false
+AAAA,@,2600:1f18:16e:df01::258,300,true
 
 # CNAME Records
-CNAME,www,badgertechnologies.us,1,false
-CNAME,alias,apex-loadbalancer.netlify.com,1,false
-CNAME,mail,badgertechnologies.us,1,false
-CNAME,portal,badgertechnologies.us,1,false
-CNAME,remote,badgertechnologies.us,1,false
-CNAME,secure,badgertechnologies.us,1,false
-CNAME,support,badgertechnologies.us,1,false
+CNAME,www,badgertechnologies.us,300,true
+CNAME,alias,apex-loadbalancer.netlify.com,300,false
+CNAME,mail,badgertechnologies.us,300,false
+CNAME,portal,badgertechnologies.us,300,false
+CNAME,remote,badgertechnologies.us,300,false
+CNAME,secure,badgertechnologies.us,300,false
+CNAME,support,badgertechnologies.us,300,false
 
 # MX Records
-MX,@,aspmx.l.google.com,1,false,1
-MX,@,alt1.aspmx.l.google.com,1,false,5
-MX,@,alt2.aspmx.l.google.com,1,false,5
-MX,@,alt3.aspmx.l.google.com,1,false,10
-MX,@,alt4.aspmx.l.google.com,1,false,10
+MX,@,aspmx.l.google.com,3600,false,1
+MX,@,alt1.aspmx.l.google.com,3600,false,5
+MX,@,alt2.aspmx.l.google.com,3600,false,5
+MX,@,alt3.aspmx.l.google.com,3600,false,10
+MX,@,alt4.aspmx.l.google.com,3600,false,10
 
 # TXT Records
-TXT,@,"v=spf1 include:_spf.google.com ~all",1,false
-TXT,@,"v=caa1 issue letsencrypt.org",1,false
-TXT,@,"v=verification badger-technologies-2025",1,false
-TXT,@,business-type=technology-consulting,1,false
-TXT,@,ca-policy=letsencrypt-authorized,1,false
-TXT,@,certificate-transparency=enabled,1,false
-TXT,@,established=2025,1,false
-TXT,@,industry=information-technology,1,false
-TXT,@,security-contact=security@badgertechnologies.us,1,false
-TXT,@,"services=cybersecurity,managed-it,cloud-solution",1,false
-TXT,@,ssl-policy=strict-transport-security,1,false
-TXT,@,google-site-verification=-8cqIK3K1-oJYa7O3pcEuS7cPDt7oOv691q4C2s49yw,1,false
-TXT,@,google-site-verification=8Qk_zp70UR53rdQMZhsBXX-v5IkXosxNIo8vvqWo5gc,1,false
-TXT,@,google-site-verification=O9G17_7TphijVZhNvlT3fZh9q88klahPkUM6FWbnf8c,1,false
+TXT,@,v=spf1 include:_spf.google.com ~all,3600,false
+TXT,@,v=caa1 issue letsencrypt.org,3600,false
+TXT,@,v=verification badger-technologies-2025,3600,false
+TXT,@,business-type=technology-consulting,3600,false
+TXT,@,ca-policy=letsencrypt-authorized,3600,false
+TXT,@,certificate-transparency=enabled,3600,false
+TXT,@,established=2025,3600,false
+TXT,@,industry=information-technology,3600,false
+TXT,@,security-contact=security@badgertechnologies.us,3600,false
+TXT,@,services=cybersecurity managed-it cloud-solution,3600,false
+TXT,@,ssl-policy=strict-transport-security,3600,false
+TXT,@,google-site-verification=-8cqIK3K1-oJYa7O3pcEuS7cPDt7oOv691q4C2s49yw,300,false
+TXT,@,google-site-verification=8Qk_zp70UR53rdQMZhsBXX-v5IkXosxNIo8vvqWo5gc,300,false
+TXT,@,google-site-verification=O9G17_7TphijVZhNvlT3fZh9q88klahPkUM6FWbnf8c,300,false
 
 # DKIM Record
-TXT,google._domainkey,"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5QI3BI9FjaXJ8Qj3rrztEI9dWFTdKAIhB4t1ByBvmwX8Jz6Jo8G0RrQA0HzfF7tBwDeXlcQcp8bLJyqht4WWgxeNpVR9wsxGbD/U6XZKn+AtODeFPoUCuIcNKVJ6Km+2ds6R+9Rt37HAVjxaHrJng/3v2JEvrEnwgskAz4lN4ampajEPX6IPJCvMNJaipLDnv45wXWgA7g1spkVXL7Qsg07BIAxeAe+tsrlvNBfC7zZ3u+Y+QUAnOzFaD7XUbJhXD+BKbJBKTiBc5QFQ11HoPMdFbVWiEl+uYRvqHj5pb2WkadjTJ6Jm1eDv/B/FVwmL1/1tDDS7yN5Y/zvvclEgQIDAQAB",1,false
+TXT,google._domainkey,v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5QI3BI9FjaXJ8Qj3rrztEI9dWFTdKAIhB4t1ByBvmwX8Jz6Jo8G0RrQA0HzfF7tBwDeXlcQcp8bLJyqht4WWgxeNpVR9wsxGbD/U6XZKn+AtODeFPoUCuIcNKVJ6Km+2ds6R+9Rt37HAVjxaHrJng/3v2JEvrEnwgskAz4lN4ampajEPX6IPJCvMNJaipLDnv45wXWgA7g1spkVXL7Qsg07BIAxeAe+tsrlvNBfC7zZ3u+Y+QUAnOzFaD7XUbJhXD+BKbJBKTiBc5QFQ11HoPMdFbVWiEl+uYRvqHj5pb2WkadjTJ6Jm1eDv/B/FVwmL1/1tDDS7yN5Y/zvvclEgQIDAQAB,3600,false
 
 # DMARC Record  
-TXT,_dmarc,"v=DMARC1; p=quarantine; rua=mailto:admin@badgertechnologies.us; ruf=mailto:admin@badgertechnologies.us; sp=quarantine; adkim=r; aspf=r; fo=1",1,false
-
-# SRV Record
-SRV,_https._tcp,0 1 443 badgertechnologies.us,1,false
-
-# CAA Records (Real CAA support!)
-CAA,@,0 issue "letsencrypt.org",1,false
-CAA,@,0 issue "digicert.com",1,false
-CAA,@,0 iodef "mailto:security@badgertechnologies.us",1,false
+TXT,_dmarc,v=DMARC1; p=quarantine; rua=mailto:admin@badgertechnologies.us; ruf=mailto:admin@badgertechnologies.us; sp=quarantine; adkim=r; aspf=r; fo=1,3600,false

@@ -1,0 +1,46 @@
+$ORIGIN badgertechnologies.us.
+$TTL 300
+
+; A Records
+@	IN	A	75.2.60.5
+
+; AAAA Records
+@	IN	AAAA	2600:1f18:16e:df01::258
+
+; CNAME Records
+www	IN	CNAME	badgertechnologies.us.
+alias	IN	CNAME	apex-loadbalancer.netlify.com.
+mail	IN	CNAME	badgertechnologies.us.
+portal	IN	CNAME	badgertechnologies.us.
+remote	IN	CNAME	badgertechnologies.us.
+secure	IN	CNAME	badgertechnologies.us.
+support	IN	CNAME	badgertechnologies.us.
+
+; MX Records
+@	IN	MX	1	aspmx.l.google.com.
+@	IN	MX	5	alt1.aspmx.l.google.com.
+@	IN	MX	5	alt2.aspmx.l.google.com.
+@	IN	MX	10	alt3.aspmx.l.google.com.
+@	IN	MX	10	alt4.aspmx.l.google.com.
+
+; TXT Records
+@	IN	TXT	"v=spf1 include:_spf.google.com ~all"
+@	IN	TXT	"v=caa1 issue letsencrypt.org"
+@	IN	TXT	"v=verification badger-technologies-2025"
+@	IN	TXT	"business-type=technology-consulting"
+@	IN	TXT	"ca-policy=letsencrypt-authorized"
+@	IN	TXT	"certificate-transparency=enabled"
+@	IN	TXT	"established=2025"
+@	IN	TXT	"industry=information-technology"
+@	IN	TXT	"security-contact=security@badgertechnologies.us"
+@	IN	TXT	"services=cybersecurity,managed-it,cloud-solution"
+@	IN	TXT	"ssl-policy=strict-transport-security"
+@	IN	TXT	"google-site-verification=-8cqIK3K1-oJYa7O3pcEuS7cPDt7oOv691q4C2s49yw"
+@	IN	TXT	"google-site-verification=8Qk_zp70UR53rdQMZhsBXX-v5IkXosxNIo8vvqWo5gc"
+@	IN	TXT	"google-site-verification=O9G17_7TphijVZhNvlT3fZh9q88klahPkUM6FWbnf8c"
+
+; DKIM Record
+google._domainkey	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5QI3BI9FjaXJ8Qj3rrztEI9dWFTdKAIhB4t1ByBvmwX8Jz6Jo8G0RrQA0HzfF7tBwDeXlcQcp8bLJyqht4WWgxeNpVR9wsxGbD/U6XZKn+AtODeFPoUCuIcNKVJ6Km+2ds6R+9Rt37HAVjxaHrJng/3v2JEvrEnwgskAz4lN4ampajEPX6IPJCvMNJaipLDnv45wXWgA7g1spkVXL7Qsg07BIAxeAe+tsrlvNBfC7zZ3u+Y+QUAnOzFaD7XUbJhXD+BKbJBKTiBc5QFQ11HoPMdFbVWiEl+uYRvqHj5pb2WkadjTJ6Jm1eDv/B/FVwmL1/1tDDS7yN5Y/zvvclEgQIDAQAB"
+
+; DMARC Record
+_dmarc	IN	TXT	"v=DMARC1; p=quarantine; rua=mailto:admin@badgertechnologies.us; ruf=mailto:admin@badgertechnologies.us; sp=quarantine; adkim=r; aspf=r; fo=1"

@@ -14,15 +14,16 @@ Write-Output "=== MX Records (Email Setup) ==="
 nslookup -type=MX badgertechnologies.us
 
 Write-Output ""
-Write-Output "=== TXT Records (SPF, DMARC, Verification) ==="
+Write-Output "=== TXT Records (SPF, DMARC, Security Policies) ==="
 nslookup -type=TXT badgertechnologies.us
 Write-Output ""
 Write-Output "Checking DMARC record:"
 nslookup -type=TXT _dmarc.badgertechnologies.us
 
 Write-Output ""
-Write-Output "=== CAA Records (Certificate Security) ==="
-nslookup -type=CAA badgertechnologies.us
+Write-Output "=== Security TXT Records (Name.com CAA Alternative) ==="
+Write-Output "Looking for security policy TXT records..."
+nslookup -type=TXT badgertechnologies.us | Select-String -Pattern "ca-policy|security-contact|certificate-transparency"
 
 Write-Output ""
 Write-Output "=== DNS Propagation Check (Multiple Servers) ==="

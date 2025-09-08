@@ -24,11 +24,12 @@
 ### OR Microsoft 365 MX Record:
 - Type: MX | Host: @ | Answer: badgertechnologies-us.mail.protection.outlook.com | Priority: 0 | TTL: 3600
 
-## PRIORITY 3: Security Records
+## PRIORITY 3: Security Records (Name.com Compatible)
 
-### CAA Records (Shows certificate security):
-- Type: CAA | Host: @ | Answer: 0 issue "letsencrypt.org" | TTL: 3600
-- Type: CAA | Host: @ | Answer: 0 iodef "mailto:security@badgertechnologies.us" | TTL: 3600
+### Certificate Authority Information (using TXT records):
+- Type: TXT | Host: @ | Answer: ca-policy=letsencrypt-authorized | TTL: 3600
+- Type: TXT | Host: @ | Answer: security-contact=security@badgertechnologies.us | TTL: 3600
+- Type: TXT | Host: @ | Answer: certificate-transparency=enabled | TTL: 3600
 
 ## PRIORITY 4: Professional Subdomains
 

@@ -38,12 +38,15 @@
 - **Record Type**: MX | **Host**: @ | **Answer**: alt3.smtp.google.com | **Priority**: 10 | **TTL**: 3600
 - **Record Type**: MX | **Host**: @ | **Answer**: alt4.smtp.google.com | **Priority**: 10 | **TTL**: 3600
 
-### 3. Security Records
+### 3. Security Records (Name.com Compatible)
 
-#### CAA Records (Certificate Authority Authorization):
-- **Record Type**: CAA | **Host**: @ | **Answer**: `0 issue "letsencrypt.org"` | **TTL**: 3600
-- **Record Type**: CAA | **Host**: @ | **Answer**: `0 issue "digicert.com"` | **TTL**: 3600
-- **Record Type**: CAA | **Host**: @ | **Answer**: `0 iodef "mailto:security@badgertechnologies.us"` | **TTL**: 3600
+#### Certificate Security TXT Records (Alternative to CAA):
+Since Name.com doesn't support CAA records, use these TXT records instead:
+
+- **Record Type**: TXT | **Host**: @ | **Answer**: `ca-policy=letsencrypt-authorized` | **TTL**: 3600
+- **Record Type**: TXT | **Host**: @ | **Answer**: `security-contact=security@badgertechnologies.us` | **TTL**: 3600
+- **Record Type**: TXT | **Host**: @ | **Answer**: `certificate-transparency=enabled` | **TTL**: 3600
+- **Record Type**: TXT | **Host**: @ | **Answer**: `ssl-policy=strict-transport-security` | **TTL**: 3600
 
 ## Phase 2: Professional Subdomains
 

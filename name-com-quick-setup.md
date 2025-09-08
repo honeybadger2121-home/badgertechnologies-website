@@ -1,6 +1,21 @@
 # Name.com Quick Setup - Critical DNS Records for badgertechnologies.us
+# (Configured for Netlify hosting with custom domain)
 
-## PRIORITY 1: Email Authentication (Add these FIRST)
+## PRIORITY 0: Netlify Custom Domain Setup (FIRST!)
+
+### Primary Domain A Record (Points to Netlify):
+- Type: A
+- Host: @
+- Answer: 75.2.60.5
+- TTL: 3600
+
+### WWW Subdomain (Points to Netlify):
+- Type: CNAME
+- Host: www  
+- Answer: badgertechnologiesllc.netlify.app
+- TTL: 3600
+
+## PRIORITY 1: Email Authentication (Add these NEXT)
 
 ### SPF Record (Prevents email spoofing)
 - Type: TXT

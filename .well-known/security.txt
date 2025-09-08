@@ -1,0 +1,10 @@
+Contact: mailto:security@badgertechnologies.com
+Contact: tel:+1-815-367-6989
+Expires: 2026-09-08T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://badgertechnologies.us/.well-known/security.txt
+Policy: https://badgertechnologies.us/security-policy
+Hiring: https://badgertechnologies.us/careers.html
+
+# This file is for security researchers to report vulnerabilities
+# We take security seriously and appreciate responsible disclosure

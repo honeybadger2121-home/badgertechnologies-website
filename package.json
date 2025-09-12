@@ -6,7 +6,8 @@
   "scripts": {
     "build": "echo 'Static site - no build required'",
     "test": "echo 'No tests configured'",
-    "start": "echo 'Use Cloudflare Pages for hosting'"
+    "start": "echo 'Use Cloudflare Pages for hosting'",
+    "dev": "echo 'Open index.html in browser for local development'"
   },
   "repository": {
     "type": "git",

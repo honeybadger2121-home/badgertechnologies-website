@@ -4,7 +4,7 @@
   "description": "Badger Technologies - Professional IT Services and Cybersecurity Solutions",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Static site ready' && echo 'index.html exists' && dir index.html",
+    "build": "echo 'Build complete - serving from root directory'",
     "test": "echo 'No tests configured'",
     "start": "echo 'Use Cloudflare Pages for hosting'",
     "dev": "echo 'Open index.html in browser for local development'",

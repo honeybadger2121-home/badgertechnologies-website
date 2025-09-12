@@ -1,19 +1,16 @@
-# Cloudflare Pages Build Configuration
-# This file ensures static site deployment without Workers
+# Cloudflare Pages Static Site Configuration
+# Ensures proper static HTML file serving
 
-# Build Configuration
-build_command = "npm run build"
-build_output_directory = "."
+[build]
+command = "npm run build"
+publish = "."
 
-# Framework: None (Static Site)
-framework = "static"
+[build.environment]
+NODE_VERSION = "18"
 
-# Environment Variables (none needed for static site)
-[env]
+# Static site configuration
+compatibility_date = "2025-09-12"
+name = "badgertechnologies"
 
-# Functions directory (optional - for Cloudflare Pages Functions)
-functions_directory = "functions"
-
-# Deployment Configuration
-# Note: Remove any custom deploy commands in Cloudflare Pages dashboard
-# Static sites should NOT use "npx wrangler deploy"
+# No Workers or Functions - pure static site
+# Serve HTML files directly from root directory

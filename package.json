@@ -4,12 +4,12 @@
   "description": "Badger Technologies - Professional IT Services and Cybersecurity Solutions",
   "main": "index.html",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler publish",
-    "build": "echo 'Static site - no build required'",
+    "dev": "wrangler pages dev . --compatibility-date=2023-10-30",
     "preview": "wrangler pages dev .",
-    "cf-deploy": "wrangler pages publish .",
-    "test": "echo 'No tests configured'"
+    "deploy": "wrangler pages publish .",
+    "build": "echo 'Static site - no build required'",
+    "test": "echo 'Testing API endpoints...' && curl -s https://your-pages-url.pages.dev/api/test || echo 'Deploy first to test'",
+    "test-local": "echo 'Start dev server first: npm run dev'"
   },
   "repository": {
     "type": "git",

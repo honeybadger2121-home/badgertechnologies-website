@@ -1,32 +1,39 @@
+# Cloudflare Pages Configuration
+# This file is used for Pages Functions and environment variables
+
 name = "badger-technologies-site"
-main = "src/worker.js"
 compatibility_date = "2023-10-30"
 
-[env.production]
-name = "badger-technologies-production"
-routes = [
-  { pattern = "badgertechnologies.us/*", zone_name = "badgertechnologies.us" }
-]
+# Pages Functions don't need main entry point
+# Functions are automatically deployed from /functions directory
 
-[env.staging]
-name = "badger-technologies-staging"
-
-# Environment variables for form handling
+# Environment variables for Pages Functions
 [vars]
 CONTACT_EMAIL = "info@badgertechnologies.us"
 SITE_NAME = "Badger Technologies"
 
-# KV namespace for storing form submissions (optional)
+# Production environment configuration
+[env.production.vars]
+CONTACT_EMAIL = "info@badgertechnologies.us"
+SITE_NAME = "Badger Technologies"
+
+# Staging environment configuration  
+[env.staging.vars]
+CONTACT_EMAIL = "test@badgertechnologies.us"
+SITE_NAME = "Badger Technologies (Staging)"
+
+# Optional: KV namespace for storing form submissions
+# Uncomment and configure in Cloudflare dashboard if needed
 # [[kv_namespaces]]
 # binding = "FORM_SUBMISSIONS"
 # id = "your-kv-namespace-id"
 # preview_id = "your-preview-kv-namespace-id"
 
-# R2 bucket for file storage (optional)
+# Optional: R2 bucket for file storage
 # [[r2_buckets]]
 # binding = "ASSETS"
 # bucket_name = "badger-tech-assets"
 
-# Custom domains (configure in Cloudflare dashboard)
-# [env.production]
-# route = "badgertechnologies.us/*"
+# Optional: Email Workers configuration
+# [[send_email]]
+# name = "EMAIL"

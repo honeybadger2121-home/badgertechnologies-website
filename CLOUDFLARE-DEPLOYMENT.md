@@ -35,7 +35,37 @@ This guide covers deploying the Badger Technologies website to Cloudflare Pages 
    # DNS will be automatically configured if domain is on Cloudflare
    ```
 
-### 2. Configure Cloudflare Workers (Optional - for form handling)
+### 2. Cloudflare Pages Functions (Recommended)
+
+Cloudflare Pages Functions are automatically deployed with your site - no separate Worker needed!
+
+1. **Functions Structure**
+   ```
+   /functions/
+   ├── _middleware.js          # Handles routing and clean URLs
+   └── api/
+       ├── contact.js          # Contact form handler
+       ├── assessment.js       # Assessment form handler
+       └── test.js            # API test endpoint
+   ```
+
+2. **Automatic Deployment**
+   ```bash
+   # Functions are deployed automatically when you push to GitHub
+   git push origin main
+   
+   # Or deploy manually with Wrangler
+   wrangler pages publish .
+   ```
+
+3. **Test Your API**
+   ```bash
+   # Test the API endpoints
+   curl https://your-site.pages.dev/api/test
+   curl -X POST https://your-site.pages.dev/api/contact -d "name=Test&email=test@example.com&message=Test"
+   ```
+
+### 2. Legacy Cloudflare Workers (Optional)
 
 1. **Install Wrangler CLI**
    ```bash

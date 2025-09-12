@@ -7,7 +7,8 @@
     "build": "echo 'Static site - no build required' && ls -la",
     "test": "echo 'No tests configured'",
     "start": "echo 'Use Cloudflare Pages for hosting'",
-    "dev": "echo 'Open index.html in browser for local development'"
+    "dev": "echo 'Open index.html in browser for local development'",
+    "deploy": "echo 'Deploying to Cloudflare Pages'"
   },
   "repository": {
     "type": "git",

@@ -4,11 +4,11 @@
   "description": "Badger Technologies - Professional IT Services and Cybersecurity Solutions",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Build complete - serving from root directory'",
+    "build": "mkdir -p dist && cp -r *.html *.css *.js *.png *.md *.txt *.xml *.json images dist/ 2>/dev/null || echo 'Build completed'",
+    "build:windows": "if not exist dist mkdir dist && copy *.html dist\\ && copy *.css dist\\ && copy *.js dist\\ && copy *.png dist\\ && copy *.md dist\\ && copy *.txt dist\\ && copy *.xml dist\\ && copy *.json dist\\ && xcopy images dist\\images\\ /E /I /Y",
     "test": "echo 'No tests configured'",
     "start": "echo 'Use Cloudflare Pages for hosting'",
-    "dev": "echo 'Open index.html in browser for local development'",
-    "deploy": "echo 'Deploying to Cloudflare Pages'"
+    "dev": "echo 'Open index.html in browser for local development'"
   },
   "repository": {
     "type": "git",

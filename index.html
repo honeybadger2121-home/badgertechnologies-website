@@ -164,41 +164,55 @@
         }
         
         /* Mobile Menu Overlay */
-        .mobile-menu-overlay {
+        .mobile-overlay {
             display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             background: rgba(15, 23, 42, 0.98);
             backdrop-filter: blur(20px);
             z-index: 1001;
-            padding-top: 6rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
         }
         
-        .mobile-menu-overlay.active {
-            display: block;
+        .mobile-overlay.active {
+            display: flex;
         }
         
         .mobile-nav-menu {
             list-style: none;
-            padding: 2rem;
+            padding: 0;
             margin: 0;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
         }
         
         .mobile-nav-menu li {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
         
         .mobile-nav-menu .nav-link {
             font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
             display: block;
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
         }
         
-        .mobile-menu-close {
+        .mobile-nav-menu .nav-link:hover {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+        
+        .mobile-close-btn {
             position: absolute;
             top: 1rem;
             right: 2rem;
@@ -630,6 +644,30 @@
         
         /* Mobile */
         @media (max-width: 768px) {
+            nav {
+                padding: 0.5rem 0;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .nav-logo {
+                gap: 0.5rem;
+            }
+            
+            .logo-image {
+                height: 35px;
+            }
+            
+            .company-name {
+                font-size: 1.1rem;
+            }
+            
+            .tagline {
+                font-size: 0.65rem;
+            }
+            
             .nav-menu {
                 display: none;
             }
@@ -687,8 +725,8 @@
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-        <button class="mobile-menu-close" id="mobileMenuClose">
+    <div class="mobile-overlay" id="mobileMenuOverlay">
+        <button class="mobile-close-btn" id="mobileMenuClose">
             <i class="fas fa-times"></i>
         </button>
         <ul class="mobile-nav-menu">
@@ -1007,33 +1045,43 @@
         const mobileOverlay = document.querySelector('.mobile-overlay');
         const mobileCloseBtn = document.querySelector('.mobile-close-btn');
 
-        // Toggle mobile menu
-        mobileMenuToggle.addEventListener('click', function() {
-            mobileOverlay.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        });
+        if (mobileMenuToggle && mobileOverlay && mobileCloseBtn) {
+            // Toggle mobile menu
+            mobileMenuToggle.addEventListener('click', function() {
+                console.log('Mobile menu toggle clicked');
+                mobileOverlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
 
-        // Close mobile menu
-        function closeMobileMenu() {
-            mobileOverlay.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore background scrolling
+            // Close mobile menu
+            function closeMobileMenu() {
+                console.log('Closing mobile menu');
+                mobileOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+
+            mobileCloseBtn.addEventListener('click', closeMobileMenu);
+
+            // Close mobile menu when clicking on overlay background
+            mobileOverlay.addEventListener('click', function(e) {
+                if (e.target === mobileOverlay) {
+                    closeMobileMenu();
+                }
+            });
+
+            // Close mobile menu when pressing Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileOverlay.style.display === 'flex') {
+                    closeMobileMenu();
+                }
+            });
+        } else {
+            console.log('Mobile menu elements not found:', {
+                toggle: !!mobileMenuToggle,
+                overlay: !!mobileOverlay,
+                closeBtn: !!mobileCloseBtn
+            });
         }
-
-        mobileCloseBtn.addEventListener('click', closeMobileMenu);
-
-        // Close mobile menu when clicking on overlay background
-        mobileOverlay.addEventListener('click', function(e) {
-            if (e.target === mobileOverlay) {
-                closeMobileMenu();
-            }
-        });
-
-        // Close mobile menu when pressing Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && mobileOverlay.style.display === 'flex') {
-                closeMobileMenu();
-            }
-        });
     </script>
 </body>
 </html>

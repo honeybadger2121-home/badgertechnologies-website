@@ -148,6 +148,67 @@
             color: #3b82f6;
         }
         
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .mobile-menu-toggle:hover {
+            color: #3b82f6;
+        }
+        
+        /* Mobile Menu Overlay */
+        .mobile-menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 1001;
+            padding-top: 6rem;
+        }
+        
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+        
+        .mobile-nav-menu {
+            list-style: none;
+            padding: 2rem;
+            margin: 0;
+        }
+        
+        .mobile-nav-menu li {
+            margin-bottom: 1.5rem;
+        }
+        
+        .mobile-nav-menu .nav-link {
+            font-size: 1.5rem;
+            display: block;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-menu-close {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
         .btn {
             display: inline-flex;
             align-items: center;
@@ -573,6 +634,14 @@
                 display: none;
             }
             
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
             .hero-container {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -608,9 +677,29 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
             <a href="assessment.html" class="btn btn-primary">Get Assessment</a>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="assessment.html" class="nav-link">Get Assessment</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -910,6 +999,39 @@
                 nav.style.background = 'rgba(15, 23, 42, 0.98)';
             } else {
                 nav.style.background = 'rgba(15, 23, 42, 0.95)';
+            }
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileOverlay = document.querySelector('.mobile-overlay');
+        const mobileCloseBtn = document.querySelector('.mobile-close-btn');
+
+        // Toggle mobile menu
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileOverlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+
+        // Close mobile menu
+        function closeMobileMenu() {
+            mobileOverlay.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore background scrolling
+        }
+
+        mobileCloseBtn.addEventListener('click', closeMobileMenu);
+
+        // Close mobile menu when clicking on overlay background
+        mobileOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileOverlay) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close mobile menu when pressing Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileOverlay.style.display === 'flex') {
+                closeMobileMenu();
             }
         });
     </script>

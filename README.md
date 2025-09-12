@@ -40,7 +40,7 @@ Professional IT services and cybersecurity solutions website for Badger Technolo
 - `.well-known/` - Security and verification files
 
 ### Configuration
-- `netlify.toml` - Netlify deployment settings
+- `.cfpages` - Cloudflare Pages deployment settings
 
 ## 📋 IT Documentation
 
@@ -57,7 +57,7 @@ Professional IT services and cybersecurity solutions website for Badger Technolo
 
 ## 🚀 Deployment
 
-Website is automatically deployed via Netlify:
+Website is automatically deployed via Cloudflare Pages:
 - **Source**: GitHub repository (main branch)
 - **Build**: Static site deployment
 - **CDN**: Global content delivery network
@@ -72,7 +72,7 @@ Website is automatically deployed via Netlify:
 ## 🛠️ Technologies Used
 
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Hosting**: Netlify
+- **Hosting**: Cloudflare Pages
 - **Domain**: Name.com DNS management
 - **Email**: Google Workspace
 - **Security**: SSL/TLS encryption, SPF/DMARC authentication

@@ -1,4 +1,4 @@
-# Sales Representative - Job Description
+# Founding Sales Representative - Job Description
 
 <div align="center">
   <img src="images/badger-logo-banner.png" alt="Badger Technologies Logo" width="820" height="312">

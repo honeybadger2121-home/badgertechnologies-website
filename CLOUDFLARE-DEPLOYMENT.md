@@ -19,12 +19,13 @@ This guide covers deploying the Badger Technologies website to Cloudflare Pages 
    # Select your GitHub repository: honeybadger2121-home/badgertechnologies-website
    ```
 
-2. **Build Configuration**
+2. **Build Configuration** (IMPORTANT - Use these exact settings)
    ```yaml
-   Build command: (leave empty - static site)
+   Framework preset: None
+   Build command: npm run build
    Build output directory: /
    Root directory: /
-   Environment variables: (none required for basic deployment)
+   Environment variables: (none required)
    ```
 
 3. **Custom Domain Setup**
@@ -35,9 +36,9 @@ This guide covers deploying the Badger Technologies website to Cloudflare Pages 
    # DNS will be automatically configured if domain is on Cloudflare
    ```
 
-### 2. Cloudflare Pages Functions (Recommended)
+### 2. Cloudflare Pages Functions (Automatic)
 
-Cloudflare Pages Functions are automatically deployed with your site - no separate Worker needed!
+Cloudflare Pages Functions are automatically deployed with your site!
 
 1. **Functions Structure**
    ```
@@ -54,35 +55,14 @@ Cloudflare Pages Functions are automatically deployed with your site - no separa
    # Functions are deployed automatically when you push to GitHub
    git push origin main
    
-   # Or deploy manually with Wrangler
-   wrangler pages publish .
+   # No additional deployment commands needed!
    ```
 
 3. **Test Your API**
    ```bash
-   # Test the API endpoints
+   # Test the API endpoints after deployment
    curl https://your-site.pages.dev/api/test
    curl -X POST https://your-site.pages.dev/api/contact -d "name=Test&email=test@example.com&message=Test"
-   ```
-
-### 2. Legacy Cloudflare Workers (Optional)
-
-1. **Install Wrangler CLI**
-   ```bash
-   npm install -g wrangler
-   wrangler login
-   ```
-
-2. **Deploy Worker**
-   ```bash
-   cd your-project-directory
-   wrangler publish
-   ```
-
-3. **Set Environment Variables**
-   ```bash
-   wrangler secret put CONTACT_EMAIL
-   # Enter: info@badgertechnologies.us
    ```
 
 ## 📁 File Structure

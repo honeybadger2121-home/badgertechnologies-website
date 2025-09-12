@@ -4,12 +4,9 @@
   "description": "Badger Technologies - Professional IT Services and Cybersecurity Solutions",
   "main": "index.html",
   "scripts": {
-    "dev": "wrangler pages dev . --compatibility-date=2023-10-30",
-    "preview": "wrangler pages dev .",
-    "deploy": "wrangler pages publish .",
-    "build": "echo 'Static site - no build required'",
-    "test": "echo 'Testing API endpoints...' && curl -s https://your-pages-url.pages.dev/api/test || echo 'Deploy first to test'",
-    "test-local": "echo 'Start dev server first: npm run dev'"
+    "build": "echo 'Static site - no build step required'",
+    "test": "echo 'No tests configured'",
+    "start": "echo 'Use Cloudflare Pages for hosting'"
   },
   "repository": {
     "type": "git",
@@ -28,9 +25,6 @@
   "author": "Badger Technologies",
   "license": "MIT",
   "homepage": "https://badgertechnologies.us",
-  "devDependencies": {
-    "wrangler": "^3.0.0"
-  },
   "engines": {
     "node": ">=16.0.0"
   },

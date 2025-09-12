@@ -1,4 +1,4 @@
-# Founding Sales Representative - Job Description
+# Founding Client Acquisition Specialist - Job Description
 
 <div align="center">
   <img src="images/badger-logo-banner.png" alt="Badger Technologies Logo" width="820" height="312">
@@ -6,13 +6,13 @@
 
 ## Position Overview
 **Company:** Badger Technologies (EARLY-STAGE STARTUP)
-**Position:** Founding Sales Representative  
+**Position:** Founding Client Acquisition Specialist  
 **Department:** Sales & Business Development (Founding Team Member)  
 **Reports To:** Founder / CEO  
 **Employment Type:** Equity Partnership / Commission-Based / Performance-Based 
 
 ## Position Summary
-We are seeking an entrepreneurial Sales Representative to join our founding team as we launch our technology services startup. This is a ground-floor opportunity for someone with aggressive business development capabilities and a "founder mentality" - willing to do whatever it takes to establish our market presence through community outreach, door-to-door prospecting, and relationship building. You'll be responsible for building our client base from zero and generating the initial revenue stream that will fuel our growth. Perfect for someone who wants equity upside, unlimited earning potential, and the opportunity to build something from the ground up.
+We are seeking an entrepreneurial Client Acquisition Specialist to join our founding team as we launch our technology services startup. This is a ground-floor opportunity for someone with aggressive business development capabilities and a "founder mentality" - willing to do whatever it takes to establish our market presence through community outreach, door-to-door prospecting, and relationship building. You'll be responsible for building our client base from zero and generating the initial revenue stream that will fuel our growth. Perfect for someone who wants equity upside, unlimited earning potential, and the opportunity to build something from the ground up.
 
 ## Key Responsibilities
 
@@ -213,7 +213,7 @@ We are an early-stage startup launching innovative IT services focused on cybers
 
 **Current Stage:** Pre-revenue startup seeking aggressive business development to establish market presence and generate initial cash flow.
 
-**Why Join Our Sales Team:** 
+**Why Join Our Client Acquisition Team:** 
 - **Progressive Salary Growth:** Your compensation increases with every successful client you bring on
 - **Performance Recognition:** Permanent salary increases reward your sales success
 - **Equity Upside:** Meaningful ownership in a company you'll help build from zero

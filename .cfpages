@@ -1,6 +1,5 @@
 # Cloudflare Pages Static Site Configuration
-# This file ensures the site is deployed as static HTML/CSS/JS
-# No Workers, no Functions, just static file serving
+# NO WORKERS - Static HTML/CSS/JS only
 
 [build]
 publish = "."
@@ -8,3 +7,6 @@ command = "npm run build"
 
 [build.environment]
 NODE_VERSION = "18"
+
+# Static site only - no Worker functionality needed
+compatibility_flags = []

@@ -3,9 +3,15 @@
 Professional IT services and cybersecurity solutions website for Badger Technologies.
 
 ## 🌐 Live Site
-- **Primary Domain**: https://www.badgertechnologies.us
-- **Alternative**: https://badgertechnologies.us (redirects to www)
-- **Hosted on**: Netlify
+- **Primary Domain**: https://badgertechnologies.us
+- **Cloudflare Pages**: https://badgertechnologies.red-moon-31c4.workers.dev
+- **Hosted on**: Cloudflare Pages
+
+## ⚡ Recent Updates
+- ✅ Migrated to Cloudflare Pages
+- ✅ DNS optimization completed
+- ✅ Mobile navigation enhanced
+- ✅ Repository reconnection in progress
 
 ## 📁 Website Structure
 

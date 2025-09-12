@@ -1,0 +1,32 @@
+name = "badger-technologies-site"
+main = "src/worker.js"
+compatibility_date = "2023-10-30"
+
+[env.production]
+name = "badger-technologies-production"
+routes = [
+  { pattern = "badgertechnologies.us/*", zone_name = "badgertechnologies.us" }
+]
+
+[env.staging]
+name = "badger-technologies-staging"
+
+# Environment variables for form handling
+[vars]
+CONTACT_EMAIL = "info@badgertechnologies.us"
+SITE_NAME = "Badger Technologies"
+
+# KV namespace for storing form submissions (optional)
+# [[kv_namespaces]]
+# binding = "FORM_SUBMISSIONS"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
+# R2 bucket for file storage (optional)
+# [[r2_buckets]]
+# binding = "ASSETS"
+# bucket_name = "badger-tech-assets"
+
+# Custom domains (configure in Cloudflare dashboard)
+# [env.production]
+# route = "badgertechnologies.us/*"

@@ -803,7 +803,7 @@
                 
                 <div class="contact-form">
                     <h3 style="margin-bottom: 1.5rem; color: #1e293b;">Send us a Message</h3>
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <form id="contactForm" method="POST" action="/api/contact">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
@@ -1039,10 +1039,46 @@
             answer.classList.toggle('active');
         }
 
-        // Form submission success message
-        document.querySelector('form[name="contact"]').addEventListener('submit', function(e) {
-            // This will be handled by Netlify, but you can add custom success handling here
-            console.log('Form submitted');
+        // Form submission with Cloudflare Worker
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            // Show loading state
+            submitButton.innerHTML = 'Sending...';
+            submitButton.disabled = true;
+            
+            try {
+                const formData = new FormData(this);
+                
+                // Combine first and last name
+                const name = `${formData.get('firstName')} ${formData.get('lastName')}`;
+                formData.append('name', name);
+                
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                    // Redirect to thank you page
+                    window.location.href = '/thank-you.html';
+                } else {
+                    throw new Error(result.error || 'Failed to send message');
+                }
+                
+            } catch (error) {
+                console.error('Form submission error:', error);
+                alert('Sorry, there was an error sending your message. Please try again or contact us directly.');
+                
+                // Reset button
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }
         });
 
         // Mobile menu toggle functionality

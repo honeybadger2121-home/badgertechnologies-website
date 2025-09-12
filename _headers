@@ -1,0 +1,68 @@
+# Cloudflare Pages Headers Configuration
+# https://developers.cloudflare.com/pages/platform/headers/
+
+# Global headers for all pages
+/*
+  # Security Headers
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  
+  # Performance Headers
+  Cache-Control: public, max-age=3600
+  
+  # SEO Headers
+  X-Robots-Tag: index, follow
+
+# Static assets - Long term caching
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  
+/favicon.png
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS and JS files - Medium term caching
+*.css
+  Cache-Control: public, max-age=86400
+  Content-Type: text/css
+
+*.js
+  Cache-Control: public, max-age=86400
+  Content-Type: application/javascript
+
+# HTML files - Short term caching for dynamic updates
+*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+# API and form endpoints - No caching
+/api/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  
+# Special files
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain
+
+/sitemap.xml
+  Cache-Control: public, max-age=86400
+  Content-Type: application/xml
+
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json
+
+# Font files (if added later)
+*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff2
+
+*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: font/woff
+
+# Additional security for admin paths
+/admin/*
+  X-Robots-Tag: noindex, nofollow

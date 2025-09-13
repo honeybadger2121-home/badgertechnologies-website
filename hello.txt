@@ -1,1 +1,1 @@
-Hello World! Static site test - reconnection test.
+Hello World! Static site test.

@@ -1,0 +1,8 @@
+# Cloudflare Pages configuration
+# Build the static site into dist and serve that as the output
+
+build_output_dir = "dist"
+build_command = "npm run build"
+
+[build.environment]
+NODE_VERSION = "18"

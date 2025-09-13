@@ -17,7 +17,7 @@
         </tr>
         <tr>
           <td style="font-size: 14px; color: #4a5568; padding-bottom: 8px;">
-            Principal IT Consultant & Cybersecurity Specialist
+            Founder
           </td>
         </tr>
         <tr>

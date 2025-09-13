@@ -87,15 +87,31 @@ p {
     letter-spacing: 0.5px;
 }
 
+/* Image optimization and responsive sizing */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .nav-logo .logo-image {
     height: 40px;
     width: auto;
+    max-width: 200px;
     margin-right: 12px;
     transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
 .nav-logo .logo-image:hover {
     transform: scale(1.05);
+}
+
+.mobile-logo-img {
+    height: 32px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
 }
 
 .nav-logo .logo-placeholder {

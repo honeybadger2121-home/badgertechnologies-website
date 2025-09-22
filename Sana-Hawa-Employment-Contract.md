@@ -153,8 +153,8 @@ By signing below, both parties agree to the terms and conditions outlined in thi
 **Badger Technologies, LLC**
 
 _________________________________  
-Name: [Company Representative]  
-Title: [Title]  
+Name: Benjamin Sherman
+Title: Founder 
 Date: _________________  
 
 **Employee**
@@ -168,12 +168,12 @@ Date: _________________
 **Witness** (Optional but Recommended)
 
 _________________________________  
-Name: [Witness Name]  
+Name:   
 Date: _________________  
 
 ---
 
-*This contract is governed by the laws of [State/Province]. Any disputes will be resolved through binding arbitration. This agreement supersedes all previous verbal or written agreements regarding this employment arrangement.*
+*This contract is governed by the laws of Illinois. Any disputes will be resolved through binding arbitration. This agreement supersedes all previous verbal or written agreements regarding this employment arrangement.*
 
 **Next Steps Upon Contract Acceptance:**
 1. Email credentials will be provided within 24 hours

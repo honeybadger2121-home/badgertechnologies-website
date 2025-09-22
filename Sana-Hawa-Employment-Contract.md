@@ -152,14 +152,14 @@ By signing below, both parties agree to the terms and conditions outlined in thi
 
 **Badger Technologies, LLC**
 
-_________________________________  
+---
 Name: [Company Representative]  
 Title: [Title]  
 Date: _________________  
 
 **Employee**
 
-_________________________________  
+---
 Sana Hawa  
 Date: _________________  
 
@@ -167,7 +167,7 @@ Date: _________________
 
 **Witness** (Optional but Recommended)
 
-_________________________________  
+---
 Name: [Witness Name]  
 Date: _________________  
 

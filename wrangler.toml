@@ -1,0 +1,16 @@
+name = "badgertechnologies"
+main = "src/worker.js"
+compatibility_date = "2023-10-30"
+
+[vars]
+CONTACT_EMAIL = "info@badgertechnologies.us"
+SITE_NAME = "Badger Technologies"
+
+[assets]
+# Serve from the staged build output directory
+directory = "dist"
+# Bind the assets namespace to env.ASSETS in the Worker
+binding = "ASSETS"
+
+[build]
+command = "npm run build"

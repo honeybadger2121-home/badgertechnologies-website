@@ -432,7 +432,13 @@
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/badger-logo-main.png" alt="Badger Technologies" class="logo-image">
+                <img src="images/badger-logo-main-40.png" 
+             srcset="images/badger-logo-main-40.png 1x, images/badger-logo-main-80.png 2x, images/badger-logo-main-160.png 4x" 
+             alt="Badger Technologies" 
+             class="logo-image" 
+             width="40" 
+             height="40" 
+             loading="lazy">
                 <div>
                     <div class="company-name">Badger Technologies</div>
                     <div class="tagline">Securing Tomorrow's Technology Today</div>
@@ -605,7 +611,7 @@
                     </div>
                 </div>
                 <div class="assessment-form">
-                    <form id="assessmentForm" name="assessment" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <form id="assessmentForm" name="assessment" method="POST" action="/api/assessment">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -666,7 +672,7 @@
                             </select>
                         </div>
                         
-                        <div data-netlify-recaptcha="true"></div>
+                        <div class="recaptcha-placeholder"></div>
                         
                         <button type="submit" class="btn btn-primary" style="width: 100%;">
                             Request Free Assessment
@@ -744,7 +750,7 @@
 
         // Form submission
         document.getElementById('assessmentForm').addEventListener('submit', function(e) {
-            // Let Netlify handle the form submission
+            // Submit form to Cloudflare Pages API
             console.log('Assessment form submitted');
         });
     </script>
@@ -873,7 +879,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="assessmentForm" name="assessment" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <form id="assessmentForm" name="assessment" method="POST" action="/api/assessment">
                         <input type="hidden" name="form-name" value="assessment" />
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Organization Name" required>
@@ -932,7 +938,7 @@
                             <textarea name="issues" placeholder="Describe any slow systems, crashes, or ongoing problems" rows="3"></textarea>
                         </div>
                         <div class="form-group">
-                            <div data-netlify-recaptcha="true"></div>
+                            <div class="recaptcha-placeholder"></div>
                         </div>
                         <button type="submit" class="btn btn-primary">Request Free Assessment</button>
                     </form>

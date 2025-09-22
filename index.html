@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Performance Optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#1e3a8a">
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="images/badger-logo-cybersecurity.png" as="image">
+    
     <title>Badger Technologies - Securing Tomorrow's Technology Today</title>
     <meta name="keywords" content="IT services, cybersecurity, managed IT, cloud solutions, network security, Illinois IT support, technology consulting">
     <meta name="author" content="Badger Technologies">
@@ -146,6 +163,81 @@
         
         .nav-link:hover {
             color: #3b82f6;
+        }
+        
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .mobile-menu-toggle:hover {
+            color: #3b82f6;
+        }
+        
+        /* Mobile Menu Overlay */
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 1001;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        
+        .mobile-overlay.active {
+            display: flex;
+        }
+        
+        .mobile-nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+        }
+        
+        .mobile-nav-menu li {
+            margin-bottom: 2rem;
+        }
+        
+        .mobile-nav-menu .nav-link {
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-nav-menu .nav-link:hover {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+        
+        .mobile-close-btn {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
         }
         
         .btn {
@@ -569,8 +661,40 @@
         
         /* Mobile */
         @media (max-width: 768px) {
+            nav {
+                padding: 0.5rem 0;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .nav-logo {
+                gap: 0.5rem;
+            }
+            
+            .logo-image {
+                height: 35px;
+            }
+            
+            .company-name {
+                font-size: 1.1rem;
+            }
+            
+            .tagline {
+                font-size: 0.65rem;
+            }
+            
             .nav-menu {
                 display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .container {
+                padding: 0 1rem;
             }
             
             .hero-container {
@@ -593,7 +717,7 @@
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/badger-logo-main.png" alt="Badger Technologies" class="logo-image">
+                <img src="images/badger-logo-main-40.png" srcset="images/badger-logo-main-40.png 1x, images/badger-logo-main-80.png 2x, images/badger-logo-main-160.png 4x" alt="Badger Technologies" class="logo-image" width="40" height="40" loading="lazy">
                 <div>
                     <div class="company-name">Badger Technologies</div>
                     <div class="tagline">Securing Tomorrow's Technology Today</div>
@@ -608,9 +732,29 @@
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
             <a href="assessment.html" class="btn btn-primary">Get Assessment</a>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileMenuOverlay">
+        <button class="mobile-close-btn" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="assessment.html" class="nav-link">Get Assessment</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -912,6 +1056,49 @@
                 nav.style.background = 'rgba(15, 23, 42, 0.95)';
             }
         });
+
+        // Mobile menu toggle functionality
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileOverlay = document.querySelector('.mobile-overlay');
+        const mobileCloseBtn = document.querySelector('.mobile-close-btn');
+
+        if (mobileMenuToggle && mobileOverlay && mobileCloseBtn) {
+            // Toggle mobile menu
+            mobileMenuToggle.addEventListener('click', function() {
+                console.log('Mobile menu toggle clicked');
+                mobileOverlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Close mobile menu
+            function closeMobileMenu() {
+                console.log('Closing mobile menu');
+                mobileOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+
+            mobileCloseBtn.addEventListener('click', closeMobileMenu);
+
+            // Close mobile menu when clicking on overlay background
+            mobileOverlay.addEventListener('click', function(e) {
+                if (e.target === mobileOverlay) {
+                    closeMobileMenu();
+                }
+            });
+
+            // Close mobile menu when pressing Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileOverlay.style.display === 'flex') {
+                    closeMobileMenu();
+                }
+            });
+        } else {
+            console.log('Mobile menu elements not found:', {
+                toggle: !!mobileMenuToggle,
+                overlay: !!mobileOverlay,
+                closeBtn: !!mobileCloseBtn
+            });
+        }
     </script>
 </body>
 </html>

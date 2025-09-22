@@ -53,7 +53,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Contact form handling - Simple Netlify form submission
+// Contact form handling - Cloudflare Pages API submission
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
@@ -70,7 +70,7 @@ if (contactForm) {
         submitButton.textContent = 'Sending...';
         submitButton.disabled = true;
         
-        // Let Netlify handle the rest - form will submit naturally
+        // Submit to Cloudflare Pages API
         // The action="/thank-you.html" will redirect after submission
     });
 }

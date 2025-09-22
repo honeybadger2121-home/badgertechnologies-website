@@ -1,0 +1,37 @@
+{
+  "name": "badger-technologies-website",
+  "version": "1.0.1",
+  "description": "Badger Technologies - Professional IT Services and Cybersecurity Solutions",
+  "main": "index.html",
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "test": "echo 'No tests configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/honeybadger2121-home/badgertechnologies-website.git"
+  },
+  "keywords": [
+    "IT services",
+    "cybersecurity",
+    "managed IT",
+    "cloud solutions",
+    "network security",
+    "technology consulting",
+    "cloudflare pages",
+    "static site"
+  ],
+  "author": "Badger Technologies",
+  "license": "MIT",
+  "homepage": "https://badgertechnologies.us",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

@@ -17,7 +17,7 @@
         </tr>
         <tr>
           <td style="font-size: 14px; color: #4a5568; padding-bottom: 8px;">
-            Principal IT Consultant & Cybersecurity Specialist
+            Founder
           </td>
         </tr>
         <tr>
@@ -63,11 +63,11 @@
   <table cellpadding="0" cellspacing="0" border="0">
     <tr>
       <td style="padding-right: 15px; vertical-align: middle;">
-        <img src="https://badgertechnologies.us/images/badger-logo-main.png" alt="Badger Technologies" width="80" style="display: block;">
+        <img src="https://www.badgertechnologies.us/images/badger-logo-main.png" alt="Badger Technologies" width="80" style="display: block;">
       </td>
       <td style="vertical-align: middle;">
         <div style="font-weight: bold; font-size: 16px; color: #1a365d;">Benjamin Sherman</div>
-        <div style="color: #4a5568; margin: 2px 0;">Principal IT Consultant</div>
+        <div style="color: #4a5568; margin: 2px 0;">Founder</div>
         <div style="font-weight: bold; color: #2c5aa0; margin: 4px 0;">Badger Technologies</div>
         <div style="margin: 2px 0;">
           📧 <a href="mailto:benjamin@badgertechnologies.us" style="color: #2c5aa0; text-decoration: none;">benjamin@badgertechnologies.us</a> | 

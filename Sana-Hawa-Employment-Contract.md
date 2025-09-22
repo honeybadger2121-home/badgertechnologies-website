@@ -64,10 +64,9 @@ A "client" is defined as:
 - **Performance-Based Only:** Compensation begins upon achieving Phase 1 requirements
 
 **Professional Support:**
-- Badger Technologies email account 
-(sana.hawa@badgertechnologies.us) or (sana@badgertechnologies.us)
+- Badger Technologies email account (sana.hawa@badgertechnologies.us) or (sana@badgertechnologies.us)
 - Company business cards and marketing materials
-- More things as the company grows
+- Additional resources as the company grows
 
 ---
 

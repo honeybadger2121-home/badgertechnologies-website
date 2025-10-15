@@ -1,27 +1,30 @@
 # Door-to-Door Prospecting Scripts
+## (Managed IT Services Focus)
 
 ## THE FUNDAMENTALS
 
 ### **What to Bring:**
 - Professional business cards (100+)
-- One-page service overview (printed)
-- Tablet/laptop for quick demos
+- One-page managed IT services overview (printed)
+- Pricing sheet (Essential/Professional/Enterprise packages)
+- Tablet for showing website/testimonials
 - Professional appearance (business casual minimum)
-- Positive attitude and thick skin!
+- Positive, helpful attitude!
 
 ### **Best Times to Visit:**
 - **Tuesday-Thursday: 10am-12pm, 2pm-4pm** (avoid lunch rush)
-- **Avoid Mondays** (everyone's stressed)
-- **Avoid Fridays after 2pm** (weekend mode)
+- **Avoid Mondays** (everyone's stressed from weekend catch-up)
+- **Avoid Fridays after 2pm** (weekend mode activated)
 
 ### **Target Businesses:**
-Small professional offices in business parks:
-- Law firms (3-20 employees)
+Small professional offices (5-50 employees):
+- Law firms
 - Accounting firms
 - Medical/dental offices
 - Real estate agencies
 - Insurance agencies
-- Engineering firms
+- Engineering/consulting firms
+- Manufacturing offices
 
 ---
 
@@ -29,11 +32,15 @@ Small professional offices in business parks:
 
 **[Walk in confidently, smile, make eye contact]**
 
-**You:** "Hi! I'm Benjamin with Badger Technologies. Is [OWNER/DECISION MAKER] available for a quick 2-minute conversation?"
+**You:** "Hi! I'm Benjamin with Badger Technologies. Is [OWNER/OFFICE MANAGER] available for a quick 2-minute conversation?"
 
 **Receptionist:** "What is this regarding?"
 
-**You:** "I help businesses in [CITY/AREA] protect their data from cyber attacks. Just wanted to introduce myself since we're local. Is he/she available?"
+**You:** "We provide IT support for small businesses here in [CITY/AREA]. I just wanted to introduce myself since we're local and see if they're happy with their current IT situation."
+
+**[Alternative approach - more direct]**
+
+**You:** "We help businesses eliminate their IT headaches - you know, slow computers, network problems, that sort of thing. Takes 2 minutes to see if we can help."
 
 ---
 
@@ -43,7 +50,7 @@ Small professional offices in business parks:
 
 **You:** "Thank you!"
 
-**[Wait patiently, stand rather than sit - shows you're not planning to stay long]**
+**[Wait patiently, stand - shows you're not taking up time]**
 
 ---
 
@@ -51,17 +58,17 @@ Small professional offices in business parks:
 
 **Receptionist:** "He's with a client / in a meeting / not available."
 
-**You:** "No problem! What's the best time to catch him/her? I can come back."
+**You:** "No problem! What's the best time to catch him/her? I can swing back by."
 
 **Receptionist:** "Try calling to set an appointment."
 
-**You:** "Perfect! Can I leave my card and a quick overview of what we do? When he/she sees the cost of a data breach, they usually want to talk."
+**You:** "Perfect! Can I leave my card and a quick overview? Honestly, most offices we talk to are spending way more on emergency IT calls than they would on our monthly support."
 
 **[Hand business card + one-pager]**
 
-**You:** "I'll give him/her a call tomorrow. What's his/her direct line or email?"
+**You:** "I'll shoot over an email this afternoon. What's the best address to reach [DECISION MAKER]?"
 
-**[Get contact info, thank them, leave]**
+**[Get contact info, thank them warmly, leave]**
 
 ---
 
@@ -73,81 +80,125 @@ Small professional offices in business parks:
 
 **[Shake hands firmly, smile, maintain eye contact]**
 
-**You:** "I run an IT security company here in [CITY]. We help businesses like yours prevent ransomware attacks and data breaches."
+**You:** "I run Badger Technologies here in [CITY]. We provide complete IT support for small businesses - kind of like having an IT department without the full-time cost."
 
-**[Pause - let them respond]**
+**[Pause - gauge their interest]**
 
----
+**You:** "Quick question: **Who handles IT stuff for you now?**"
 
-### **Their Response Option 1: "We already have IT support"**
-
-**You:** "That's great! Are they handling your security assessments and compliance requirements too?"
-
-**Them:** "I think so..."
-
-**You:** "Most IT companies focus on keeping things running, but security is a different specialty. **When was your last security assessment?"**
-
-**[If they don't know or it's been 12+ months:]**
-
-**You:** "Here's the thing - the average data breach costs $200,000 for a business your size. **For $3,500, I can show you exactly where you're vulnerable** and how to fix it before something happens."
-
-**You:** "Can I send you more info? What's the best email?"
+**[Let them answer, then respond based on their situation]**
 
 ---
 
-### **Their Response Option 2: "How much does this cost?"**
+### **Their Response Option 1: "We have someone who handles it"**
 
-**You:** "Depends on your setup, but most businesses your size invest between **$3,500 and $8,500** for a complete security assessment."
+**You:** "Oh great! Is that an employee, or do you have an IT company?"
 
-**You:** "That might sound like a lot, but compare it to the **$200,000 average cost of a data breach**, not to mention the reputation damage and lost clients."
+**If employee:**
+**You:** "Gotcha. So what happens when that person is out sick, or on vacation? Or if something breaks after hours?"
 
-**You:** "Think of it as insurance - you pay a little now to avoid losing everything later."
+**If outsourced/break-fix:**
+**You:** "Nice. And are they proactive - like monitoring your systems, or more reactive - you call them when things break?"
 
-**You:** "Want me to send over a quick proposal? I can have it to you by tomorrow."
+**Them:** "Mostly when things break..."
+
+**You:** "That's pretty common. Here's the thing - **reactive IT ends up costing way more than proactive support**."
+
+**You:** "Emergency calls at $150/hour, staff time wasted troubleshooting, downtime costing you productivity... it adds up fast. Most businesses your size spend $2,000-$5,000/year on 'break-fix' without realizing it."
+
+**You:** "Our managed IT service is **$799 to $1,499 per month** - one flat fee, unlimited support, and we prevent problems before they start."
+
+**You:** "Want me to do a free assessment? I can show you exactly what you're spending now vs. what our service would cost. Usually saves money AND reduces headaches."
 
 ---
 
-### **Their Response Option 3: "I'm not interested"**
+### **Their Response Option 2: "What exactly do you do?"**
 
-**You:** "No worries! Can I ask - is it because you're confident in your current security, or just not a priority right now?"
+**You:** "Great question! We basically become your IT department. Here's what that means:"
 
-**Them:** "We're fine / Not a priority / Too expensive"
+**You:** "✅ **Unlimited helpdesk** - Your staff emails or calls us when they have issues, we fix it  
+✅ **Proactive monitoring** - We watch your systems 24/7 and fix problems before they cause downtime  
+✅ **Regular maintenance** - Updates, patches, optimization - all handled  
+✅ **Strategic planning** - We help you make smart technology decisions  
+✅ **One monthly fee** - No surprise bills, no hourly charges"
 
-**You:** "I totally get it. **One question though:** If your business got hit with ransomware tomorrow and you were offline for a week, how much would that cost you?"
+**You:** "Think of it like having an IT person on staff, but for a fraction of the cost."
 
-**[Let them think about it]**
+**You:** "Most businesses your size pay **$799 to $1,499 per month**. That's less than a part-time employee, and you get a whole team."
 
-**You:** "Just something to think about. Here's my card - when you're ready to make sure that never happens, give me a call."
+**You:** "When's a good time for me to come back and do a free IT assessment?"
 
-**[Hand card, smile, leave on good terms]**
+---
+
+### **Their Response Option 3: "How much does it cost?"**
+
+**You:** "Depends on how many people you have and what you need, but most businesses your size are between **$799 and $1,499 per month**."
+
+**[Gauge their reaction]**
+
+**You:** "I know that might seem like a lot, but let me put it in perspective:"
+
+**You:** "Hiring a full-time IT person? $70,000/year plus benefits. A part-timer? Still $35,000-$40,000/year."
+
+**You:** "Emergency IT calls? If you're calling someone even once a month at $150/hour, that's already $1,800+ per year, and you're still waiting days for them to show up."
+
+**You:** "With us, it's **$800-$1,500/month for UNLIMITED support** - email, phone, remote, even on-site visits. And we're preventing problems, not just reacting to them."
+
+**You:** "Would it help if I did a free assessment? I can show you exactly what you'd get and what it would cost for your specific situation."
+
+---
+
+### **Their Response Option 4: "We're not interested"**
+
+**You:** "No worries at all! Can I ask - is it because you're totally happy with your current setup, or just not thinking about IT right now?"
+
+**Them:** "We're fine / Not a priority / Too expensive / Happy with current"
+
+**You:** "Totally understand. **One quick question though:** When was the last time you had an IT problem that wasted time or cost you money?"
+
+**[Let them think]**
+
+**You:** "Most business owners don't realize how much time and money IT problems are costing until they add it up. Staff troubleshooting, downtime, emergency calls... it sneaks up on you."
+
+**You:** "Tell you what - here's my card. If you ever get frustrated with IT stuff, or just want a second opinion on what you're spending, give me a call. I'll do a free assessment, no strings attached."
+
+**[Hand card, smile genuinely, leave on good terms]**
+
+**You:** "Nice meeting you! Have a great day."
 
 ---
 
 ## SCRIPT 3: THE ELEVATOR PITCH (30 Seconds)
 
-**Use this when:** Someone asks "What do you do?" or when you have limited time.
+**Use this when:** Someone asks "What do you do?" or you have limited time.
 
-**You:** "I run Badger Technologies - we help small businesses protect themselves from cyber attacks."
+**Version 1 (Problem-focused):**
 
-"You know how ransomware can shut down a business for weeks and cost hundreds of thousands to recover from?"
+**You:** "I run Badger Technologies - we eliminate IT headaches for small businesses."
 
-"**We prevent that** by finding vulnerabilities before the hackers do. Security assessments, compliance audits, employee training - the whole package."
+"You know how frustrating it is when computers are slow, printers don't work, network goes down, and you don't have anyone to call?"
 
-"Most businesses don't realize they're at risk until it's too late. We fix that."
+"**We fix that.** We become your IT department - unlimited support, proactive monitoring, one monthly fee."
+
+"Most businesses find they actually save money compared to calling someone every time something breaks."
 
 **[Pause]**
 
-**You:** "Do you ever worry about your business data getting hacked?"
+**You:** "Do you ever deal with frustrating IT problems?"
 
 ---
 
-## SCRIPT 4: OBJECTION HANDLING
+**Version 2 (Value-focused):**
 
-### **Objection: "We can't afford it right now"**
+**You:** "We provide complete IT support for small businesses - everything from helpdesk to strategy."
 
-**You:** "I understand budget concerns. Let me ask you this - can you afford to be offline for a week?"
+"Think of it like having an IT person on staff, but for $800-$1,500/month instead of $70,000/year."
 
-**You:** "Here's what I recommend: Start with a **basic security assessment for $2,500**. That shows you exactly where you're at risk. Then you can prioritize and fix the critical stuff first."
+"Your team gets help when they need it, your technology actually works, and you get predictable costs. That's it."
+
+**[Pause]**
+
+**You:** "Is your IT situation where you want it to be?"
 
 **You:** "We can even break it into monthly payments. **Would $300/month work better** than $3,500 upfront?"
 

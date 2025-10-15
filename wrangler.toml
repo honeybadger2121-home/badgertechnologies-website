@@ -1,22 +1,6 @@
 name = "badgertechnologies"
 compatibility_date = "2023-10-30"
-pages_build_output_dir = "dist"
 
 [vars]
 CONTACT_EMAIL = "info@badgertechnologies.us"
 SITE_NAME = "Badger Technologies"
-
-[observability]
-enabled = true
-
-[observability.logs]
-enabled = true
-head_sampling_rate = 1
-invocation_logs = true
-
-# Pages Functions configuration
-# The _worker.js file in dist/ will be used as the Pages Function
-# This provides the ASSETS binding automatically
-
-[build]
-command = "npm run build"

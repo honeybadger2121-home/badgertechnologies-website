@@ -52,10 +52,30 @@ async function copyDirectories() {
   }
 }
 
+async function copyFavicons() {
+  // Copy favicon files to root for easier access
+  const faviconSources = [
+    { src: 'images/icons/favicon.ico', dest: 'favicon.ico' },
+    { src: 'images/icons/favicon.png', dest: 'favicon.png' }
+  ];
+  
+  for (const favicon of faviconSources) {
+    const srcPath = path.join(root, favicon.src);
+    const destPath = path.join(dist, favicon.dest);
+    try {
+      await fs.copyFile(srcPath, destPath);
+      console.log(`Copied ${favicon.dest} to root`);
+    } catch {
+      // File doesn't exist; skip
+    }
+  }
+}
+
 async function main() {
   await ensureEmptyDir(dist);
   await copyRootFiles();
   await copyDirectories();
+  await copyFavicons();
   console.log('Built static site for Cloudflare Pages deployment');
 }
 

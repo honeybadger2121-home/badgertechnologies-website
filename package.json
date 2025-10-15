@@ -22,7 +22,7 @@
     "static site"
   ],
   "author": "Badger Technologies",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "homepage": "https://badgertechnologies.us",
   "engines": {
     "node": ">=16.0.0"

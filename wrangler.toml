@@ -7,6 +7,14 @@ pages_build_output_dir = "dist"
 CONTACT_EMAIL = "info@badgertechnologies.us"
 SITE_NAME = "Badger Technologies"
 
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+
 [assets]
 # Serve from the staged build output directory
 directory = "dist"

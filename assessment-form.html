@@ -356,7 +356,12 @@
                     <p>• Complete security vulnerability assessment • Network performance analysis • Cloud readiness evaluation • Detailed recommendations report • No obligation consultation</p>
                 </div>
 
-                <form class="assessment-form" action="#" method="POST" id="assessmentForm">
+                <form class="assessment-form" action="https://formspree.io/f/meoqzwky" method="POST" id="assessmentForm">
+                    <!-- Hidden Fields for Email -->
+                    <input type="hidden" name="_subject" value="New IT Assessment Request - Badger Technologies">
+                    <input type="hidden" name="_next" value="https://badgertechnologies.us/thank-you.html">
+                    <input type="hidden" name="_cc" value="info@badgertechnologies.us">
+                    
                     <!-- Company Information -->
                     <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px;">Company Information</h3>
                     
@@ -511,8 +516,6 @@
     <script>
         // Form submission handling
         document.getElementById('assessmentForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             // Basic form validation
             const requiredFields = ['companyName', 'contactName', 'email', 'phone'];
             let isValid = true;
@@ -528,15 +531,13 @@
             });
             
             if (!isValid) {
+                e.preventDefault();
                 alert('Please fill in all required fields.');
                 return;
             }
             
-            // Show success message (replace with actual form submission)
-            alert('Thank you for your interest! We will contact you within 1 business day to discuss your free IT assessment.');
-            
-            // Redirect to thank you page
-            window.location.href = 'thank-you.html';
+            // If validation passes, let the form submit naturally to Formspree
+            // Formspree will handle the redirect to the thank-you page
         });
         
         // Phone number formatting

@@ -1,6 +1,7 @@
 name = "badgertechnologies"
 main = "src/worker.js"
 compatibility_date = "2023-10-30"
+pages_build_output_dir = "dist"
 
 [vars]
 CONTACT_EMAIL = "info@badgertechnologies.us"

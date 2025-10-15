@@ -102,10 +102,11 @@ See [docs/BUILD_INSTRUCTIONS.md](docs/BUILD_INSTRUCTIONS.md) for detailed build 
 ## 🛠️ Technical Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
-- **Hosting:** Cloudflare Pages
-- **CDN:** Cloudflare
+- **Hosting:** Cloudflare Pages (Auto-deployment from GitHub)
+- **CDN:** Cloudflare Global Network
 - **Security:** Content Security Policy, HSTS, PGP key available
-- **CI/CD:** Automated deployment via Cloudflare Pages
+- **CI/CD:** GitHub Actions + Cloudflare Pages (Deploy on push to main)
+- **Build:** Node.js 18, Custom build script
 
 ---
 

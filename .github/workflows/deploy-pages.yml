@@ -1,0 +1,51 @@
+name: Deploy to Cloudflare Pages
+
+# Trigger the workflow on push to main branch or pull requests
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy to Cloudflare Pages
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build static site
+        run: npm run build
+        
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: badgertechnologies-website
+          directory: dist
+          # Enable automatic deployment from GitHub
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Add deployment summary
+        run: |
+          echo "## 🚀 Deployment Complete!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ **Site URL**: https://badgertechnologies.us" >> $GITHUB_STEP_SUMMARY
+          echo "✅ **Preview URL**: Will be shown in the Pages dashboard" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Build Details" >> $GITHUB_STEP_SUMMARY
+          echo "- **Build Command**: \`npm run build\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Output Directory**: \`dist/\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Node Version**: 18" >> $GITHUB_STEP_SUMMARY

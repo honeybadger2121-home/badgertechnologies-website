@@ -5,8 +5,9 @@
   "main": "index.html",
   "scripts": {
     "build": "node ./scripts/build.mjs",
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "deploy": "wrangler pages deploy dist",
+    "dev": "wrangler pages dev dist",
+    "preview": "wrangler pages dev dist --port 8788",
     "test": "echo 'No tests configured'"
   },
   "repository": {
@@ -34,7 +35,7 @@
     "last 2 versions",
     "not dead"
   ],
-  "dependencies": {
-    "@cloudflare/kv-asset-handler": "^0.3.0"
+  "devDependencies": {
+    "wrangler": "^3.0.0"
   }
 }

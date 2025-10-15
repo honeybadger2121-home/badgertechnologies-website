@@ -34,25 +34,29 @@ async function copyRootFiles() {
   }
 }
 
-async function copyImagesDir() {
-  const imagesSrc = path.join(root, 'images');
-  try {
-    const stat = await fs.stat(imagesSrc);
-    if (stat.isDirectory()) {
-      const imagesDest = path.join(dist, 'images');
-      // Node 18+ supports fs.cp
-      await fs.cp(imagesSrc, imagesDest, { recursive: true, force: true });
+async function copyDirectories() {
+  const directories = ['images', 'assets', 'pages'];
+  
+  for (const dirName of directories) {
+    const srcDir = path.join(root, dirName);
+    try {
+      const stat = await fs.stat(srcDir);
+      if (stat.isDirectory()) {
+        const destDir = path.join(dist, dirName);
+        await fs.cp(srcDir, destDir, { recursive: true, force: true });
+        console.log(`Copied ${dirName} directory`);
+      }
+    } catch {
+      // Directory doesn't exist; skip
     }
-  } catch {
-    // no images dir; skip
   }
 }
 
 async function main() {
   await ensureEmptyDir(dist);
   await copyRootFiles();
-  await copyImagesDir();
-  console.log('Staged static site to dist (Workers Sites)');
+  await copyDirectories();
+  console.log('Built static site for Cloudflare Pages deployment');
 }
 
 main().catch(err => {

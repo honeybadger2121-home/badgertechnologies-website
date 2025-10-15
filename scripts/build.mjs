@@ -48,24 +48,11 @@ async function copyImagesDir() {
   }
 }
 
-async function copyWorkerAsPageFunction() {
-  // Copy worker.js to dist/_worker.js for Cloudflare Pages Functions
-  const workerSrc = path.join(root, 'src', 'worker.js');
-  const workerDest = path.join(dist, '_worker.js');
-  try {
-    await fs.copyFile(workerSrc, workerDest);
-    console.log('Copied worker.js to dist/_worker.js (Pages Function)');
-  } catch (err) {
-    console.warn('Could not copy worker.js:', err.message);
-  }
-}
-
 async function main() {
   await ensureEmptyDir(dist);
   await copyRootFiles();
   await copyImagesDir();
-  await copyWorkerAsPageFunction();
-  console.log('Staged static site to dist');
+  console.log('Staged static site to dist (Workers Sites)');
 }
 
 main().catch(err => {

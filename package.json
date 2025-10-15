@@ -33,5 +33,8 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.0"
+  }
 }

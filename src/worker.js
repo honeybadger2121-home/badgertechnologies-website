@@ -1,48 +1,81 @@
+// Import at the top level - this is the correct way for Workers
+import { getAssetFromKV } from '@cloudflare/kv-asset-handler'
+
 export default {
   async fetch(request, env, ctx) {
-    // Check if ASSETS binding exists (Cloudflare Pages environment)
-    if (!env || !env.ASSETS) {
-      console.error('ASSETS binding not available. Make sure this is deployed to Cloudflare Pages.');
-      return new Response('Configuration error: ASSETS binding not available', { 
-        status: 500,
-        headers: { 'Content-Type': 'text/plain' }
-      });
-    }
-
     try {
-      // Try to serve the exact asset first
-      let response = await env.ASSETS.fetch(request);
+      // Try to serve the asset using Workers Sites
+      const response = await getAssetFromKV(
+        {
+          request,
+          waitUntil: ctx.waitUntil.bind(ctx),
+        },
+        {
+          ASSET_NAMESPACE: env.__STATIC_CONTENT,
+          ASSET_MANIFEST: env.__STATIC_CONTENT_MANIFEST,
+          // Configure caching
+          cacheControl: {
+            browserTTL: 3600, // 1 hour
+            edgeTTL: 86400,   // 1 day
+            bypassCache: false,
+          },
+          // SPA fallback configuration
+          mapRequestToAsset: (req) => {
+            const url = new URL(req.url);
+            
+            // Handle directory requests by appending index.html
+            if (url.pathname.endsWith('/') && url.pathname !== '/') {
+              url.pathname += 'index.html';
+            } else if (url.pathname === '/') {
+              url.pathname = '/index.html';
+            }
+            
+            return new Request(url.toString(), req);
+          },
+        }
+      );
 
-      if (response.status !== 404) {
-        return response;
-      }
-
+      return response;
+    } catch (e) {
+      console.error('Worker error:', e.message);
+      
+      // For 404s or other errors, try to serve index.html for SPA routing
       const url = new URL(request.url);
-
-      // Directory-style request: try to append index.html
-      if (url.pathname.endsWith('/')) {
-        const indexUrl = new URL(url);
-        indexUrl.pathname += 'index.html';
-        const idxResp = await env.ASSETS.fetch(indexUrl.toString(), request);
-        if (idxResp.status !== 404) return idxResp;
-      }
-
-      // Only do SPA-style fallback for GET navigation requests that accept HTML
       const isGet = request.method === 'GET';
       const accept = request.headers.get('Accept') || '';
       const wantsHTML = accept.includes('text/html');
 
       if (isGet && wantsHTML) {
-        return env.ASSETS.fetch(new Request(new URL('/index.html', request.url), request));
+        try {
+          return await getAssetFromKV(
+            {
+              request: new Request(new URL('/index.html', request.url), request),
+              waitUntil: ctx.waitUntil.bind(ctx),
+            },
+            {
+              ASSET_NAMESPACE: env.__STATIC_CONTENT,
+              ASSET_MANIFEST: env.__STATIC_CONTENT_MANIFEST,
+            }
+          );
+        } catch (fallbackError) {
+          return new Response(`
+            <html>
+              <head><title>Badger Technologies</title></head>
+              <body>
+                <h1>Badger Technologies</h1>
+                <p>Your Complete IT Department - Without the Full-Time Cost</p>
+                <p>Starting at $799/month</p>
+                <p><a href="https://www.badgertechnologies.us">Visit our main site</a></p>
+              </body>
+            </html>
+          `, { 
+            status: 200,
+            headers: { 'Content-Type': 'text/html' }
+          });
+        }
       }
 
-      return response; // 404 for non-HTML/other requests
-    } catch (error) {
-      console.error('Worker error:', error);
-      return new Response(`Worker error: ${error.message}`, { 
-        status: 500,
-        headers: { 'Content-Type': 'text/plain' }
-      });
+      return new Response('Not found', { status: 404 });
     }
   }
 };

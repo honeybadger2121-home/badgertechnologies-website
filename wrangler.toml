@@ -1,6 +1,12 @@
 name = "badgertechnologies"
+main = "src/worker.js"
 compatibility_date = "2023-10-30"
 
+# Workers Sites configuration - serves static files from dist/
+[site]
+bucket = "dist"
+
+# Environment variables
 [vars]
 CONTACT_EMAIL = "info@badgertechnologies.us"
 SITE_NAME = "Badger Technologies"

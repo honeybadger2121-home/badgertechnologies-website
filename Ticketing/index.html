@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badger Technologies - Ticketing System</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Professional IT ticketing system for Badger Technologies - Manage support tickets, track issues, and streamline IT operations.">
+    <meta name="keywords" content="IT ticketing, helpdesk, support system, Badger Technologies, ticket management">
+    <meta name="author" content="Badger Technologies">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+    
+    <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="assets/css/ticketing.css">
+    
+    <!-- Additional styles for modals and notifications -->
+    <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #6b7280;
+            padding: 0.5rem;
+        }
+        
+        .modal-close:hover {
+            color: #1f2937;
+        }
+        
+        .modal-body {
+            padding: 1.5rem;
+        }
+        
+        .modal-footer {
+            padding: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+        
+        /* Notification Styles */
+        .notification-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 3000;
+        }
+        
+        .notification {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #3b82f6;
+            min-width: 300px;
+        }
+        
+        .notification-success {
+            border-left-color: #10b981;
+        }
+        
+        .notification-error {
+            border-left-color: #ef4444;
+        }
+        
+        .notification-warning {
+            border-left-color: #f59e0b;
+        }
+        
+        .notification-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .notification-message {
+            font-weight: 500;
+            color: #1f2937;
+        }
+        
+        .notification-close {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #6b7280;
+            padding: 0 0.5rem;
+        }
+        
+        /* Mobile Responsive */
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        
+        @media (max-width: 1024px) {
+            .sidebar.mobile-open {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                z-index: 1000;
+                width: 250px;
+                height: calc(100vh - 80px);
+                overflow-y: auto;
+            }
+            
+            .mobile-overlay {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Badger Technologies</span>
+                </div>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+                        <li><a href="#tickets" class="nav-link">All Tickets</a></li>
+                        <li><a href="#new-ticket" class="nav-link">New Ticket</a></li>
+                        <li><a href="#reports" class="nav-link">Reports</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="user-menu">
+                    <span class="user-name">Benjamin Sherman</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <button onclick="ticketSystem.logout()" class="btn btn-secondary btn-sm">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                    <button class="menu-toggle menu-toggle-hidden" title="Toggle menu" aria-label="Toggle navigation menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="dashboard">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <nav>
+                        <ul class="sidebar-menu">
+                            <li><a href="#dashboard" class="sidebar-link active">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a></li>
+                            <li><a href="#tickets" class="sidebar-link">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span>All Tickets</span>
+                            </a></li>
+                            <li><a href="#my-tickets" class="sidebar-link">
+                                <i class="fas fa-user-tag"></i>
+                                <span>My Tickets</span>
+                            </a></li>
+                            <li><a href="#new-ticket" class="sidebar-link">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Create Ticket</span>
+                            </a></li>
+                            <li><a href="#reports" class="sidebar-link">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Reports</span>
+                            </a></li>
+                            <li><a href="#settings" class="sidebar-link">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Content Area -->
+                <div class="content-area">
+                    <!-- Dashboard Section -->
+                    <section id="dashboard" class="page-section active">
+                        <div class="page-header">
+                            <h1 class="page-title">Dashboard Overview</h1>
+                            <div class="page-actions">
+                                <button onclick="ticketSystem.refreshDashboard()" class="btn btn-secondary">
+                                    <i class="fas fa-sync"></i> Refresh
+                                </button>
+                                <a href="#new-ticket" class="btn btn-primary">
+                                    <i class="fas fa-plus"></i> New Ticket
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Stats Cards -->
+                        <div class="stats-grid">
+                            <div class="stat-card stat-total">
+                                <div class="stat-value">0</div>
+                                <div class="stat-label">Total Tickets</div>
+                            </div>
+                            <div class="stat-card stat-open urgent">
+                                <div class="stat-value">0</div>
+                                <div class="stat-label">Open Tickets</div>
+                            </div>
+                            <div class="stat-card stat-in-progress high">
+                                <div class="stat-value">0</div>
+                                <div class="stat-label">In Progress</div>
+                            </div>
+                            <div class="stat-card stat-resolved low">
+                                <div class="stat-value">0</div>
+                                <div class="stat-label">Resolved Today</div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activity -->
+                        <div class="recent-activity">
+                            <h2>Recent Activity</h2>
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-ticket-alt"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>New ticket created:</strong> Email server configuration issue</p>
+                                        <span class="activity-time">5 minutes ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p><strong>Ticket resolved:</strong> Software license renewal</p>
+                                        <span class="activity-time">2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- All Tickets Section -->
+                    <section id="tickets" class="page-section page-section-hidden">
+                        <div class="page-header">
+                            <h1 class="page-title">All Tickets</h1>
+                            <div class="page-actions">
+                                <button onclick="ticketSystem.exportTickets('csv')" class="btn btn-secondary">
+                                    <i class="fas fa-download"></i> Export CSV
+                                </button>
+                                <a href="#new-ticket" class="btn btn-primary">
+                                    <i class="fas fa-plus"></i> New Ticket
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Search and Filters -->
+                        <div class="search-filters">
+                            <input type="text" name="search" class="form-input search-input" placeholder="Search tickets...">
+                            <select name="status" class="form-select filter-select" title="Filter by status" aria-label="Filter tickets by status">
+                                <option value="all">All Status</option>
+                                <option value="open">Open</option>
+                                <option value="in-progress">In Progress</option>
+                                <option value="resolved">Resolved</option>
+                                <option value="closed">Closed</option>
+                            </select>
+                            <select name="priority" class="form-select filter-select" title="Filter by priority" aria-label="Filter tickets by priority">
+                                <option value="all">All Priority</option>
+                                <option value="urgent">Urgent</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                            <select name="assignee" class="form-select filter-select" title="Filter by assignee" aria-label="Filter tickets by assignee">
+                                <option value="all">All Assignees</option>
+                                <option value="Benjamin Sherman">Benjamin Sherman</option>
+                                <option value="unassigned">Unassigned</option>
+                            </select>
+                        </div>
+
+                        <!-- Tickets Table -->
+                        <div class="ticket-table-container">
+                            <table class="ticket-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ticket ID</th>
+                                        <th>Title</th>
+                                        <th>Customer</th>
+                                        <th>Priority</th>
+                                        <th>Status</th>
+                                        <th>Assignee</th>
+                                        <th>Updated</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Tickets will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- New Ticket Section -->
+                    <section id="new-ticket" class="page-section page-section-hidden">
+                        <div class="page-header">
+                            <h1 class="page-title">Create New Ticket</h1>
+                        </div>
+
+                        <form data-form-type="new-ticket">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label" for="title">Ticket Title *</label>
+                                    <input type="text" id="title" name="title" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="priority">Priority</label>
+                                    <select id="priority" name="priority" class="form-select">
+                                        <option value="low">Low</option>
+                                        <option value="medium" selected>Medium</option>
+                                        <option value="high">High</option>
+                                        <option value="urgent">Urgent</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="category">Category</label>
+                                    <select id="category" name="category" class="form-select">
+                                        <option value="Hardware">Hardware</option>
+                                        <option value="Software">Software</option>
+                                        <option value="Network">Network</option>
+                                        <option value="Email & Communication">Email & Communication</option>
+                                        <option value="Security">Security</option>
+                                        <option value="General Support">General Support</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="customer">Customer/Organization *</label>
+                                    <input type="text" id="customer" name="customer" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label class="form-label" for="contact">Contact Information</label>
+                                    <input type="text" id="contact" name="contact" class="form-input" placeholder="Contact name and email/phone">
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label class="form-label" for="description">Description *</label>
+                                    <textarea id="description" name="description" class="form-textarea" rows="6" required placeholder="Detailed description of the issue..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label" for="assignee">Assign To</label>
+                                    <select id="assignee" name="assignee" class="form-select">
+                                        <option value="unassigned">Unassigned</option>
+                                        <option value="Benjamin Sherman">Benjamin Sherman</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save"></i> Create Ticket
+                                </button>
+                                <button type="reset" class="btn btn-secondary">
+                                    <i class="fas fa-times"></i> Clear Form
+                                </button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- My Tickets Section -->
+                    <section id="my-tickets" class="page-section page-section-hidden">
+                        <div class="page-header">
+                            <h1 class="page-title">My Tickets</h1>
+                        </div>
+                        <p>Tickets assigned to you will appear here.</p>
+                    </section>
+
+                    <!-- Reports Section -->
+                    <section id="reports" class="page-section page-section-hidden">
+                        <div class="page-header">
+                            <h1 class="page-title">Reports & Analytics</h1>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-value">8.5</div>
+                                <div class="stat-label">Avg Resolution Time (hours)</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">94%</div>
+                                <div class="stat-label">Customer Satisfaction</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">15</div>
+                                <div class="stat-label">Tickets This Week</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">3</div>
+                                <div class="stat-label">Open Critical Issues</div>
+                            </div>
+                        </div>
+                        
+                        <p class="reports-note">Detailed reporting features coming soon...</p>
+                    </section>
+
+                    <!-- Settings Section -->
+                    <section id="settings" class="page-section page-section-hidden">
+                        <div class="page-header">
+                            <h1 class="page-title">System Settings</h1>
+                        </div>
+                        
+                        <div class="settings-grid">
+                            <div class="settings-section">
+                                <h3>User Preferences</h3>
+                                <form data-form-type="user-settings">
+                                    <div class="form-group">
+                                        <label class="form-label">Email Notifications</label>
+                                        <label class="settings-label">
+                                            <input type="checkbox" checked> New ticket assignments
+                                        </label>
+                                        <label class="settings-label">
+                                            <input type="checkbox" checked> Ticket updates
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <div class="settings-section">
+                                <h3>System Configuration</h3>
+                                <p class="settings-note">Advanced settings available in admin panel.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Badger Technologies. All rights reserved.</p>
+            <p class="footer-subtitle">Professional IT Support & Managed Services</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/database.js"></script>
+    <script src="assets/js/ticketing.js"></script>
+    
+    <!-- Additional inline JavaScript for specific functionality -->
+    <script>
+        // Initialize page on load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up activity items with proper styling
+            const activityItems = document.querySelectorAll('.activity-item');
+            activityItems.forEach(item => {
+                item.style.display = 'flex';
+                item.style.alignItems = 'center';
+                item.style.gap = '1rem';
+                item.style.padding = '1rem';
+                item.style.backgroundColor = '#f9fafb';
+                item.style.borderRadius = '8px';
+                item.style.marginBottom = '0.5rem';
+            });
+            
+            const activityIcons = document.querySelectorAll('.activity-icon');
+            activityIcons.forEach(icon => {
+                icon.style.width = '40px';
+                icon.style.height = '40px';
+                icon.style.backgroundColor = '#3b82f6';
+                icon.style.color = 'white';
+                icon.style.borderRadius = '50%';
+                icon.style.display = 'flex';
+                icon.style.alignItems = 'center';
+                icon.style.justifyContent = 'center';
+                icon.style.flexShrink = '0';
+            });
+            
+            const activityTimes = document.querySelectorAll('.activity-time');
+            activityTimes.forEach(time => {
+                time.style.color = '#6b7280';
+                time.style.fontSize = '0.875rem';
+                time.style.display = 'block';
+                time.style.marginTop = '0.25rem';
+            });
+            
+            // Mobile menu button visibility
+            function updateMobileMenu() {
+                const menuToggle = document.querySelector('.menu-toggle');
+                if (window.innerWidth <= 1024) {
+                    menuToggle.style.display = 'block';
+                } else {
+                    menuToggle.style.display = 'none';
+                }
+            }
+            
+            updateMobileMenu();
+            window.addEventListener('resize', updateMobileMenu);
+        });
+    </script>
+</body>
+</html>

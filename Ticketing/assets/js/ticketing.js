@@ -63,12 +63,10 @@ class TicketingSystem {
     // Event listeners
     bindEvents() {
         // Navigation
-        document.addEventListener('DOMContentLoaded', () => {
-            this.setupNavigation();
-            this.setupForms();
-            this.setupFilters();
-            this.setupModals();
-        });
+        this.setupNavigation();
+        this.setupForms();
+        this.setupFilters();
+        this.setupModals();
 
         // Responsive menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
@@ -96,9 +94,16 @@ class TicketingSystem {
     }
 
     navigateToSection(sectionId) {
-        // Hide all sections
-        const sections = document.querySelectorAll('.page-section');
-        sections.forEach(section => {
+        // Hide all sections (both page-section and content-section)
+        const pageSections = document.querySelectorAll('.page-section');
+        const contentSections = document.querySelectorAll('.content-section');
+        
+        pageSections.forEach(section => {
+            section.style.display = 'none';
+            section.classList.remove('active');
+        });
+        
+        contentSections.forEach(section => {
             section.style.display = 'none';
             section.classList.remove('active');
         });
@@ -108,6 +113,13 @@ class TicketingSystem {
         if (targetSection) {
             targetSection.style.display = 'block';
             targetSection.classList.add('active', 'fade-in');
+            
+            // Special handling for CRM and leads sections
+            if (sectionId === 'crm' && window.crmManager) {
+                window.crmManager.loadCustomers();
+            } else if (sectionId === 'leads' && window.crmManager) {
+                window.crmManager.loadLeads();
+            }
         }
 
         // Update page title
@@ -116,10 +128,12 @@ class TicketingSystem {
 
     updatePageTitle(sectionId) {
         const titles = {
-            'dashboard': 'Dashboard Overview',
+            'dashboard': 'Dashboard',
             'tickets': 'All Tickets',
             'new-ticket': 'Create New Ticket',
             'my-tickets': 'My Tickets',
+            'crm': 'Customer Relationship Management',
+            'leads': 'Sales Pipeline',
             'reports': 'Reports & Analytics',
             'settings': 'System Settings'
         };
@@ -133,9 +147,15 @@ class TicketingSystem {
     // Form handling
     setupForms() {
         const forms = document.querySelectorAll('form');
+        console.log('Setting up forms, found:', forms.length);
+        
         forms.forEach(form => {
+            const formType = form.getAttribute('data-form-type');
+            console.log('Setting up form with type:', formType);
+            
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
+                console.log('Form submitted:', formType);
                 this.handleFormSubmit(form);
             });
         });
@@ -170,6 +190,8 @@ class TicketingSystem {
 
     // Ticket management
     async createTicket(formData) {
+        console.log('Creating ticket with data:', formData);
+        
         const ticketData = {
             title: formData.get('title'),
             description: formData.get('description'),
@@ -179,13 +201,17 @@ class TicketingSystem {
             customer: formData.get('customer'),
             contact: formData.get('contact')
         };
+        
+        console.log('Ticket data processed:', ticketData);
 
         try {
             let newTicket;
             if (this.database) {
+                console.log('Using database service to create ticket');
                 // Use database service
                 newTicket = await this.database.createTicket(ticketData);
             } else {
+                console.log('Using localStorage fallback to create ticket');
                 // Fallback to localStorage
                 newTicket = {
                     id: this.generateTicketId(),
@@ -199,6 +225,7 @@ class TicketingSystem {
                 this.saveTickets();
             }
 
+            console.log('Ticket created successfully:', newTicket);
             this.showNotification('Ticket created successfully', 'success');
             await this.refreshTicketList();
             this.navigateToSection('tickets');
@@ -363,6 +390,53 @@ class TicketingSystem {
         this.updateRecentActivity();
     }
 
+    updateRecentActivity() {
+        const activityContainer = document.querySelector('.recent-activity');
+        if (!activityContainer) return;
+
+        // Get recent tickets for activity
+        const recentTickets = this.tickets
+            .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
+            .slice(0, 5);
+
+        let activityHTML = '<h3>Recent Activity</h3>';
+        
+        if (recentTickets.length === 0) {
+            activityHTML += '<p class="no-activity">No recent activity</p>';
+        } else {
+            activityHTML += '<div class="activity-list">';
+            recentTickets.forEach(ticket => {
+                const timeAgo = this.getTimeAgo(new Date(ticket.updatedAt));
+                activityHTML += `
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>${ticket.title}</strong></p>
+                            <p class="activity-meta">
+                                ${ticket.customer} • ${ticket.status} • ${timeAgo}
+                            </p>
+                        </div>
+                    </div>
+                `;
+            });
+            activityHTML += '</div>';
+        }
+        
+        activityContainer.innerHTML = activityHTML;
+    }
+
+    getTimeAgo(date) {
+        const now = new Date();
+        const diffInSeconds = Math.floor((now - date) / 1000);
+        
+        if (diffInSeconds < 60) return 'Just now';
+        if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)} minutes ago`;
+        if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)} hours ago`;
+        return `${Math.floor(diffInSeconds / 86400)} days ago`;
+    }
+
     updateStatsCards() {
         const stats = this.calculateStats();
         
@@ -506,9 +580,161 @@ class TicketingSystem {
         this.showModal('ticket-modal', modalContent);
     }
 
+    generateTicketModalContent(ticket) {
+        return `
+            <div class="modal-header">
+                <h3>Ticket Details - ${ticket.id}</h3>
+                <span class="close" onclick="ticketSystem.closeModal('ticket-modal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="ticket-details">
+                    <div class="detail-row">
+                        <label>Title:</label>
+                        <span>${ticket.title}</span>
+                    </div>
+                    <div class="detail-row">
+                        <label>Customer:</label>
+                        <span>${ticket.customer}</span>
+                    </div>
+                    <div class="detail-row">
+                        <label>Priority:</label>
+                        <span class="priority-${ticket.priority}">${ticket.priority.toUpperCase()}</span>
+                    </div>
+                    <div class="detail-row">
+                        <label>Status:</label>
+                        <span class="status-${ticket.status}">${ticket.status.toUpperCase()}</span>
+                    </div>
+                    <div class="detail-row">
+                        <label>Category:</label>
+                        <span>${ticket.category}</span>
+                    </div>
+                    <div class="detail-row">
+                        <label>Assignee:</label>
+                        <span>${ticket.assignee}</span>
+                    </div>
+                    <div class="detail-row">
+                        <label>Created:</label>
+                        <span>${new Date(ticket.createdAt).toLocaleString()}</span>
+                    </div>
+                    <div class="detail-row">
+                        <label>Updated:</label>
+                        <span>${new Date(ticket.updatedAt).toLocaleString()}</span>
+                    </div>
+                    <div class="detail-row full-width">
+                        <label>Description:</label>
+                        <p>${ticket.description}</p>
+                    </div>
+                    ${ticket.contact ? `
+                    <div class="detail-row">
+                        <label>Contact:</label>
+                        <span>${ticket.contact}</span>
+                    </div>
+                    ` : ''}
+                </div>
+                
+                ${ticket.comments && ticket.comments.length > 0 ? `
+                <div class="ticket-comments">
+                    <h4>Comments</h4>
+                    ${ticket.comments.map(comment => `
+                        <div class="comment">
+                            <div class="comment-header">
+                                <strong>${comment.author}</strong>
+                                <span class="comment-date">${new Date(comment.timestamp).toLocaleString()}</span>
+                            </div>
+                            <p>${comment.content}</p>
+                        </div>
+                    `).join('')}
+                </div>
+                ` : ''}
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="ticketSystem.editTicket('${ticket.id}')">Edit Ticket</button>
+                <button class="btn btn-secondary" onclick="ticketSystem.closeModal('ticket-modal')">Close</button>
+            </div>
+        `;
+    }
+
     showEditTicketModal(ticket) {
         const modalContent = this.generateEditTicketModalContent(ticket);
         this.showModal('edit-ticket-modal', modalContent);
+    }
+
+    generateEditTicketModalContent(ticket) {
+        return `
+            <div class="modal-header">
+                <h3>Edit Ticket - ${ticket.id}</h3>
+                <span class="close" onclick="ticketSystem.closeModal('edit-ticket-modal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="edit-ticket-form" data-form-type="ticket-update">
+                    <input type="hidden" name="ticket-id" value="${ticket.id}">
+                    
+                    <div class="form-group">
+                        <label for="edit-title">Title:</label>
+                        <input type="text" id="edit-title" name="title" value="${ticket.title}" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-customer">Customer:</label>
+                        <input type="text" id="edit-customer" name="customer" value="${ticket.customer}" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-priority">Priority:</label>
+                        <select id="edit-priority" name="priority">
+                            <option value="low" ${ticket.priority === 'low' ? 'selected' : ''}>Low</option>
+                            <option value="medium" ${ticket.priority === 'medium' ? 'selected' : ''}>Medium</option>
+                            <option value="high" ${ticket.priority === 'high' ? 'selected' : ''}>High</option>
+                            <option value="urgent" ${ticket.priority === 'urgent' ? 'selected' : ''}>Urgent</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-status">Status:</label>
+                        <select id="edit-status" name="status">
+                            <option value="open" ${ticket.status === 'open' ? 'selected' : ''}>Open</option>
+                            <option value="in-progress" ${ticket.status === 'in-progress' ? 'selected' : ''}>In Progress</option>
+                            <option value="resolved" ${ticket.status === 'resolved' ? 'selected' : ''}>Resolved</option>
+                            <option value="closed" ${ticket.status === 'closed' ? 'selected' : ''}>Closed</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-category">Category:</label>
+                        <select id="edit-category" name="category">
+                            <option value="Hardware" ${ticket.category === 'Hardware' ? 'selected' : ''}>Hardware</option>
+                            <option value="Software" ${ticket.category === 'Software' ? 'selected' : ''}>Software</option>
+                            <option value="Network" ${ticket.category === 'Network' ? 'selected' : ''}>Network</option>
+                            <option value="Email & Communication" ${ticket.category === 'Email & Communication' ? 'selected' : ''}>Email & Communication</option>
+                            <option value="Security" ${ticket.category === 'Security' ? 'selected' : ''}>Security</option>
+                            <option value="General Support" ${ticket.category === 'General Support' ? 'selected' : ''}>General Support</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-assignee">Assignee:</label>
+                        <select id="edit-assignee" name="assignee">
+                            <option value="unassigned" ${ticket.assignee === 'unassigned' ? 'selected' : ''}>Unassigned</option>
+                            <option value="Benjamin Sherman" ${ticket.assignee === 'Benjamin Sherman' ? 'selected' : ''}>Benjamin Sherman</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-contact">Contact:</label>
+                        <input type="text" id="edit-contact" name="contact" value="${ticket.contact || ''}">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="edit-description">Description:</label>
+                        <textarea id="edit-description" name="description" rows="4" required>${ticket.description}</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="document.getElementById('edit-ticket-form').dispatchEvent(new Event('submit'))">Save Changes</button>
+                <button class="btn btn-secondary" onclick="ticketSystem.closeModal('edit-ticket-modal')">Cancel</button>
+            </div>
+        `;
     }
 
     showModal(modalId, content) {
@@ -528,10 +754,19 @@ class TicketingSystem {
         document.body.style.overflow = 'hidden';
     }
 
-    closeModal(modal) {
-        modal.style.display = 'none';
-        modal.classList.remove('fade-in');
-        document.body.style.overflow = 'auto';
+    closeModal(modalOrId) {
+        let modal;
+        if (typeof modalOrId === 'string') {
+            modal = document.getElementById(modalOrId);
+        } else {
+            modal = modalOrId;
+        }
+        
+        if (modal) {
+            modal.style.display = 'none';
+            modal.classList.remove('fade-in');
+            document.body.style.overflow = 'auto';
+        }
     }
 
     createModal(id) {
@@ -703,8 +938,10 @@ class TicketingSystem {
     }
 }
 
-// Initialize the ticketing system
-const ticketSystem = new TicketingSystem();
-
-// Global functions for onclick handlers
-window.ticketSystem = ticketSystem;
+// Initialize the ticketing system when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    const ticketSystem = new TicketingSystem();
+    
+    // Global functions for onclick handlers
+    window.ticketSystem = ticketSystem;
+});

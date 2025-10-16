@@ -1,0 +1,574 @@
+/* CRM Module Styles - Odoo-Inspired Customer Relationship Management */
+
+/* CRM Dashboard */
+.crm-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.crm-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid;
+    transition: transform 0.3s ease;
+}
+
+.crm-card:hover {
+    transform: translateY(-2px);
+}
+
+.crm-card.leads {
+    border-left-color: #3b82f6;
+}
+
+.crm-card.customers {
+    border-left-color: #10b981;
+}
+
+.crm-card.opportunities {
+    border-left-color: #f59e0b;
+}
+
+.crm-metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.crm-metric-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.crm-metric-label {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.crm-trend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.crm-trend.up {
+    color: #10b981;
+}
+
+.crm-trend.down {
+    color: #ef4444;
+}
+
+/* Customer Management */
+.customer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.customer-list {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.customer-header {
+    background: #f9fafb;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-search {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.customer-search input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.customer-item {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.customer-item:hover {
+    background: #f9fafb;
+}
+
+.customer-item:last-child {
+    border-bottom: none;
+}
+
+.customer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.customer-name {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.customer-contact {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.customer-stats {
+    text-align: right;
+    font-size: 0.875rem;
+}
+
+.customer-tickets {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.customer-revenue {
+    color: #10b981;
+    font-weight: 600;
+}
+
+/* Customer Profile */
+.customer-profile {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.customer-profile-header {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    padding: 2rem;
+}
+
+.customer-avatar {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.customer-profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.customer-profile-type {
+    opacity: 0.9;
+}
+
+.customer-profile-content {
+    padding: 2rem;
+}
+
+.customer-tabs {
+    display: flex;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 2rem;
+}
+
+.customer-tab {
+    padding: 1rem 1.5rem;
+    border: none;
+    background: none;
+    color: #6b7280;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.customer-tab.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+}
+
+.customer-tab:hover {
+    color: #1f2937;
+}
+
+/* Lead Management */
+.lead-pipeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.lead-stage {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 1rem;
+    min-height: 400px;
+}
+
+.lead-stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.lead-stage-title {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.lead-stage-count {
+    background: #3b82f6;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.lead-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lead-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.lead-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.lead-title {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 0.875rem;
+}
+
+.lead-value {
+    color: #10b981;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.lead-company {
+    color: #6b7280;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.lead-progress {
+    width: 100%;
+    height: 4px;
+    background: #e5e7eb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.lead-progress-bar {
+    height: 100%;
+    background: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+/* Opportunity Management */
+.opportunity-list {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.opportunity-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.opportunity-table th,
+.opportunity-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.opportunity-table th {
+    background: #f9fafb;
+    font-weight: 600;
+    color: #374151;
+}
+
+.opportunity-table tr:hover {
+    background: #f9fafb;
+}
+
+.opportunity-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.opportunity-value {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.opportunity-probability {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.opportunity-probability-bar {
+    width: 60px;
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.opportunity-probability-fill {
+    height: 100%;
+    background: #3b82f6;
+}
+
+/* Forms */
+.crm-form {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.crm-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.crm-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.crm-form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.crm-form-label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.crm-form-input,
+.crm-form-select,
+.crm-form-textarea {
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.crm-form-input:focus,
+.crm-form-select:focus,
+.crm-form-textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.crm-form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Activity Timeline */
+.activity-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.activity-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e5e7eb;
+}
+
+.activity-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item::before {
+    content: '';
+    position: absolute;
+    left: -1.75rem;
+    top: 1rem;
+    width: 12px;
+    height: 12px;
+    background: #3b82f6;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.activity-title {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.activity-time {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.activity-description {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Communication Log */
+.communication-log {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.communication-item {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.communication-item:last-child {
+    border-bottom: none;
+}
+
+.communication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.communication-type {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.communication-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.communication-icon.email {
+    color: #3b82f6;
+}
+
+.communication-icon.call {
+    color: #10b981;
+}
+
+.communication-icon.meeting {
+    color: #f59e0b;
+}
+
+.communication-date {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.communication-content {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .crm-dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .customer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .lead-pipeline {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .crm-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .lead-pipeline {
+        grid-template-columns: 1fr;
+    }
+    
+    .customer-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .customer-tab {
+        flex: 1;
+        min-width: 120px;
+    }
+}

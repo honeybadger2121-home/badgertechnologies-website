@@ -216,6 +216,32 @@
             margin-right: auto;
         }
         
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
         .hero-buttons {
             display: flex;
             gap: 1rem;
@@ -794,8 +820,23 @@
                         Ready to secure and optimize your IT infrastructure? Our expert team is here to help you transform your technology and protect your business.
                     </p>
 
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15min</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Free</div>
+                            <div class="stat-label">Consultation</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support Available</div>
+                        </div>
+                    </div>
+
                     <div class="hero-buttons">
-                        <a href="assessment.html" class="btn btn-primary">Start Free Assessment</a>
+                        <a href="assessment-form.html" class="btn btn-primary">Start Free Assessment</a>
                         <a href="#contact" class="btn btn-outline">Contact Information</a>
                     </div>
                 </div>

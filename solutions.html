@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Solutions | Badger Technologies - Custom IT Solutions</title>
+    <meta name="description" content="Tailored technology solutions including cloud migration, digital transformation, automation, and strategic IT consulting for modern businesses.">
+    <meta name="keywords" content="technology solutions, digital transformation, cloud migration, IT consulting, business automation, technology strategy">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 0.5rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #3b82f6;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-highlight {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-description {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #3b82f6;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #3b82f6;
+        }
+        
+        .hero-visual {
+            position: relative;
+        }
+        
+        .solution-showcase {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .solution-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Solutions Section */
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.1);
+            color: #3b82f6;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .solution-item {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .solution-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .solution-item .solution-icon-main {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .solution-item h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .solution-item p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .solution-benefits {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .solution-benefits li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            color: #374151;
+            font-size: 0.95rem;
+        }
+        
+        .solution-benefits li::before {
+            content: "🚀";
+            margin-right: 0.75rem;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            text-align: center;
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn-white {
+            background: white;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+        
+        .btn-white:hover {
+            background: #f8fafc;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #3b82f6;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.6;
+        }
+        
+        .footer-section a:hover {
+            color: #3b82f6;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logos/badger-logo-main.png" alt="Badger Technologies">
+                <span>Badger Technologies</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="solutions.html" class="nav-link active">Solutions</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <a href="assessment-form.html" class="btn btn-primary">Get Assessment</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>
+                        <span>Strategic Technology Solutions</span>
+                        <span class="hero-highlight">Built for Growth</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Transform your business with custom technology solutions designed to drive efficiency, enhance security, and accelerate growth. From digital transformation to cloud migration, we deliver results that matter.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">40%</div>
+                            <div class="stat-label">Cost Reduction</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="assessment-form.html" class="btn btn-primary">Start Your Transformation</a>
+                        <a href="contact.html" class="btn btn-secondary">Explore Solutions</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="solution-showcase">
+                        <div class="solution-icon">🚀</div>
+                        <h3>Digital Transformation</h3>
+                        <p>Modernize your technology infrastructure and business processes for competitive advantage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">⚡ Our Solutions</div>
+                <h2 class="section-title">Transformative Technology Solutions</h2>
+                <p class="section-description">
+                    Comprehensive technology solutions designed to address your unique business challenges and drive sustainable growth.
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-item">
+                    <div class="solution-icon-main">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Cloud Migration & Modernization</h3>
+                    <p>Seamlessly transition to the cloud with our comprehensive migration services. We handle everything from planning to execution, ensuring minimal disruption and maximum benefit.</p>
+                    <ul class="solution-benefits">
+                        <li>Cloud readiness assessment</li>
+                        <li>Migration strategy & planning</li>
+                        <li>Azure & AWS expertise</li>
+                        <li>Post-migration optimization</li>
+                        <li>Cost reduction strategies</li>
+                    </ul>
+                    <a href="assessment-form.html" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-icon-main">
+                        <i class="fas fa-digital-tachograph"></i>
+                    </div>
+                    <h3>Digital Transformation</h3>
+                    <p>Modernize your business processes and technology infrastructure to improve efficiency, reduce costs, and enhance customer experience.</p>
+                    <ul class="solution-benefits">
+                        <li>Process automation</li>
+                        <li>Legacy system modernization</li>
+                        <li>Digital workflow optimization</li>
+                        <li>Technology integration</li>
+                        <li>Change management support</li>
+                    </ul>
+                    <a href="assessment-form.html" class="btn btn-primary">Learn More</a>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-icon-main">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Protect your business with enterprise-grade security solutions and ensure compliance with industry regulations and standards.</p>
+                    <ul class="solution-benefits">
+                        <li>Security framework implementation</li>
+                        <li>Compliance consulting</li>
+                        <li>Risk assessment & mitigation</li>
+                        <li>Employee security training</li>
+                        <li>Incident response planning</li>
+                    </ul>
+                    <a href="assessment-form.html" class="btn btn-primary">Secure Now</a>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-icon-main">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Business Process Automation</h3>
+                    <p>Streamline operations and increase productivity with intelligent automation solutions tailored to your business workflows.</p>
+                    <ul class="solution-benefits">
+                        <li>Workflow analysis & optimization</li>
+                        <li>Custom automation development</li>
+                        <li>Integration with existing systems</li>
+                        <li>ROI measurement & reporting</li>
+                        <li>Ongoing optimization support</li>
+                    </ul>
+                    <a href="assessment-form.html" class="btn btn-primary">Automate</a>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-icon-main">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics & Intelligence</h3>
+                    <p>Transform your data into actionable insights with advanced analytics solutions and business intelligence platforms.</p>
+                    <ul class="solution-benefits">
+                        <li>Data strategy development</li>
+                        <li>Business intelligence implementation</li>
+                        <li>Custom dashboard creation</li>
+                        <li>Predictive analytics</li>
+                        <li>Data governance & quality</li>
+                    </ul>
+                    <a href="assessment-form.html" class="btn btn-primary">Analyze</a>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-icon-main">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobility & Remote Work</h3>
+                    <p>Enable flexible work environments with secure mobile solutions and remote access technologies that maintain productivity and security.</p>
+                    <ul class="solution-benefits">
+                        <li>Remote work infrastructure</li>
+                        <li>Mobile device management</li>
+                        <li>Secure remote access</li>
+                        <li>Collaboration platform setup</li>
+                        <li>Security policy enforcement</li>
+                    </ul>
+                    <a href="assessment-form.html" class="btn btn-primary">Go Mobile</a>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's discuss how our technology solutions can drive your business forward. Get a free consultation and custom roadmap for your digital transformation journey.</p>
+                <a href="assessment-form.html" class="btn btn-white">Schedule Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><strong>Benjamin Sherman</strong><br>
+                    Founder & Lead Technology Consultant</p>
+                    <p>📧 benjamin@badgertechnologies.us<br>
+                    📱 (555) 123-4567<br>
+                    📍 Illinois, United States</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="assessment-form.html">Free Assessment</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Solutions</h3>
+                    <p><a href="solutions.html">Cloud Migration</a></p>
+                    <p><a href="solutions.html">Digital Transformation</a></p>
+                    <p><a href="solutions.html">Security & Compliance</a></p>
+                    <p><a href="solutions.html">Business Automation</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Badger Technologies. All rights reserved. | Professional IT Support & Managed Services</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

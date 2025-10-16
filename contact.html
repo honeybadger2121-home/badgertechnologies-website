@@ -6,10 +6,43 @@
     <title>Contact Us | Badger Technologies - Get Expert IT Support Today</title>
     <meta name="description" content="Contact Badger Technologies for professional IT services, cybersecurity solutions, and technical support. Get your free assessment today.">
     <meta name="keywords" content="contact IT support, cybersecurity consultation, managed IT services, technical support, IT assessment">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact Us | Badger Technologies - Get Expert IT Support Today">
+    <meta property="og:description" content="Contact Badger Technologies for professional IT services, cybersecurity solutions, and technical support. Get your free assessment today.">
+    <meta property="og:url" content="https://badgertechnologies.us/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://badgertechnologies.us/images/logos/badger-logo-main.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Badger Technologies - Expert IT Support">
+    <meta name="twitter:description" content="Professional IT services, cybersecurity solutions, and technical support. Get your free assessment today.">
+    <meta name="twitter:image" content="https://badgertechnologies.us/images/logos/badger-logo-main.png">
+    
+    <link rel="canonical" href="https://badgertechnologies.us/contact.html">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        
+        // Track contact form submissions
+        function trackContactSubmission() {
+            gtag('event', 'contact_form_submission', {
+                'event_category': 'lead_generation',
+                'event_label': 'contact_page_inquiry',
+                'value': 1
+            });
+        }
+    </script>
     
     <style>
         * {
@@ -815,7 +848,11 @@
                 
                 <div class="contact-form">
                     <h3 style="margin-bottom: 1.5rem; color: #1e293b;">Send us a Message</h3>
-                    <form id="contactForm" method="POST" action="/api/contact">
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/meoqzwky">
+                        <!-- Hidden Fields for Email -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Badger Technologies">
+                        <input type="hidden" name="_next" value="https://badgertechnologies.us/thank-you.html">
+                        <input type="hidden" name="_cc" value="info@badgertechnologies.us">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>

@@ -10,308 +10,54 @@
     
     <title>Free IT Assessment Request - Badger Technologies</title>
     <meta name="description" content="Request your free IT assessment from Badger Technologies. Comprehensive evaluation of your technology infrastructure, security, and optimization opportunities.">
+    <meta name="keywords" content="IT assessment, free technology evaluation, cybersecurity audit, infrastructure review, Badger Technologies">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Free IT Assessment - Badger Technologies">
+    <meta property="og:description" content="Get a comprehensive evaluation of your technology infrastructure, security, and optimization opportunities. Free assessment from IT experts.">
+    <meta property="og:url" content="https://badgertechnologies.us/assessment-form.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://badgertechnologies.us/images/logos/badger-logo-main.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free IT Assessment - Badger Technologies">
+    <meta name="twitter:description" content="Get a comprehensive evaluation of your technology infrastructure, security, and optimization opportunities.">
+    <meta name="twitter:image" content="https://badgertechnologies.us/images/logos/badger-logo-main.png">
+    
+    <link rel="canonical" href="https://badgertechnologies.us/assessment-form.html">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
         
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+        // Track assessment form submissions
+        function trackAssessmentSubmission() {
+            gtag('event', 'assessment_form_submission', {
+                'event_category': 'lead_generation',
+                'event_label': 'it_assessment_request',
+                'value': 1
+            });
         }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* Navigation */
-        nav {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .logo-image {
-            border-radius: 8px;
-        }
-        
-        .company-name {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #2c3e50;
-        }
-        
-        .tagline {
-            font-size: 0.75rem;
-            color: #7f8c8d;
-            font-weight: 500;
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-            align-items: center;
-        }
-        
-        .nav-link {
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            color: #3498db;
-        }
-        
-        .btn {
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            display: inline-block;
-            text-align: center;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
-        }
-        
-        /* Form Section */
-        .form-section {
-            padding: 80px 0;
-        }
-        
-        .form-container {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 50px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .form-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .form-header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-        
-        .form-header p {
-            font-size: 1.2rem;
-            color: #7f8c8d;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, #3498db10, #2980b910);
-            border: 2px solid #3498db;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 30px 0;
-            text-align: center;
-        }
-        
-        .highlight-box h3 {
-            color: #2980b9;
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-        
-        .assessment-form {
-            display: grid;
-            gap: 25px;
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .form-group.full-width {
-            grid-column: 1 / -1;
-        }
-        
-        label {
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-        }
-        
-        .required {
-            color: #e74c3c;
-        }
-        
-        input, select, textarea {
-            padding: 12px 15px;
-            border: 2px solid #ecf0f1;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-            font-family: 'Inter', sans-serif;
-        }
-        
-        input:focus, select:focus, textarea:focus {
-            outline: none;
-            border-color: #3498db;
-            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
-        }
-        
-        textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        
-        .checkbox-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 10px;
-        }
-        
-        .checkbox-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .checkbox-item input[type="checkbox"] {
-            width: auto;
-            margin: 0;
-        }
-        
-        .submit-section {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 2px solid #ecf0f1;
-        }
-        
-        .btn-submit {
-            background: linear-gradient(135deg, #27ae60, #229954);
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-submit:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(39, 174, 96, 0.3);
-        }
-        
-        .privacy-note {
-            font-size: 0.9rem;
-            color: #7f8c8d;
-            margin-top: 20px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .privacy-note a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .privacy-note a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .nav-container {
-                padding: 1rem;
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .nav-menu {
-                gap: 1rem;
-            }
-            
-            .form-container {
-                padding: 30px 20px;
-                margin: 20px;
-            }
-            
-            .form-header h1 {
-                font-size: 2rem;
-            }
-            
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-            
-            .checkbox-group {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    </script>
 </head>
-<body>
+<body class="assessment-body">
     <!-- Navigation -->
-    <nav>
+    <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <img src="images/logos/badger-logo-main-40.png" 
@@ -346,9 +92,9 @@
                     <p>Get a comprehensive evaluation of your technology infrastructure, security posture, and optimization opportunities - completely free.</p>
                 </div>
                 
-                <div class="pricing-note" style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
-                    <h3 style="color: #856404; margin-bottom: 0.5rem;">💰 Pricing Information</h3>
-                    <p style="color: #856404; margin: 0;">Our managed IT services start at <strong>$799/month</strong>. For precise pricing tailored to your specific needs, complete this assessment to schedule a personalized consultation and pricing meeting.</p>
+                <div class="pricing-note">
+                    <h3>💰 Pricing Information</h3>
+                    <p>Our managed IT services start at <strong>$799/month</strong>. For precise pricing tailored to your specific needs, complete this assessment to schedule a personalized consultation and pricing meeting.</p>
                 </div>
                 
                 <div class="highlight-box">
@@ -363,7 +109,7 @@
                     <input type="hidden" name="_cc" value="info@badgertechnologies.us">
                     
                     <!-- Company Information -->
-                    <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 20px;">Company Information</h3>
+                    <h3 class="form-section-header">Company Information</h3>
                     
                     <div class="form-row">
                         <div class="form-group">
@@ -405,7 +151,7 @@
                     </div>
 
                     <!-- Contact Information -->
-                    <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px 0;">Contact Information</h3>
+                    <h3 class="form-section-header contact-header">Contact Information</h3>
                     
                     <div class="form-row">
                         <div class="form-group">
@@ -430,7 +176,7 @@
                     </div>
 
                     <!-- Current IT Environment -->
-                    <h3 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin: 30px 0 20px 0;">Current IT Environment</h3>
+                    <h3 class="form-section-header contact-header">Current IT Environment</h3>
                     
                     <div class="form-group full-width">
                         <label>Current IT Challenges (Check all that apply):</label>
@@ -535,6 +281,9 @@
                 alert('Please fill in all required fields.');
                 return;
             }
+            
+            // Track form submission in Google Analytics
+            trackAssessmentSubmission();
             
             // If validation passes, let the form submit naturally to Formspree
             // Formspree will handle the redirect to the thank-you page

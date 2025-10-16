@@ -22,23 +22,51 @@
     <link rel="preload" href="images/logos/badger-logo-cybersecurity.png" as="image">
     
     <title>Badger Technologies - Your Complete IT Department</title>
+    <meta name="description" content="Complete managed IT services starting at $799/month. Your dedicated IT department without the full-time cost. 24/7 support, cybersecurity, and cloud solutions for Illinois businesses.">
     <meta name="keywords" content="managed IT services, IT support, helpdesk, network monitoring, cloud solutions, Illinois IT department, technology consulting">
     <meta name="author" content="Badger Technologies">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Badger Technologies - Your Complete IT Department"
+    <meta property="og:title" content="Badger Technologies - Your Complete IT Department">
     <meta property="og:description" content="Complete managed IT services starting at $799/month. Your dedicated IT department without the full-time cost. 24/7 support for Illinois businesses.">
     <meta property="og:url" content="https://badgertechnologies.us">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://badgertechnologies.us/images/logos/badger-logo-main.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Badger Technologies - Managed IT Services">
-    <meta name="twitter:description" content="Complete managed IT services starting at $799/month. Your dedicated IT department without the full-time cost."
+    <meta name="twitter:description" content="Complete managed IT services starting at $799/month. Your dedicated IT department without the full-time cost.">
     <meta name="twitter:image" content="https://badgertechnologies.us/images/logos/badger-logo-main.png">
     <link rel="canonical" href="https://badgertechnologies.us/">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        
+        // Custom event tracking for form submissions
+        function trackFormSubmission(formType) {
+            gtag('event', 'form_submission', {
+                'event_category': 'contact',
+                'event_label': formType,
+                'value': 1
+            });
+        }
+        
+        // Track button clicks
+        function trackButtonClick(buttonType, destination) {
+            gtag('event', 'click', {
+                'event_category': 'engagement',
+                'event_label': buttonType + '_' + destination,
+                'value': 1
+            });
+        }
+    </script>
     
     <!-- Structured Data -->
     <script type="application/ld+json">

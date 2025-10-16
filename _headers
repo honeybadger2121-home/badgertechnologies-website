@@ -15,6 +15,10 @@
   
   # SEO Headers
   X-Robots-Tag: index, follow
+  
+  # Additional Performance Headers
+  Vary: Accept-Encoding
+  Accept-Ranges: bytes
 
 # Static assets - Long term caching
 /images/*

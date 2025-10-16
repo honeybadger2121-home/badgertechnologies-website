@@ -1,11 +1,13 @@
 name: Deploy to Cloudflare Pages
 
-# Trigger the workflow on push to main branch or pull requests
+# DISABLED: Cloudflare Pages handles automatic deployment from GitHub
+# This workflow is not needed as Pages auto-deploys on push
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch: # Manual trigger only
+  # push:
+  #   branches: [main]
+  # pull_request:
+  #   branches: [main]
 
 jobs:
   deploy:

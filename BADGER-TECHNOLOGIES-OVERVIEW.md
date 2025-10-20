@@ -400,30 +400,4 @@ Small-to-medium businesses (10-50 employees) characterized by:
 
 ---
 
-## 💼 Investment & Partnership Opportunities
-
-### Current Funding Status
-- **Current Revenue:** $0 (pre-revenue startup)
-- **Funding Stage:** Seeking founding team members and initial investment
-- **Equity Available:** Significant ownership opportunities for key contributors
-
-### Partnership Opportunities
-1. **Founding IT Consultant/Sales Representative**
-   - Equity partnership + commission structure
-   - 40-60% commission on generated sales
-   - Ground-floor opportunity with unlimited earning potential
-
-2. **Strategic Service Partners**
-   - Complementary technology providers
-   - Industry-specific software vendors
-   - Hardware and infrastructure suppliers
-
-### Growth Capital Requirements
-- **Working Capital:** For initial operations and marketing
-- **Technology Investment:** Tools, software, and infrastructure
-- **Personnel Expansion:** As client base grows
-- **Marketing and Sales:** Lead generation and brand building
-
----
-
 *This document represents Badger Technologies' current business strategy and projections as of October 2025. All financial projections are estimates based on market analysis and business modeling.*

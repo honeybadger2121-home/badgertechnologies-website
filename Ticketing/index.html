@@ -447,7 +447,7 @@
                     </section>
 
                     <!-- CRM Section -->
-                    <div id="crm" class="content-section" style="display: none;">
+                    <div id="crm" class="content-section content-section-hidden">
                         <div class="content-header">
                             <h2>Customer Relationship Management</h2>
                             <div class="header-actions">
@@ -540,7 +540,7 @@
                     </div>
 
                     <!-- Sales Pipeline Section -->
-                    <div id="leads" class="content-section" style="display: none;">
+                    <div id="leads" class="content-section content-section-hidden">
                         <div class="content-header">
                             <h2>Sales Pipeline</h2>
                             <div class="header-actions">
@@ -696,7 +696,7 @@
     </footer>
 
     <!-- Add Customer Modal -->
-    <div id="add-customer-modal" class="modal" style="display: none;">
+    <div id="add-customer-modal" class="modal modal-hidden">
         <div class="modal-content">
             <div class="modal-header">
                 <h3>Add New Customer</h3>
@@ -746,7 +746,7 @@
     </div>
 
     <!-- Add Lead Modal -->
-    <div id="add-lead-modal" class="modal" style="display: none;">
+    <div id="add-lead-modal" class="modal modal-hidden">
         <div class="modal-content">
             <div class="modal-header">
                 <h3>Add New Lead</h3>
@@ -870,15 +870,15 @@
         
         // Modal helper functions
         function showAddCustomerModal() {
-            document.getElementById('add-customer-modal').style.display = 'block';
+            document.getElementById('add-customer-modal').classList.remove('modal-hidden');
         }
         
         function showAddLeadModal() {
-            document.getElementById('add-lead-modal').style.display = 'block';
+            document.getElementById('add-lead-modal').classList.remove('modal-hidden');
         }
         
         function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
+            document.getElementById(modalId).classList.add('modal-hidden');
         }
         
         function saveCustomer() {

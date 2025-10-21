@@ -54,7 +54,7 @@
         }
         .cta-button {
             display: inline-block;
-            background: #16a085;
+            background: #74c0fc;
             color: white !important;
             padding: 15px 30px;
             text-decoration: none;
@@ -167,10 +167,10 @@
         <!-- Main Content -->
         <div class="content">
             <div class="greeting">
-                Hello *|FNAME|*,
+                Hello {{first_name}},
             </div>
 
-            <p>Are you tired of dealing with IT problems that slow down your business? As a leader at <strong>*|COMPANY|*</strong>, you understand how critical reliable technology is to your daily operations.</p>
+            <p>Are you tired of dealing with IT problems that slow down your business? As a leader at <strong>{{company}}</strong>, you understand how critical reliable technology is to your daily operations.</p>
 
             <div class="pain-points">
                 <h3 class="frustration-title">💻 Common IT Frustrations We Solve:</h3>
@@ -185,9 +185,9 @@
             </div>
 
             <div class="support-offer">
-                <h3 class="support-title">🛠️ Professional IT Support for *|COMPANY|*</h3>
+                <h3 class="support-title">🛠️ Professional IT Support for {{company}}</h3>
                 <p><strong>What if you never had to worry about IT problems again?</strong></p>
-                <p>I'd like to offer <strong>*|COMPANY|*</strong> a <strong>complimentary consultation</strong> to discuss how our managed IT support services can keep your technology running smoothly.</p>
+                <p>I'd like to offer <strong>{{company}}</strong> a <strong>$30 consultation</strong> to discuss how our managed IT support services can keep your technology running smoothly.</p>
             </div>
 
             <h3 class="section-title">Our IT Support Services Include:</h3>
@@ -247,7 +247,7 @@
             </div>
 
             <div class="button-container">
-                <a href="https://calendly.com/badgertechnologies/it-support-consultation" class="cta-button">
+                <a href="https://calendly.com/benjamin-badgertechnologies/30min" class="cta-button">
                     Schedule Your IT Support Consultation
                 </a>
             </div>
@@ -255,7 +255,7 @@
             <div class="testimonial">
                 <p><strong>Client Success Story:</strong></p>
                 <p><em>"Since partnering with Badger Technologies for IT support, we haven't had a single major IT issue. Our team is more productive, and I can focus on running my business instead of dealing with computer problems. Their response time is incredible!"</em></p>
-                <p><strong>— Operations Manager, *|INDUSTRY|* Company</strong></p>
+                <p><strong>— Operations Manager, {{industry}} Company</strong></p>
             </div>
 
             <h3 class="section-title">Why Choose Badger Technologies for IT Support?</h3>
@@ -282,41 +282,40 @@
             </div>
 
             <div class="support-offer">
-                <h4 class="support-title">🎁 Special Offer for *|COMPANY|*:</h4>
-                <p><strong>Schedule a complimentary IT support consultation</strong> to discuss your specific needs and see how we can help your business run more efficiently.</p>
+                <h4 class="support-title">🎁 Special Offer for {{company}}:</h4>
+                <p><strong>Schedule a $30 IT support consultation</strong> to discuss your specific needs and see how we can help your business run more efficiently.</p>
                 <p>During the consultation, we'll review your current setup and provide recommendations tailored to your business.</p>
             </div>
 
             <p>Imagine coming to work knowing that your technology will work flawlessly all day. No more calling your "computer guy" and waiting hours for help. No more lost productivity from IT issues.</p>
 
-            <p>Would you be available for a brief 15-minute call this week to discuss your current IT challenges and how we can help <strong>*|COMPANY|*</strong> run more efficiently?</p>
+            <p>Would you be available for a brief 15-minute call this week to discuss your current IT challenges and how we can help <strong>{{company}}</strong> run more efficiently?</p>
 
             <p>Best regards,<br>
-            <strong>Benjamin Sherman</strong><br>
+          <!-- <strong>Benjamin Sherman</strong><br>
             Owner & Founder<br>
             Badger Technologies<br>
-            📧 bsherman@badgertechnologies.com<br>
+            📧 benjamin@badgertechnologies.us<br>
             📱 (815) 367-6989</p>
-
+                  --> 
             <p class="footer-text">
-                P.S. The consultation is completely complimentary and includes a customized recommendations report for your business. Even if we never work together, you'll gain valuable insights about optimizing your IT infrastructure!
-            </p>
+                P.S. The $30 consultation includes a customized recommendations report for your business. Even if we never work together, you'll gain valuable insights about optimizing your IT infrastructure!
+            </p> 
         </div>
 
-        <!-- Footer -->
+        <!-- Footer
         <div class="footer">
             <div><strong>BADGER TECHNOLOGIES</strong></div>
             <div>Professional IT Support & Managed Services</div>
             <div class="social-links">
-                <a href="https://badgertechnologies.com">Website</a> |
+                <a href="https://badgertechnologies.us">Website</a> |
                 <a href="https://linkedin.com/company/badgertechnologies">LinkedIn</a> |
-                <a href="mailto:info@badgertechnologies.com">Contact</a>
+                <a href="mailto:info@badgertechnologies.us">Contact</a>
             </div>
             <div class="footer-links">
-                <a href="*|UNSUB|*" >Unsubscribe</a> | 
-                <a href="*|UPDATE_PROFILE|*" >Update Preferences</a>
+                <a href="{{unsubscribe_link}}">Unsubscribe</a>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

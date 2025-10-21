@@ -25,6 +25,20 @@
     <meta name="keywords" content="managed IT services, IT support, helpdesk, network monitoring, cloud solutions, Illinois IT department, technology consulting">
     <meta name="author" content="Badger Technologies">
     <meta name="robots" content="index, follow">
+    
+    <!-- Business Information Meta Tags -->
+    <meta name="company" content="Badger Technologies LLC">
+    <meta name="industry" content="Information Technology Services">
+    <meta name="business-type" content="IT Services Company">
+    <meta name="location" content="Illinois, United States">
+    <meta name="services" content="Managed IT Services, Cybersecurity, Cloud Solutions, IT Consulting">
+    <meta name="phone" content="+1-815-367-6989">
+    <meta name="email" content="benjamin@badgertechnologies.us">
+    <meta name="founded" content="2024">
+    <meta name="employees" content="1-10">
+    <meta name="revenue" content="Startup">
+    <meta name="target-market" content="Small to Medium Businesses">
+    
     <meta property="og:title" content="Badger Technologies - Your Complete IT Department">
     <meta property="og:description" content="Complete managed IT services starting at $799/month. Your dedicated IT department without the full-time cost. 24/7 support for Illinois businesses.">
     <meta property="og:url" content="https://badgertechnologies.us">
@@ -39,6 +53,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data for Company Information -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Badger Technologies",
+        "legalName": "Badger Technologies LLC",
+        "description": "Complete IT Solutions & Technology Consulting. Managed IT services, cybersecurity, cloud solutions, and technology consulting for Illinois businesses.",
+        "url": "https://badgertechnologies.us",
+        "logo": "https://badgertechnologies.us/images/logos/badger-logo-main.png",
+        "foundingDate": "2024",
+        "founder": {
+            "@type": "Person",
+            "name": "Benjamin Sherman",
+            "jobTitle": "Founder & CEO"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-815-367-6989",
+            "contactType": "customer service",
+            "email": "benjamin@badgertechnologies.us",
+            "availableLanguage": "English"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Illinois",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/badger-technologies-llc/"
+        ],
+        "serviceArea": {
+            "@type": "State",
+            "name": "Illinois"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "IT Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Managed IT Services",
+                        "description": "24/7 IT support and monitoring"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Cybersecurity Services",
+                        "description": "Advanced security solutions and threat protection"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Cloud Solutions",
+                        "description": "Cloud infrastructure and migration services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "IT Consulting",
+                        "description": "Technology consulting and strategic planning"
+                    }
+                }
+            ]
+        },
+        "naics": "541511",
+        "industry": "Information Technology Services"
+    }
+    </script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -868,6 +960,37 @@
             </div>
         </div>
     </section>
+
+    <!-- Company Information (Hidden for tools/crawlers) -->
+    <div class="company-info" style="display: none; position: absolute; left: -9999px;">
+        <div itemscope itemtype="https://schema.org/Organization">
+            <h1 itemprop="name">Badger Technologies LLC</h1>
+            <div itemprop="description">Complete IT Solutions & Technology Consulting. Managed IT services, cybersecurity, cloud solutions, and technology consulting for Illinois businesses.</div>
+            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="addressRegion">Illinois</span>
+                <span itemprop="addressCountry">United States</span>
+            </div>
+            <div itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+                <span itemprop="telephone">+1-815-367-6989</span>
+                <span itemprop="email">benjamin@badgertechnologies.us</span>
+                <span itemprop="contactType">customer service</span>
+            </div>
+            <span itemprop="url">https://badgertechnologies.us</span>
+            <span itemprop="industry">Information Technology Services</span>
+            <span itemprop="foundingDate">2024</span>
+            <div itemprop="founder" itemscope itemtype="https://schema.org/Person">
+                <span itemprop="name">Benjamin Sherman</span>
+                <span itemprop="jobTitle">Founder & CEO</span>
+            </div>
+            <div itemprop="serviceType">Managed IT Services</div>
+            <div itemprop="serviceType">Cybersecurity Services</div>
+            <div itemprop="serviceType">Cloud Solutions</div>
+            <div itemprop="serviceType">IT Consulting</div>
+            <div itemprop="serviceType">Technology Consulting</div>
+            <span itemprop="employee">1-10 employees</span>
+            <span itemprop="naics">541511</span>
+        </div>
+    </div>
 
     <!-- Features Section -->
     <section class="section section-light">

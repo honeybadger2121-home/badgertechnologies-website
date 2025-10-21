@@ -4,6 +4,32 @@ Allow: /
 Sitemap: https://badgertechnologies.us/sitemap.xml
 Sitemap: https://www.badgertechnologies.us/sitemap.xml
 
+# Block competitor scraping and intelligence gathering
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Block common competitor research tools
+User-agent: *
+Disallow: /pricing
+Disallow: /internal
+Disallow: /strategy
+Disallow: /competitors
+Disallow: /sales-toolkit/
+Disallow: /leads/
+Disallow: /contracts/
+
 # Disallow admin or sensitive areas (when they exist)
 # Disallow: /admin/
 # Disallow: /private/

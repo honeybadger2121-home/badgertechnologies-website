@@ -36,6 +36,7 @@
             top: 0;
             width: 100%;
             background: rgba(15, 23, 42, 0.95);
+            -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
             z-index: 1000;
             padding: 1rem 0;
@@ -603,6 +604,16 @@
                 align-items: center;
             }
         }
+
+        /* Utility Classes for inline style fixes */
+        .card-centered {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .btn-full-width {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -672,7 +683,7 @@
                 </div>
 
                 <div class="hero-visual">
-                    <div class="card" style="max-width: 400px; margin: 0 auto;">
+                    <div class="card card-centered">
                         <div class="card-icon">🚀</div>
                         <h3>End-to-End Solutions</h3>
                         <p>From initial assessment to full implementation and ongoing support, we handle your complete IT transformation journey.</p>
@@ -715,7 +726,7 @@
                         <div class="price-value">$250/month</div>
                     </div>
                     
-                    <a href="assessment.html" class="btn btn-primary" style="width: 100%;">Get Security Assessment</a>
+                    <a href="assessment.html" class="btn btn-primary btn-full-width">Get Security Assessment</a>
                 </div>
                 
                 <div class="solution-card">
@@ -739,7 +750,7 @@
                         <div class="price-value">$299/month</div>
                     </div>
                     
-                    <a href="assessment.html" class="btn btn-primary" style="width: 100%;">Get Cloud Assessment</a>
+                    <a href="assessment.html" class="btn btn-primary btn-full-width">Get Cloud Assessment</a>
                 </div>
                 
                 <div class="solution-card">
@@ -763,7 +774,7 @@
                         <div class="price-value">$175/month</div>
                     </div>
                     
-                    <a href="assessment.html" class="btn btn-primary" style="width: 100%;">Get Network Assessment</a>
+                    <a href="assessment.html" class="btn btn-primary btn-full-width">Get Network Assessment</a>
                 </div>
                 
                 <div class="solution-card">
@@ -787,7 +798,7 @@
                         <div class="price-value">$75/user/month</div>
                     </div>
                     
-                    <a href="assessment.html" class="btn btn-primary" style="width: 100%;">Get IT Assessment</a>
+                    <a href="assessment.html" class="btn btn-primary btn-full-width">Get IT Assessment</a>
                 </div>
                 
                 <div class="solution-card">
@@ -811,7 +822,7 @@
                         <div class="price-value">$79/month</div>
                     </div>
                     
-                    <a href="assessment.html" class="btn btn-primary" style="width: 100%;">Get Data Assessment</a>
+                    <a href="assessment.html" class="btn btn-primary btn-full-width">Get Data Assessment</a>
                 </div>
                 
                 <div class="solution-card">
@@ -835,7 +846,7 @@
                         <div class="price-value">$150/hour</div>
                     </div>
                     
-                    <a href="assessment.html" class="btn btn-primary" style="width: 100%;">Discuss Your Project</a>
+                    <a href="assessment.html" class="btn btn-primary btn-full-width">Discuss Your Project</a>
                 </div>
             </div>
         </div>

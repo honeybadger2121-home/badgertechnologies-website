@@ -1,4 +1,4 @@
-# Phone Prospecting Scripts
+# Phone Prospecting Scripts - IT Support Services
 
 ## COLD CALLING FUNDAMENTALS
 
@@ -8,7 +8,7 @@
 - Avoid Monday mornings and Friday afternoons
 
 ### **Your Mindset:**
-- You're offering value, not bothering them
+- You're offering solutions to their IT headaches
 - Rejection is normal (expect 80%+ to say no)
 - Every call is practice
 - Goal: 50+ calls per day = 2-3 appointments
@@ -38,11 +38,11 @@
 
 **Receptionist:** "What is this regarding?"
 
-**You (Option 1 - Direct):** "It's about their IT security. Can you put me through?"
+**You (Option 1 - Direct):** "It's about their IT support needs. Can you put me through?"
 
 **You (Option 2 - Vague):** "I'm following up on some information I sent over. Is he/she available?"
 
-**You (Option 3 - Peer-level):** "I'm with Badger Technologies, just need to speak with him/her briefly about their network security."
+**You (Option 3 - Peer-level):** "I'm with Badger Technologies, just need to speak with him/her briefly about their IT infrastructure."
 
 ---
 
@@ -70,11 +70,11 @@
 
 **[Wait for response - build quick rapport]**
 
-**You:** "Great! I'll be brief - I know you're busy. **The reason I'm calling** is we help businesses in [CITY/INDUSTRY] protect their data from ransomware and cyber attacks."
+**You:** "Great! I'll be brief - I know you're busy. **The reason I'm calling** is we help businesses in [CITY/INDUSTRY] solve their IT problems and keep their technology running smoothly."
 
-**You:** "I'm calling today because **I noticed [COMPANY] doesn't have [SPECIFIC SECURITY ELEMENT - e.g., security certification visible on website, recent news about industry breaches, etc.]** and wanted to reach out."
+**You:** "I'm calling today because **most small businesses struggle with slow computers, network issues, and unreliable IT support** - and I wanted to see if that's something you're dealing with."
 
-**You:** "**Have you done a security assessment** in the last 12 months?"
+**You:** "**Are you currently happy with your IT support,** or are there things that could be working better?"
 
 **[STOP TALKING - Let them answer]**
 
@@ -82,59 +82,59 @@
 
 ## SCRIPT 3: QUALIFYING QUESTIONS
 
-### **If they say NO to security assessment:**
+### **If they express IT frustrations:**
 
-**You:** "Okay, so you're probably not 100% sure where your vulnerabilities are, right?"
+**You:** "I hear that a lot. Most businesses are frustrated with slow response times and reactive IT support that only fixes problems after they happen."
 
-**Them:** "I guess not..."
+**Them:** "Exactly! Our computer guy takes forever to get back to us..."
 
-**You:** "Here's the thing - **most small businesses don't realize they're at risk until it's too late.** The average data breach costs over $200,000 to recover from."
+**You:** "Here's the thing - **your business can't afford to wait when technology breaks down.** Every minute of downtime costs you money and productivity."
 
-**You:** "**Can I ask you a few quick questions** to see if it makes sense for us to work together?"
+**You:** "**Can I ask you a few quick questions** to see if our managed IT services would be a good fit?"
 
 ---
 
 ### **The Qualifying Questions:**
 
-**Question 1:** "How many employees do you have?" [Establishes company size]
+**Question 1:** "How many employees do you have?" [Establishes company size for pricing]
 
-**Question 2:** "Are you handling any sensitive data - client information, medical records, financial data?" [Identifies compliance needs]
+**Question 2:** "What happens when your computers or network go down? How long does it usually take to get fixed?" [Identifies pain points]
 
-**Question 3:** "What would happen to your business if your systems went down for a week?" [Creates urgency]
+**Question 3:** "Are you currently paying per incident, or do you have monthly IT support?" [Understands current model]
 
-**Question 4:** "Do you have cyber insurance?" [If NO = need you more; if YES = easier sale]
+**Question 4:** "How much are you spending on IT support per month?" [Budget qualification]
 
-**Question 5:** "When was the last time you updated your IT infrastructure?" [Identifies gaps]
+**Question 5:** "What's your biggest IT frustration right now?" [Identifies specific problems to solve]
 
 ---
 
 ## SCRIPT 4: THE PITCH (Based on Their Answers)
 
-### **If they have concerns:**
+### **If they have IT problems:**
 
-**You:** "Based on what you're telling me, it sounds like a security assessment would be really valuable for [COMPANY]."
+**You:** "Based on what you're telling me, it sounds like managed IT support would solve a lot of headaches for [COMPANY]."
 
-**You:** "Here's what we do: **We come in, scan your entire network, identify every vulnerability, and give you a detailed report** with exactly what to fix and how to fix it."
+**You:** "Here's what we do: **We become your complete IT department.** Help desk support, network monitoring, data backups, security - everything you need to keep your business running smoothly."
 
-**You:** "Most businesses your size invest between **$3,500 and $8,500** depending on complexity."
+**You:** "Most businesses your size invest between **$149 and $299 per month** depending on how many users you have and what level of support you need."
 
-**You:** "But here's the kicker - **that investment could save you $200,000+ in breach costs,** not to mention reputation damage and lost clients."
+**You:** "But here's the thing - **that monthly investment prevents expensive downtime** and gives you predictable IT costs. No more surprise repair bills."
 
 **You:** "Does that sound like something you'd want to explore?"
 
 ---
 
-### **If they're hesitant about cost:**
+### **If they're hesitant about monthly costs:**
 
 **You:** "I totally understand budget concerns. Let me ask you this:"
 
-**You:** "**If you got hit with ransomware tomorrow and were offline for a week, how much would that cost your business?"**
+**You:** "**How much did you spend on IT last year** - all the emergency calls, repairs, new equipment, everything?"
 
 **[Let them calculate in their head]**
 
-**You:** "Exactly. So **spending $3,500 now to prevent a $200,000 disaster** is actually the cheapest insurance policy you'll ever buy."
+**You:** "I bet it was more than $149 a month, right? **With managed IT support, you get 24/7 monitoring, unlimited help desk support, and predictable monthly costs.**"
 
-**You:** "Plus, **we can break it into monthly payments** if that helps with cash flow."
+**You:** "Plus, **we prevent problems before they happen,** so you're not constantly dealing with fires."
 
 ---
 
@@ -142,35 +142,33 @@
 
 ### **Objection: "We already have an IT company"**
 
-**You:** "That's great! Are they handling security specifically, or just general IT support?"
+**You:** "That's great! Are they providing proactive monitoring and 24/7 support, or do you call them when something breaks?"
 
-**Them:** "General IT..."
+**Them:** "We call when something breaks..."
 
-**You:** "Here's the thing - **IT support and IT security are two different specialties.** It's like having a general practitioner vs. a cardiologist."
+**You:** "Here's the difference - **reactive IT support waits for problems to happen. Managed IT support prevents them.**"
 
-**You:** "Your IT company keeps things running. **We make sure hackers can't get in.** Completely different skill sets."
+**You:** "Think about it - would you rather fix your car after it breaks down on the highway, or have regular maintenance to prevent breakdowns?"
 
-**You:** "In fact, many of our clients keep their existing IT company and use us for specialized security. We can work together."
+**You:** "Most of our clients were getting frustrated with their old 'break-fix' IT company because they were always dealing with emergencies."
 
-**You:** "**Can I send you some more info?** What's the best email?"
+**You:** "**Can I send you some info** about what proactive IT support looks like? What's the best email?"
 
 ---
 
 ### **Objection: "We can't afford it right now"**
 
-**You:** "I understand. Can I ask - **is it that you don't have the budget, or that it's not a priority right now?"**
+**You:** "I understand. Can I ask - **what are you currently spending on IT per month?**"
 
-**[If budget:]**
+**[If they say "nothing" or very little:]**
 
-**You:** "No problem. What if we started with a **basic assessment for $2,500** that shows you exactly where you're at risk? Then you can prioritize what to fix first."
+**You:** "So you're probably calling someone when things break and paying emergency rates, right? That can be $150-200 per hour."
 
-**You:** "We also offer **monthly payment plans - $300/month** for 12 months. Does that work better?"
+**You:** "Our **Essential Support is $149/month** - that's less than one emergency service call, but you get unlimited support and monitoring."
 
-**[If not a priority:]**
+**[If they have a current IT budget:]**
 
-**You:** "I get it - until something happens, security feels like it can wait. But here's the reality: **hackers don't care about your budget or timeline."**
-
-**You:** "The question is: Do you want to pay $3,500 now to prevent an attack, or $200,000+ later to recover from one?"
+**You:** "What if we could **give you better service for the same price** you're paying now, plus prevent most of those emergency calls?"
 
 ---
 

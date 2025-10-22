@@ -52,97 +52,39 @@ p {
 }
 
 /* Navigation */
-.navbar {
+nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(15, 23, 42, 0.95);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     z-index: 1000;
-    transition: all 0.3s ease;
+    padding: 1rem 0;
 }
 
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.nav-logo {
+.logo {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    text-decoration: none;
     font-weight: 700;
-    color: #2563eb;
-}
-
-.nav-logo .logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.nav-logo .company-name {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #2563eb;
+    color: white;
 }
 
-.nav-logo .tagline {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: #64748b;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Image optimization and responsive sizing */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.nav-logo .logo-image {
+.logo img {
+    width: 40px;
     height: 40px;
-    width: auto;
-    max-width: 200px;
-    margin-right: 12px;
-    transition: transform 0.3s ease;
-    object-fit: contain;
-}
-
-.nav-logo .logo-image:hover {
-    transform: scale(1.05);
-}
-
-.mobile-logo-img {
-    height: 32px;
-    width: auto;
-    max-width: 150px;
-    object-fit: contain;
-}
-
-.nav-logo .logo-placeholder {
-    font-size: 2rem;
-    margin-right: 12px;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-    transition: transform 0.3s ease;
-}
-
-.nav-logo .logo-placeholder:hover {
-    transform: scale(1.05);
-}
-
-.nav-logo i {
-    margin-right: 10px;
-    font-size: 1.8rem;
+    margin-right: 0.5rem;
 }
 
 .nav-menu {
@@ -152,30 +94,38 @@ img {
 }
 
 .nav-link {
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
     transition: color 0.3s ease;
-    position: relative;
+    font-weight: 500;
 }
 
-.nav-link:hover {
-    color: #2563eb;
+.nav-link:hover,
+.nav-link.active {
+    color: #3b82f6;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #2563eb;
-    transition: width 0.3s ease;
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }
 
-.nav-link:hover::after {
-    width: 100%;
+.btn-primary {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 /* Mobile Menu Toggle */

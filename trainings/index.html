@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Mastery Course | Badger Technologies - Learn Professional IT Management</title>
+    <meta name="description" content="Free self-paced course on IT management, cybersecurity, and business technology. Learn from Badger Technologies' experts.">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="course-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logos/badger-logo-main.png" alt="Badger Technologies">
+                <span>Badger Technologies</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../services.html" class="nav-link">Services</a></li>
+                <li><a href="index.html" class="nav-link active">IT Course</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <a href="../assessment-form.html" class="btn btn-primary">Get Assessment</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="course-badge">🎓 FREE COURSE</div>
+                <h1>IT Mastery for Business Leaders</h1>
+                <p class="hero-description">
+                    Learn essential IT management concepts, cybersecurity best practices, and technology strategy 
+                    from industry experts. This comprehensive course covers everything business leaders need to know 
+                    about managing their technology infrastructure effectively.
+                </p>
+                
+                <div class="course-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>4-6 Hours</span>
+                        <small>Self-Paced</small>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-play-circle"></i>
+                        <span>12 Modules</span>
+                        <small>Interactive</small>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                        <small>Upon Completion</small>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Free</span>
+                        <small>No Cost</small>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="startCourse()">Start Course Now</button>
+                    <a href="#course-overview" class="btn btn-secondary">View Curriculum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Progress -->
+    <section class="progress-section" id="course-progress" style="display: none;">
+        <div class="container">
+            <div class="progress-header">
+                <h2>Your Progress</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <span class="progress-text" id="progress-text">0% Complete</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="section" id="course-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Course Curriculum</h2>
+                <p>Master IT management through 12 comprehensive modules designed for business leaders</p>
+            </div>
+
+            <div class="modules-grid">
+                <!-- Module 1 -->
+                <div class="module-card" data-module="1">
+                    <div class="module-header">
+                        <div class="module-number">01</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>IT Fundamentals for Business</h3>
+                    <p>Understanding your technology infrastructure, key components, and how they support your business operations.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 25 min</span>
+                        <span><i class="fas fa-tasks"></i> 4 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(1)">Start Module</button>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card" data-module="2">
+                    <div class="module-header">
+                        <div class="module-number">02</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Network Infrastructure Basics</h3>
+                    <p>Learn about networking, internet connectivity, WiFi, and how to ensure reliable communication systems.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-tasks"></i> 5 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(2)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-card" data-module="3">
+                    <div class="module-header">
+                        <div class="module-number">03</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Cybersecurity Essentials</h3>
+                    <p>Protect your business from cyber threats with essential security practices, tools, and policies.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 35 min</span>
+                        <span><i class="fas fa-tasks"></i> 6 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(3)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module-card" data-module="4">
+                    <div class="module-header">
+                        <div class="module-number">04</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Cloud Services & Migration</h3>
+                    <p>Understanding cloud computing, benefits, migration strategies, and management best practices.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 40 min</span>
+                        <span><i class="fas fa-tasks"></i> 7 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(4)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module-card" data-module="5">
+                    <div class="module-header">
+                        <div class="module-number">05</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Data Backup & Recovery</h3>
+                    <p>Implement robust backup strategies and disaster recovery plans to protect your critical business data.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-tasks"></i> 5 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(5)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module-card" data-module="6">
+                    <div class="module-header">
+                        <div class="module-number">06</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Email & Communication Systems</h3>
+                    <p>Optimize email systems, collaboration tools, and communication platforms for maximum productivity.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 25 min</span>
+                        <span><i class="fas fa-tasks"></i> 4 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(6)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 7 -->
+                <div class="module-card" data-module="7">
+                    <div class="module-header">
+                        <div class="module-number">07</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Hardware Management</h3>
+                    <p>Learn about computer hardware, lifecycle management, procurement, and maintenance strategies.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 20 min</span>
+                        <span><i class="fas fa-tasks"></i> 3 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(7)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 8 -->
+                <div class="module-card" data-module="8">
+                    <div class="module-header">
+                        <div class="module-number">08</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Compliance & Regulations</h3>
+                    <p>Navigate industry regulations like HIPAA, PCI-DSS, and GDPR to ensure your business stays compliant.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 35 min</span>
+                        <span><i class="fas fa-tasks"></i> 6 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(8)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 9 -->
+                <div class="module-card" data-module="9">
+                    <div class="module-header">
+                        <div class="module-number">09</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>IT Budgeting & Cost Management</h3>
+                    <p>Plan IT budgets, understand technology costs, and optimize spending for maximum ROI.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-tasks"></i> 5 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(9)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 10 -->
+                <div class="module-card" data-module="10">
+                    <div class="module-header">
+                        <div class="module-number">10</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Technology Strategy & Planning</h3>
+                    <p>Develop long-term technology strategies that align with your business goals and growth plans.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 40 min</span>
+                        <span><i class="fas fa-tasks"></i> 7 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(10)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 11 -->
+                <div class="module-card" data-module="11">
+                    <div class="module-header">
+                        <div class="module-number">11</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Vendor Management & Outsourcing</h3>
+                    <p>Learn to evaluate, select, and manage IT vendors and service providers effectively.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 25 min</span>
+                        <span><i class="fas fa-tasks"></i> 4 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(11)" disabled>Locked</button>
+                </div>
+
+                <!-- Module 12 -->
+                <div class="module-card" data-module="12">
+                    <div class="module-header">
+                        <div class="module-number">12</div>
+                        <div class="module-status">
+                            <i class="fas fa-lock module-icon"></i>
+                        </div>
+                    </div>
+                    <h3>Future-Proofing Your IT</h3>
+                    <p>Prepare for emerging technologies, scaling challenges, and future IT needs of your growing business.</p>
+                    <div class="module-meta">
+                        <span><i class="fas fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-tasks"></i> 5 lessons</span>
+                    </div>
+                    <button class="module-btn" onclick="openModule(12)" disabled>Locked</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content Modal -->
+    <div class="modal" id="courseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="moduleTitle">Module Title</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="moduleContent">
+                <!-- Module content will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="previousLesson()">Previous</button>
+                <button class="btn btn-primary" onclick="nextLesson()">Next Lesson</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Take This Course?</h2>
+                <p>Gain the knowledge and confidence to make informed IT decisions for your business</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Expert Knowledge</h3>
+                    <p>Learn from certified IT professionals with years of real-world business experience.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost Savings</h3>
+                    <p>Understand how to optimize IT spending and avoid costly mistakes and oversights.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Reduction</h3>
+                    <p>Implement security best practices and disaster recovery plans to protect your business.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business Growth</h3>
+                    <p>Leverage technology strategically to support and accelerate your business growth.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Efficiency</h3>
+                    <p>Learn at your own pace with practical, actionable lessons that respect your busy schedule.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Better Decisions</h3>
+                    <p>Make informed decisions about IT investments, vendors, and technology strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Master IT Management?</h2>
+                <p>Join hundreds of business leaders who have transformed their approach to technology management. Start your journey today and gain the confidence to make informed IT decisions.</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="startCourse()">Start Free Course</button>
+                    <a href="../contact.html" class="btn btn-secondary">Get Expert Help</a>
+                </div>
+
+                <div class="cta-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Need personalized guidance? <a href="../assessment-form.html">Schedule a free consultation</a> with our IT experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><strong>Benjamin Sherman</strong><br>
+                    Founder & IT Expert</p>
+                    <p>📧 benjamin@badgertechnologies.us<br>
+                    📱 (815) 367-6989<br>
+                    📍 Illinois, United States</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="../services.html">Services</a></p>
+                    <p><a href="../about.html">About Us</a></p>
+                    <p><a href="../contact.html">Contact</a></p>
+                    <p><a href="../assessment-form.html">Free Assessment</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Learning Resources</h3>
+                    <p><a href="index.html">IT Mastery Course</a></p>
+                    <p><a href="product-overview.html">Product Overview</a></p>
+                    <p><a href="../guides/">Setup Guides</a></p>
+                    <p><a href="../docs/">Documentation</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Badger Technologies. All rights reserved. | Professional IT Education & Managed Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="course-script.js"></script>
+</body>
+</html>

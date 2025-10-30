@@ -28,6 +28,10 @@
 /about/ /about.html 200
 /contact/ /contact.html 200
 
+# Internal training system (direct link access only)
+/trainings /trainings/index.html 200
+/trainings/ /trainings/index.html 200
+
 # 404 fallback
 /* /index.html 404
 

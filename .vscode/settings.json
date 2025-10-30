@@ -1,0 +1,31 @@
+{
+    "htmlhint.enable": false,
+    "markdownlint.ignore": [
+        "node_modules/**",
+        "leads/email-batch-*.txt",
+        "leads/*.csv"
+    ],
+    "files.exclude": {
+        "leads/email-batch-*.txt": true,
+        "leads/*.csv": false
+    },
+    "search.exclude": {
+        "leads/email-batch-*.txt": true,
+        "leads/mailchimp-*.csv": true,
+        "leads/contacts*.csv": true
+    },
+    "html.validate": false,
+    "css.validate": false,
+    "json.validate": true,
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+    "eslint.enable": false,
+    "stylelint.enable": false,
+    "emmet.includeLanguages": {
+        "html": "html"
+    },
+    "files.associations": {
+        "*.txt": "plaintext",
+        "email-batch-*.txt": "plaintext"
+    }
+}

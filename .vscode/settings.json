@@ -41,5 +41,34 @@
         ".htmlhintrc": "json"
     },
     "editor.formatOnSave": false,
-    "html.format.enable": false
+    "html.format.enable": false,
+    "cSpell.words": [
+        "badgertechnologies",
+        "Mailchimp",
+        "PRTG",
+        "FNAME",
+        "UNSUB",
+        "Formspree",
+        "tagname",
+        "ehthumbs",
+        "HSTS",
+        "nojekyll",
+        "mailchimp",
+        "Automations"
+    ],
+    "cSpell.ignorePaths": [
+        "node_modules/**",
+        ".git/**",
+        "leads/email-batch-*.txt",
+        "leads/*.csv",
+        "leads/mailchimp-*.csv"
+    ],
+    "cSpell.enabledLanguageIds": [
+        "markdown",
+        "html",
+        "javascript",
+        "typescript",
+        "json",
+        "css"
+    ]
 }

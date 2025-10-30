@@ -3,7 +3,9 @@
 [![Live Site](https://img.shields.io/badge/live-badgertechnologies.us-blue)](https://badgertechnologies.us)
 [![License](https://img.shields.io/badge/license-Proprietary-red)]()
 
-Professional IT consulting and cybersecurity services website for Badger Technologies, LLC.
+# Badger Technologies Website
+
+Professional IT services website for Badger Technologies, featuring managed IT support, cybersecurity services, technology consulting, and comprehensive training programs.
 
 ---
 

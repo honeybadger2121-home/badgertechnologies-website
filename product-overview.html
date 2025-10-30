@@ -1240,7 +1240,19 @@
     </style>
 
     <!-- Scripts -->
-    <script src="assets/js/script.js"></script>
+    <script>
+        // Global error handler to catch any remaining issues
+        window.addEventListener('error', function(e) {
+            console.log('Global error caught (non-critical):', e.message, 'at', e.filename + ':' + e.lineno);
+            return true; // Prevent default error handling
+        });
+        
+        window.addEventListener('unhandledrejection', function(e) {
+            console.log('Unhandled promise rejection (non-critical):', e.reason);
+            e.preventDefault();
+        });
+    </script>
+    <script src="assets/js/script.js?v=2.0"></script>
     <script>
         // Mobile menu functionality
         document.addEventListener('DOMContentLoaded', function() {

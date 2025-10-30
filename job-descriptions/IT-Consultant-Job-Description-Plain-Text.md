@@ -72,13 +72,17 @@ Submit:
 • Brief cover letter explaining your interest in startups
 
 Interview Steps:
+
 1. Phone screening (30 minutes)
+
 2. Technical assessment and role-play
+
 3. Final interview with founder
+
 
 Ready to build something from the ground up?
 
-Contact: careers@badgertechnologies.us
+Contact: [careers@badgertechnologies.us](mailto:careers@badgertechnologies.us)
 Website: https://badgertechnologies.us
 
 Equal Opportunity Employer - We're building a diverse founding team

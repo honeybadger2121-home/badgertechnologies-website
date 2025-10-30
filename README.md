@@ -30,19 +30,55 @@ badgertechnologies-website/
 │   ├── index.html              # Homepage
 │   ├── about.html              # About Us
 │   ├── services.html           # Services Overview
+│   ├── solutions.html          # Solutions
 │   ├── contact.html            # Contact Form
-│   └── [20+ service & legal pages]
+│   ├── careers.html            # Careers Page
+│   ├── assessment-form.html    # IT Assessment Form
+│   └── thank-you.html          # Thank You Page
+│
+├── 🎨 assets/                  # Website Assets
+│   ├── css/
+│   │   └── styles.css          # Main stylesheet
+│   └── js/
+│       └── script.js           # Main JavaScript
+│
+├── 🖼️ images/                  # Logos & Graphics
+│   ├── logos/                  # Company logos
+│   └── icons/                  # Icon assets
 │
 ├── 📋 contracts/               # Employment Contracts
 │   ├── IT-Consultant-Employment-Contract.md
+│   ├── Client-Acquisition-Specialist-Employment-Contract.md
 │   ├── Internship-Agreement-Template.md
-│   └── Sana-Hawa-Employment-Contract-Clean.md
+│   └── Company-Device-Equipment-Agreement.md
+│
+├── 💼 job-descriptions/        # Job Postings
+│   ├── IT-Consultant-Job-Description.md
+│   ├── IT-Consulting-Intern-Job-Description.md
+│   └── Client-Acquisition-Specialist-Job-Description.md
 │
 ├── 📚 docs/                    # Documentation & Templates
-│   ├── BUILD_INSTRUCTIONS.md
-│   ├── Client-Engagement-Workflow.md
-│   ├── Professional-Email-Templates.md
-│   └── email-signature-professional.md
+│   ├── business-planning/      # Business Strategy Documents
+│   │   ├── BADGER-TECHNOLOGIES-OVERVIEW.md
+│   │   ├── BADGER-TECHNOLOGIES-OVERVIEW.pdf
+│   │   ├── MANAGED-IT-PIVOT-SUMMARY.md
+│   │   └── SALES-TOOLKIT-SUMMARY.md
+│   ├── deployment/             # Deployment Documentation
+│   │   ├── DEPLOYMENT-TROUBLESHOOTING.md
+│   │   ├── QUICK-START-GUIDE.md
+│   │   └── training-subdomain-setup.md
+│   ├── build/                  # Build Instructions
+│   │   ├── BUILD_INSTRUCTIONS.md
+│   │   └── OLD_README.md
+│   ├── templates/              # Email & Document Templates
+│   │   ├── email-signature-professional.md
+│   │   ├── gmail-signature-setup-guide.md
+│   │   └── Professional-Email-Templates.md
+│   ├── workflows/              # Business Workflows
+│   │   └── Client-Engagement-Workflow.md
+│   ├── CLEANUP-SUMMARY.md      # Repository cleanup log
+│   ├── PAGES-DEPLOYMENT-GUIDE.md
+│   └── pgp-key.txt             # PGP Public Key
 │
 ├── 📖 guides/                  # Technical Setup Guides
 │   ├── Azure-Migrate-Setup-Guide.md
@@ -51,25 +87,54 @@ badgertechnologies-website/
 │   ├── Professional-Assessment-Tools-Setup.md
 │   └── Windows-Server-Infrastructure-Enhancement-Guide.md
 │
-├── 💼 job-descriptions/        # Job Postings
-│   ├── IT-Consultant-Job-Description.md
-│   ├── IT-Consulting-Intern-Job-Description.md
-│   └── Sales-Representative-Job-Description.md
+├── 🎓 trainings/               # Internal Training Materials
+│   ├── IT-Mastery-Course.md
+│   ├── Sales-Client-Acquisition-Training.md
+│   ├── client-engagement-training.html
+│   ├── product-overview.html
+│   ├── index.html
+│   ├── course-styles.css
+│   ├── course-script.js
+│   └── TRAINING-IMPLEMENTATION-GUIDE.md
 │
-├── 🖼️ images/                  # Logos & Graphics
-│   ├── badger-logo-*.png       # Various logo variants
-│   └── favicon.ico
+├── 💰 sales-toolkit/           # Sales Resources
+│   ├── collateral/             # Sales collateral
+│   ├── email-templates/        # Email templates
+│   ├── proposals/              # Proposal templates
+│   ├── scripts/                # Sales scripts
+│   ├── tracking/               # Lead tracking
+│   └── README.md
 │
-├── ⚙️ scripts/                 # Build Scripts
-├── 🔧 src/                     # Source Code
-│   └── worker.js               # Cloudflare Worker
+├── � leads/                   # Lead Generation
+│   ├── email-campaign-plan.md
+│   ├── email-templates.md
+│   ├── contacts.csv
+│   ├── mailchimp-setup-guide.md
+│   └── [campaign files]
 │
-└── 📋 Configuration Files
+├── 📄 pages/                   # Additional Pages
+│   ├── legal/                  # Legal pages
+│   └── services/               # Service-specific pages
+│
+├── ⚙️ config/                  # Configuration Files
+│   ├── .htmlhintrc             # HTML linting config
+│   ├── .nvmrc                  # Node version
+│   ├── .pages.toml             # Cloudflare Pages config
+│   ├── wrangler.toml           # Cloudflare Workers config
+│   ├── _headers                # HTTP security headers
+│   └── _redirects              # URL redirects
+│
+├── ⚙️ scripts/                 # Automation Scripts
+│   ├── build.mjs               # Build script
+│   └── fix-email-templates.ps1 # Email template fixer
+│
+└── 📋 Root Configuration
     ├── package.json            # Node.js dependencies
-    ├── wrangler.toml           # Cloudflare Workers config
-    ├── _headers                # HTTP security headers
-    ├── _redirects              # URL redirects
-    └── .gitignore
+    ├── manifest.json           # PWA manifest
+    ├── robots.txt              # SEO robots file
+    ├── sitemap.xml             # SEO sitemap
+    ├── .gitignore              # Git ignore rules
+    └── .nojekyll               # Disable Jekyll on GitHub Pages
 ```
 
 ---

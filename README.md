@@ -258,9 +258,20 @@ For team members:
 
 ## 📜 License
 
+**Proprietary License - All Rights Reserved**
+
 © 2025 Badger Technologies, LLC. All rights reserved.
 
-This is proprietary software. Unauthorized copying, distribution, or use is strictly prohibited.
+This is proprietary software. Unauthorized copying, distribution, modification, or use is strictly prohibited and will be prosecuted to the maximum extent of the law.
+
+**Authorized Use Only:**
+- Authorized Badger Technologies employees
+- Contractors under written agreement
+- Individuals with explicit written permission
+
+For licensing inquiries: benjamin@badgertechnologies.us
+
+See [LICENSE](LICENSE) file for complete terms.
 
 ---
 

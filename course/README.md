@@ -1,12 +1,12 @@
-# 🎓 Learning & Training Resources | Badger Technologies
+# 🎓 Internal Training Resources | Badger Technologies
 
 ## Overview
-Welcome to Badger Technologies' comprehensive learning center. We provide educational resources for both our clients and team members to excel in IT management and sales.
+Welcome to Badger Technologies' internal training center. These educational resources are designed exclusively for our team members to excel in IT consulting and client engagement.
 
 ## 📚 Available Courses
 
 ### 🖥️ [IT Mastery Course](index.html)
-**Target Audience:** Business leaders, managers, and anyone responsible for IT decisions
+**Target Audience:** Internal team members who need to understand IT fundamentals for client interactions
 
 **What You'll Learn:**
 - IT infrastructure fundamentals
@@ -18,7 +18,6 @@ Welcome to Badger Technologies' comprehensive learning center. We provide educat
 
 **Duration:** 4-6 hours (self-paced)  
 **Modules:** 12 interactive modules  
-**Certificate:** Available upon completion  
 **Cost:** Free
 
 ---
@@ -42,7 +41,7 @@ Welcome to Badger Technologies' comprehensive learning center. We provide educat
 ---
 
 ### 📋 [Product Overview Guide](product-overview.html)
-**Target Audience:** Anyone needing detailed information about our services
+**Target Audience:** Internal team members needing detailed information about our service offerings
 
 **What's Included:**
 - Complete service package breakdown
@@ -70,10 +69,10 @@ Welcome to Badger Technologies' comprehensive learning center. We provide educat
 
 ## 🎯 Learning Paths
 
-### For Business Leaders
-1. **Start with:** IT Mastery Course
-2. **Follow with:** Product Overview (to understand our services)
-3. **Ongoing:** Industry updates and best practices
+### For New Team Members
+1. **Start with:** IT Mastery Course (technical foundation)
+2. **Follow with:** Product Overview (understand our services)
+3. **Complete with:** Client Engagement Training (sales skills)
 
 ### For Sales Team Members
 1. **Start with:** Client Engagement Specialist Training
@@ -103,8 +102,8 @@ Welcome to Badger Technologies' comprehensive learning center. We provide educat
 ### Step 1: Choose Your Path
 Identify your role and learning objectives to select the most relevant course.
 
-### Step 2: Register & Begin
-Click on any course link to start immediately - no registration required for most content.
+### Step 2: Access Training
+Click on any course link to start immediately - all content is available to authorized team members.
 
 ### Step 3: Track Progress
 Your progress is automatically saved so you can learn at your own pace.

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,7 +56,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="section-badge">📋 PRODUCT GUIDE</div>
+                <div class="section-badge">ðŸ“‹ PRODUCT GUIDE</div>
                 <h1>Complete IT Service Portfolio</h1>
                 <p class="hero-description">
                     Explore our comprehensive range of IT services designed to support, secure, and scale your business. 
@@ -139,7 +139,7 @@
                     
                     <div class="pricing-footer">
                         <a href="assessment-form.html" class="btn btn-primary">Get Started</a>
-                        <p class="pricing-note">No setup fees • Cancel anytime</p>
+                        <p class="pricing-note">No setup fees â€¢ Cancel anytime</p>
                     </div>
                 </div>
 
@@ -179,7 +179,7 @@
                     
                     <div class="pricing-footer">
                         <a href="assessment-form.html" class="btn btn-primary">Get Started</a>
-                        <p class="pricing-note">Free migration • 30-day guarantee</p>
+                        <p class="pricing-note">Free migration â€¢ 30-day guarantee</p>
                     </div>
                 </div>
 
@@ -219,7 +219,7 @@
                     
                     <div class="pricing-footer">
                         <a href="assessment-form.html" class="btn btn-primary">Get Started</a>
-                        <p class="pricing-note">Custom SLA • Dedicated resources</p>
+                        <p class="pricing-note">Custom SLA â€¢ Dedicated resources</p>
                     </div>
                 </div>
             </div>
@@ -646,9 +646,9 @@
                     <h3>Contact Information</h3>
                     <p><strong>Benjamin Sherman</strong><br>
                     Founder & Owner</p>
-                    <p>📧 benjamin@badgertechnologies.us<br>
-                    📱 (815) 367-6989<br>
-                    📍 Illinois, United States</p>
+                    <p>ðŸ“§ benjamin@badgertechnologies.us<br>
+                    ðŸ“± (815) 367-6989<br>
+                    ðŸ“ Illinois, United States</p>
                 </div>
                 
                 <div class="footer-section">
@@ -1242,103 +1242,7 @@
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
     <script>
-        // ROI Calculator Functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const inputs = {
-                currentCosts: document.getElementById('currentCosts'),
-                downtimeHours: document.getElementById('downtime'),
-                employees: document.getElementById('employees'),
-                hourlyWage: document.getElementById('hourlyWage')
-            };
-            
-            const results = {
-                monthly: document.getElementById('monthlySavings'),
-                annual: document.getElementById('annualSavings'),
-                productivity: document.getElementById('productivityGain')
-            };
-
-            // Input field explanations
-            const explanations = {
-                'currentCosts': 'Your current monthly IT expenses including support contracts, software licenses, and internal IT staff costs.',
-                'downtime': 'Average hours per month your business experiences IT-related downtime or productivity issues.',
-                'employees': 'Total number of employees in your organization who use computers and technology daily.',
-                'hourlyWage': 'Average hourly wage of employees affected by IT downtime (used to calculate productivity loss).'
-            };
-
-            // Add explanation tooltips
-            Object.keys(explanations).forEach(id => {
-                const input = document.getElementById(id);
-                if (input) {
-                    const container = input.parentElement;
-                    const tooltip = document.createElement('div');
-                    tooltip.className = 'input-explanation';
-                    tooltip.textContent = explanations[id];
-                    tooltip.style.cssText = `
-                        font-size: 0.8rem;
-                        color: #6b7280;
-                        margin-top: 0.25rem;
-                        line-height: 1.3;
-                        display: none;
-                    `;
-                    container.appendChild(tooltip);
-                    
-                    input.addEventListener('focus', () => tooltip.style.display = 'block');
-                    input.addEventListener('blur', () => tooltip.style.display = 'none');
-                }
-            });
-
-            function calculateROI() {
-                const currentCosts = parseFloat(inputs.currentCosts.value) || 0;
-                const downtimeHours = parseFloat(inputs.downtimeHours.value) || 0;
-                const employees = parseFloat(inputs.employees.value) || 0;
-                const hourlyWage = parseFloat(inputs.hourlyWage.value) || 25;
-
-                if (currentCosts === 0 && downtimeHours === 0 && employees === 0) {
-                    // Reset to default values
-                    results.monthly.textContent = '$850';
-                    results.annual.textContent = '$10,200';
-                    results.productivity.textContent = '$340';
-                    return;
-                }
-
-                // Calculate downtime costs using actual hourly wage
-                const downtimeCost = downtimeHours * employees * hourlyWage;
-
-                // Badger Technologies pricing (assuming Professional plan at $1,499)
-                const badgerCost = 1499;
-
-                // Calculate total current monthly costs
-                const totalCurrentCosts = currentCosts + downtimeCost;
-
-                // Calculate savings
-                const monthlySavings = Math.max(0, totalCurrentCosts - badgerCost);
-                const annualSavings = monthlySavings * 12;
-                
-                // Calculate productivity gain (75% reduction in downtime)
-                const productivityGain = downtimeCost * 0.75;
-
-                // Update display
-                results.monthly.textContent = '$' + monthlySavings.toLocaleString();
-                results.annual.textContent = '$' + annualSavings.toLocaleString();
-                results.productivity.textContent = '$' + productivityGain.toLocaleString();
-            }
-
-            // Add event listeners to all inputs
-            Object.values(inputs).forEach(input => {
-                if (input) {
-                    input.addEventListener('input', calculateROI);
-                    input.addEventListener('change', calculateROI);
-                }
-            });
-
-            // Initialize with default calculation
-            calculateROI();
-            
-            // Make calculateROI available globally for the onclick handler
-            window.calculateROI = calculateROI;
-        });
-
-        // Mobile menu functionality specific to product overview
+        // Mobile menu functionality
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuToggle = document.getElementById('mobileMenuToggle');
             const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
@@ -1353,7 +1257,6 @@
                     mobileMenuOverlay.classList.remove('active');
                 });
 
-                // Close mobile menu when clicking on overlay
                 mobileMenuOverlay.addEventListener('click', function(e) {
                     if (e.target === mobileMenuOverlay) {
                         mobileMenuOverlay.classList.remove('active');

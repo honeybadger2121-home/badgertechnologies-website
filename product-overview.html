@@ -526,7 +526,21 @@
         <div class="container">
             <div class="section-header">
                 <h2>Calculate Your IT ROI</h2>
-                <p>See how much you could save with managed IT services</p>
+                <p>See how much you could save with managed IT services. Our calculator factors in both direct cost savings and productivity improvements from reduced downtime.</p>
+                <div class="roi-benefits">
+                    <div class="roi-benefit">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Direct Cost Savings</span>
+                    </div>
+                    <div class="roi-benefit">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Productivity Gains</span>
+                    </div>
+                    <div class="roi-benefit">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Reduced Downtime</span>
+                    </div>
+                </div>
             </div>
 
             <div class="roi-calculator">
@@ -535,18 +549,22 @@
                     <div class="input-group">
                         <label>Number of Employees:</label>
                         <input type="number" id="employees" value="20" min="1" max="500">
+                        <small class="input-help">Total number of employees who use computers, servers, or IT systems in your organization.</small>
                     </div>
                     <div class="input-group">
                         <label>Current IT Support Costs/Month:</label>
                         <input type="number" id="currentCosts" value="2000" min="0">
+                        <small class="input-help">What you currently spend monthly on IT support, repairs, software, and technology maintenance.</small>
                     </div>
                     <div class="input-group">
                         <label>Downtime Hours/Month:</label>
                         <input type="number" id="downtime" value="8" min="0">
+                        <small class="input-help">Average hours per month your business loses due to IT issues, system crashes, or network problems.</small>
                     </div>
                     <div class="input-group">
                         <label>Average Hourly Wage:</label>
                         <input type="number" id="hourlyWage" value="25" min="0">
+                        <small class="input-help">Average hourly wage of employees affected by IT downtime (used to calculate productivity loss).</small>
                     </div>
                     <button onclick="calculateROI()" class="btn btn-primary">Calculate Savings</button>
                 </div>
@@ -570,6 +588,11 @@
                     <div class="recommended-package" id="recommendedPackage">
                         <h4>Recommended Package:</h4>
                         <p id="packageRecommendation">Complete the calculation to see our recommendation</p>
+                    </div>
+                    
+                    <div class="calculation-note">
+                        <i class="fas fa-info-circle"></i>
+                        <small>Calculations based on industry averages showing 75% reduction in downtime with managed IT services. Individual results may vary.</small>
                     </div>
                 </div>
             </div>
@@ -940,6 +963,51 @@
             border: 1px solid #d1d5db;
             border-radius: 8px;
             font-size: 1rem;
+        }
+
+        .input-help {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .roi-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .roi-benefit {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3b82f6;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .roi-benefit i {
+            font-size: 1rem;
+        }
+
+        .calculation-note {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.8rem;
+        }
+
+        .calculation-note i {
+            color: #3b82f6;
+            margin-right: 0.5rem;
         }
 
         .savings-summary {

@@ -1245,22 +1245,24 @@
         // ROI Calculator Functionality
         document.addEventListener('DOMContentLoaded', function() {
             const inputs = {
-                currentCosts: document.getElementById('current-costs'),
-                downtimeHours: document.getElementById('downtime-hours'),
-                employees: document.getElementById('employees')
+                currentCosts: document.getElementById('currentCosts'),
+                downtimeHours: document.getElementById('downtime'),
+                employees: document.getElementById('employees'),
+                hourlyWage: document.getElementById('hourlyWage')
             };
             
             const results = {
-                monthly: document.getElementById('monthly-savings'),
-                annual: document.getElementById('annual-savings'),
-                roi: document.getElementById('roi-percentage')
+                monthly: document.getElementById('monthlySavings'),
+                annual: document.getElementById('annualSavings'),
+                productivity: document.getElementById('productivityGain')
             };
 
             // Input field explanations
             const explanations = {
-                'current-costs': 'Your current monthly IT expenses including support contracts, software licenses, and internal IT staff costs.',
-                'downtime-hours': 'Average hours per month your business experiences IT-related downtime or productivity issues.',
-                'employees': 'Total number of employees in your organization who use computers and technology daily.'
+                'currentCosts': 'Your current monthly IT expenses including support contracts, software licenses, and internal IT staff costs.',
+                'downtime': 'Average hours per month your business experiences IT-related downtime or productivity issues.',
+                'employees': 'Total number of employees in your organization who use computers and technology daily.',
+                'hourlyWage': 'Average hourly wage of employees affected by IT downtime (used to calculate productivity loss).'
             };
 
             // Add explanation tooltips
@@ -1289,18 +1291,18 @@
                 const currentCosts = parseFloat(inputs.currentCosts.value) || 0;
                 const downtimeHours = parseFloat(inputs.downtimeHours.value) || 0;
                 const employees = parseFloat(inputs.employees.value) || 0;
+                const hourlyWage = parseFloat(inputs.hourlyWage.value) || 25;
 
                 if (currentCosts === 0 && downtimeHours === 0 && employees === 0) {
                     // Reset to default values
                     results.monthly.textContent = '$850';
                     results.annual.textContent = '$10,200';
-                    results.roi.textContent = '340%';
+                    results.productivity.textContent = '$340';
                     return;
                 }
 
-                // Calculate downtime costs (assuming $50/hour average employee cost)
-                const avgHourlyWage = 50;
-                const downtimeCost = downtimeHours * employees * avgHourlyWage;
+                // Calculate downtime costs using actual hourly wage
+                const downtimeCost = downtimeHours * employees * hourlyWage;
 
                 // Badger Technologies pricing (assuming Professional plan at $1,499)
                 const badgerCost = 1499;
@@ -1311,14 +1313,14 @@
                 // Calculate savings
                 const monthlySavings = Math.max(0, totalCurrentCosts - badgerCost);
                 const annualSavings = monthlySavings * 12;
-
-                // Calculate ROI percentage
-                const roiPercentage = badgerCost > 0 ? ((monthlySavings / badgerCost) * 100) : 0;
+                
+                // Calculate productivity gain (75% reduction in downtime)
+                const productivityGain = downtimeCost * 0.75;
 
                 // Update display
                 results.monthly.textContent = '$' + monthlySavings.toLocaleString();
                 results.annual.textContent = '$' + annualSavings.toLocaleString();
-                results.roi.textContent = Math.round(roiPercentage) + '%';
+                results.productivity.textContent = '$' + productivityGain.toLocaleString();
             }
 
             // Add event listeners to all inputs
@@ -1331,6 +1333,9 @@
 
             // Initialize with default calculation
             calculateROI();
+            
+            // Make calculateROI available globally for the onclick handler
+            window.calculateROI = calculateROI;
         });
 
         // Mobile menu functionality specific to product overview

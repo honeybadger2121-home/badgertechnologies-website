@@ -29,7 +29,7 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-📧 benjamin@badgertechnologies.us
+📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 📱 (815) 367-6989
 🌐 www.badgertechnologies.us
 
@@ -68,7 +68,7 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-📧 benjamin@badgertechnologies.us
+📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 📱 (815) 367-6989
 🌐 www.badgertechnologies.us
 
@@ -107,7 +107,7 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-📧 benjamin@badgertechnologies.us
+📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 📱 (815) 367-6989
 🌐 www.badgertechnologies.us
 
@@ -147,7 +147,7 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-📧 benjamin@badgertechnologies.us
+📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 📱 (815) 367-6989
 🌐 www.badgertechnologies.us
 

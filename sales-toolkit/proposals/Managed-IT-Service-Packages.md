@@ -1,8 +1,13 @@
 # Managed IT Service Packages & Pricing
 
+
+
 ## MONTHLY MANAGED IT SERVICE TIERS
 
+
+
 ### **PACKAGE 1: ESSENTIAL IT SUPPORT** 💼
+
 *Perfect for: Small businesses (5-15 employees)*
 
 **What's Included:**
@@ -32,20 +37,32 @@
 **Per-User Cost:** ~$53-160/user depending on team size
 
 **Best For:**
+
 - Businesses with basic IT needs
+
 - Stable technology environment
+
 - Limited budget
+
 - Don't need 24/7 support
 
+
 **What's NOT Included:**
+
 - On-site visits (billed separately at $150/hour)
+
 - After-hours support
+
 - Major projects (quoted separately)
+
 - Hardware procurement
+
 
 ---
 
+
 ### **PACKAGE 2: PROFESSIONAL IT MANAGEMENT** 🛡️
+
 *Perfect for: Growing businesses (15-35 employees)*
 
 **Everything in Essential, PLUS:**
@@ -88,19 +105,30 @@
 **Per-User Cost:** ~$43-100/user depending on team size
 
 **Best For:**
+
 - Businesses dependent on technology
+
 - Growing teams
+
 - Need reliability and predictability
+
 - Want strategic IT guidance
 
+
 **Includes:**
+
 - 2 on-site visits per quarter
+
 - After-hours emergency support
+
 - Cloud backup (up to 500GB)
+
 
 ---
 
+
 ### **PACKAGE 3: ENTERPRISE IT PARTNERSHIP** 🏢
+
 *Perfect for: Established businesses (35+ employees)*
 
 **Everything in Professional, PLUS:**
@@ -148,21 +176,34 @@
 **Per-User Cost:** ~$86+/user depending on team size
 
 **Best For:**
+
 - Mission-critical technology needs
+
 - Multiple locations
+
 - Compliance requirements
+
 - Need true IT department replacement
 
+
 **Includes:**
+
 - Unlimited on-site visits
+
 - 24/7 emergency support
+
 - Unlimited cloud backup
+
 - Dedicated account manager
+
 - Technology projects included (up to 20 hours/month)
+
 
 ---
 
+
 ## À LA CARTE ADD-ONS
+
 
 **Enhance any package with these add-ons:**
 
@@ -181,7 +222,9 @@
 
 ---
 
+
 ## ONE-TIME PROJECT SERVICES
+
 
 **Not ready for monthly service? We do projects too:**
 
@@ -201,9 +244,13 @@
 
 ---
 
+
 ## INDUSTRY-SPECIFIC MANAGED IT PACKAGES
 
+
+
 ### **HEALTHCARE IT PACKAGE** 🏥
+
 **$1,999/month** (15-35 employees)
 
 **Includes Professional Package PLUS:**
@@ -216,14 +263,21 @@
 ✓ Annual HIPAA security risk assessment  
 
 **Why healthcare needs specialized IT:**
+
 - HIPAA compliance is non-negotiable
+
 - EHR downtime = patient care disruption
+
 - Medical devices need network integration
+
 - Patient data requires extra security
+
 
 ---
 
+
 ### **LEGAL IT PACKAGE** ⚖️
+
 **$1,799/month** (10-25 employees)
 
 **Includes Professional Package PLUS:**
@@ -236,14 +290,21 @@
 ✓ Time tracking software integration  
 
 **Why law firms need specialized IT:**
+
 - Client confidentiality is ethical obligation
+
 - Document-heavy workflows
+
 - Court deadlines can't be missed due to IT issues
+
 - Ethical rules around technology competence
+
 
 ---
 
+
 ### **ACCOUNTING IT PACKAGE** 💰
+
 **$1,599/month** (10-20 employees)
 
 **Includes Professional Package PLUS:**
@@ -255,55 +316,85 @@
 ✓ Bank-level security protocols  
 
 **Why accounting firms need specialized IT:**
+
 - Tax season demands can't have IT failures
+
 - Financial data requires maximum security
+
 - Client portal access is critical
+
 - Multi-factor authentication requirements
 
+
 ---
+
 
 ## PAYMENT OPTIONS
 
+
+
 ### **Option 1: Annual Contract (Save 10%)**
+
 Pay for 12 months upfront, get 2 months free
 
 **Example:** Professional Package  
+
 - Monthly: $1,499/month × 12 = $17,988  
+
 - Annual: $1,499/month × 10 = **$14,990** ✅  
+
 - **Savings: $2,998/year**
+
 
 ---
 
+
 ### **Option 2: Quarterly Payments**
+
 Pay every 3 months
 
 **Example:** Professional Package  
+
 - Quarterly: $1,499 × 3 = $4,497 every quarter
+
 
 ---
 
+
 ### **Option 3: Monthly**
+
 Standard monthly billing
 
 **Example:** Professional Package  
+
 - Monthly: $1,499/month, billed monthly
+
 
 ---
 
+
 ## CONTRACT TERMS
 
+
 **Standard Agreement:**
+
 - 12-month initial term (ensures we can provide best service)
+
 - Month-to-month after initial term
+
 - 60-day cancellation notice
+
 - Service Level Agreements (SLAs) included
+
 
 **No Long-Term Lock-In:**
 After your first year, cancel anytime with 60 days notice (we're confident you'll love the service!)
 
 ---
 
+
 ## WHAT'S INCLUDED IN ALL PACKAGES
+
 
 **Basic services included in every managed IT package:**
 
@@ -318,9 +409,13 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 ---
 
+
 ## PRICING COMPARISON
 
+
+
 ### **Hiring In-House IT vs. Managed IT Services**
+
 
 | Cost Factor | In-House IT Person | Managed IT Services |
 |-------------|-------------------|---------------------|
@@ -337,7 +432,9 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 ---
 
+
 ### **Reactive IT vs. Managed IT Services**
+
 
 | Cost Factor | "Call When Broken" | Managed IT Services |
 |-------------|-------------------|---------------------|
@@ -353,34 +450,51 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 ---
 
+
 ## RETURN ON INVESTMENT (ROI)
 
+
+
 ### **How Managed IT Services Pays for Itself:**
+
 
 **Professional Package Example ($1,499/month):**
 
 **Costs Eliminated:**
+
 - Emergency IT calls: ~$6,000/year saved  
+
 - Downtime: ~$10,000/year saved  
+
 - Your time fixing IT: ~$5,000/year saved  
+
 - Preventable problems: ~$3,000/year saved  
+
 - **Total Savings: $24,000/year**
+
 
 **Your Investment:** $17,988/year
 
 **Net Savings: $6,012/year**
 
 **PLUS:**
+
 - Better productivity (employees not frustrated)
+
 - Strategic technology guidance (make smarter investments)
+
 - Peace of mind (sleep better at night)
+
 - Scalability (grow without IT headaches)
+
 
 **ROI: 133% return on investment**
 
 ---
 
+
 ## PACKAGE COMPARISON CHART
+
 
 | Feature | Essential | Professional | Enterprise |
 |---------|-----------|--------------|------------|
@@ -401,14 +515,20 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 ---
 
+
 ## HOW TO PRESENT PRICING
 
+
+
 ### **Don't Say:**
+
 ❌ "It costs $1,499 per month"  
 ❌ "The price is $1,499"  
 ❌ "We charge $1,499"  
 
+
 ### **Instead Say:**
+
 ✅ "Your monthly investment is $1,499"  
 ✅ "For $1,499/month, you get unlimited support and peace of mind"  
 ✅ "Most businesses your size invest $1,200-1,500/month"  
@@ -416,9 +536,13 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 ---
 
+
 ## PRICING SCRIPTS
 
+
+
 ### **When They Ask "How Much?"**
+
 
 **You:** "Great question! Our managed IT packages range from $799 to $2,999/month depending on your size and needs."
 
@@ -432,7 +556,9 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 ---
 
+
 ### **When They Say "That's Too Expensive"**
+
 
 **You:** "I totally understand - $1,499/month sounds like a lot. Can I ask: What are you spending on IT right now?"
 
@@ -442,22 +568,34 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 **You:** [Pull out calculator or notepad]
 
+
 - "Emergency IT calls: About $500-1,000/month"
+
 - "Downtime and lost productivity: $800-1,500/month"
+
 - "Your time dealing with IT: $400-800/month"
+
 - "That's $1,700-3,300/month you're already spending!"
 
+
 **You:** "Our $1,499/month is usually LESS than you're spending now, but you get:"
+
 - "No more downtime"
+
 - "No more emergency bills"
+
 - "No more frustration"
+
 - "Plus strategic planning to prevent problems"
+
 
 **You:** "Make sense?"
 
 ---
 
+
 ### **Justifying Monthly Recurring Cost**
+
 
 **You:** "I know switching to a monthly service feels different than 'only calling when something breaks.'"
 
@@ -480,33 +618,59 @@ After your first year, cancel anytime with 60 days notice (we're confident you'l
 
 ---
 
+
 ## PACKAGE SELECTOR GUIDE
+
 
 **Use this to recommend the right package:**
 
+
 ### **Recommend ESSENTIAL ($799) if:**
+
 - 5-15 employees
+
 - Simple technology setup
+
 - Budget-conscious
+
 - Stable, non-growing business
+
 - Basic needs (email, file sharing, backups)
 
+
+
 ### **Recommend PROFESSIONAL ($1,499) if:**
+
 - 15-35 employees
+
 - Technology-dependent business
+
 - Growing team
+
 - Need reliability
+
 - Want strategic guidance
+
 - Have servers or complex infrastructure
 
+
+
 ### **Recommend ENTERPRISE ($2,999) if:**
+
 - 35+ employees
+
 - Multiple locations
+
 - Mission-critical technology
+
 - Compliance requirements (HIPAA, PCI, etc.)
+
 - Need 24/7 support
+
 - Want dedicated account manager
+
 - Technology is competitive advantage
+
 
 ---
 

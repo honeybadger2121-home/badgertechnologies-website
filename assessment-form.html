@@ -68,6 +68,7 @@
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="product-overview.html" class="nav-link">Products</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -84,13 +85,52 @@
                 </div>
                 
                 <div class="pricing-note">
-                    <h3>💰 Pricing Information</h3>
-                    <p>Our managed IT services start at <strong>$799/month</strong>. For precise pricing tailored to your specific needs, complete this assessment to schedule a personalized consultation and pricing meeting.</p>
+                    <h3>💰 Service Package Overview</h3>
+                    <div class="package-summary">
+                        <div class="package-item">
+                            <strong>Essential IT Support</strong> - Starting at $799/month
+                            <small>Perfect for small businesses (5-15 employees)</small>
+                        </div>
+                        <div class="package-item">
+                            <strong>Professional IT Management</strong> - Starting at $1,499/month
+                            <small>Ideal for growing businesses (15-35 employees)</small>
+                        </div>
+                        <div class="package-item">
+                            <strong>Enterprise IT Solutions</strong> - Starting at $2,999/month
+                            <small>Comprehensive solution for larger organizations (35+ employees)</small>
+                        </div>
+                    </div>
+                    <p><em>Note: Pricing is customized based on employee count and specific service requirements. Complete this assessment for accurate pricing.</em></p>
                 </div>
                 
                 <div class="highlight-box">
-                    <h3>🛡️ What You Get:</h3>
-                    <p>• Complete security vulnerability assessment • Network performance analysis • Cloud readiness evaluation • Detailed recommendations report • No obligation consultation</p>
+                    <h3>🛡️ Your $30 Assessment Includes:</h3>
+                    <div class="assessment-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Complete cybersecurity vulnerability scan</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Network performance and infrastructure analysis</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud readiness and migration evaluation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-backup"></i>
+                            <span>Backup and disaster recovery assessment</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>ROI analysis and cost optimization recommendations</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Detailed 15-page report with actionable insights</span>
+                        </div>
+                    </div>
                 </div>
 
                 <form class="assessment-form" action="https://formspree.io/f/movkrvge" method="POST" id="assessmentForm">
@@ -111,13 +151,17 @@
                             <label for="industry">Industry</label>
                             <select id="industry" name="industry">
                                 <option value="">Select Industry</option>
-                                <option value="healthcare">Healthcare</option>
+                                <option value="healthcare">Healthcare (HIPAA-compliant solutions available)</option>
+                                <option value="legal">Legal (Secure document management)</option>
+                                <option value="accounting">Accounting/CPA (Tax software optimization)</option>
                                 <option value="financial">Financial Services</option>
-                                <option value="legal">Legal</option>
                                 <option value="manufacturing">Manufacturing</option>
                                 <option value="retail">Retail</option>
                                 <option value="education">Education</option>
                                 <option value="nonprofit">Non-Profit</option>
+                                <option value="professional-services">Professional Services</option>
+                                <option value="real-estate">Real Estate</option>
+                                <option value="construction">Construction</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -178,31 +222,47 @@
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="security-concerns" name="challenges[]" value="security-concerns">
-                                <label for="security-concerns">Security concerns</label>
+                                <label for="security-concerns">Cybersecurity vulnerabilities</label>
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="frequent-downtime" name="challenges[]" value="frequent-downtime">
-                                <label for="frequent-downtime">Frequent downtime</label>
+                                <label for="frequent-downtime">Frequent system downtime</label>
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="outdated-systems" name="challenges[]" value="outdated-systems">
-                                <label for="outdated-systems">Outdated systems</label>
+                                <label for="outdated-systems">Outdated hardware/software</label>
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="compliance-issues" name="challenges[]" value="compliance-issues">
-                                <label for="compliance-issues">Compliance requirements</label>
+                                <label for="compliance-issues">Regulatory compliance (HIPAA, PCI-DSS, etc.)</label>
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="backup-concerns" name="challenges[]" value="backup-concerns">
-                                <label for="backup-concerns">Backup/recovery issues</label>
+                                <label for="backup-concerns">Unreliable backup/disaster recovery</label>
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="no-it-support" name="challenges[]" value="no-it-support">
-                                <label for="no-it-support">No dedicated IT support</label>
+                                <label for="no-it-support">No dedicated IT support team</label>
                             </div>
                             <div class="checkbox-item">
                                 <input type="checkbox" id="cloud-migration" name="challenges[]" value="cloud-migration">
-                                <label for="cloud-migration">Need cloud migration</label>
+                                <label for="cloud-migration">Need cloud migration (Azure, Microsoft 365)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="mobile-management" name="challenges[]" value="mobile-management">
+                                <label for="mobile-management">Mobile device management issues</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="network-issues" name="challenges[]" value="network-issues">
+                                <label for="network-issues">Network connectivity problems</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="cost-optimization" name="challenges[]" value="cost-optimization">
+                                <label for="cost-optimization">Need IT cost optimization</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="employee-training" name="challenges[]" value="employee-training">
+                                <label for="employee-training">Employee technology training needs</label>
                             </div>
                         </div>
                     </div>
@@ -249,6 +309,115 @@
             </div>
         </div>
     </section>
+
+    <style>
+        /* Enhanced Assessment Form Styling */
+        .package-summary {
+            display: grid;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .package-item {
+            padding: 1rem;
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .package-item strong {
+            color: #1f2937;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .package-item small {
+            color: #6b7280;
+            font-style: italic;
+        }
+        
+        .assessment-benefits {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+        }
+        
+        .benefit-item i {
+            color: #3b82f6;
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .benefit-item span {
+            color: #374151;
+            font-weight: 500;
+        }
+        
+        .pricing-note, .highlight-box {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .pricing-note h3, .highlight-box h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background: #f9fafb;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+        
+        .checkbox-item:hover {
+            background: #f3f4f6;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #3b82f6;
+        }
+        
+        .checkbox-item label {
+            margin: 0;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: #374151;
+        }
+        
+        @media (max-width: 768px) {
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 
     <script>
         // Form submission handling

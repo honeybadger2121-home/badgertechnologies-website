@@ -1,0 +1,39 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "badgertechnologies",
+    "Mailchimp",
+    "Mailchimp's",
+    "PRTG",
+    "FNAME",
+    "UNSUB",
+    "Formspree",
+    "tagname",
+    "ehthumbs",
+    "HSTS",
+    "nojekyll",
+    "mailchimp",
+    "Automations"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    ".git/**",
+    "dist/**",
+    "build/**",
+    "*.min.js",
+    "*.min.css",
+    "leads/email-batch-*.txt",
+    "leads/*.csv"
+  ],
+  "enabledLanguageIds": [
+    "markdown",
+    "html",
+    "javascript",
+    "typescript",
+    "json",
+    "css"
+  ],
+  "allowCompoundWords": true,
+  "caseSensitive": false
+}

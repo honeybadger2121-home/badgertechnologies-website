@@ -1,87 +1,161 @@
 # Email Campaign Implementation Toolkit
 
+
+
 ## Step-by-Step Email Sending Guide
+
+
 
 ### Phase 1: Immediate Send List (Valid Emails - High Priority)
 
+
+
 #### 1. Amy Bonta - Freeburg Care Center
-- **Email**: abonta@freeburgcarecenter.com
+
+- **Email**: [abonta@freeburgcarecenter.com](mailto:abonta@freeburgcarecenter.com)
+
 - **Send Time**: Tuesday 10:30 AM CST
+
 - **Subject**: Specialized IT Support for Nursing Care Facilities
+
 - **Industry**: Healthcare
+
 - **Follow-up**: Thursday if no response
+
+
 
 #### 2. April Anderson - Alter Asset Management  
-- **Email**: aanderson@alterassetmanagement.com
+
+- **Email**: [aanderson@alterassetmanagement.com](mailto:aanderson@alterassetmanagement.com)
+
 - **Send Time**: Tuesday 11:00 AM CST
+
 - **Subject**: Cost-Effective IT Solutions for Growing Property Management Firms
+
 - **Industry**: Property Management
+
 - **Follow-up**: Friday if no response
 
+
+
 #### 3. Jerry D. Shank - Prep Baseball Report
-- **Email**: shank@prepbaseballreport.com
+
+- **Email**: [shank@prepbaseballreport.com](mailto:shank@prepbaseballreport.com)
+
 - **Send Time**: Tuesday 2:00 PM CST
+
 - **Subject**: IT Solutions for Sports Organizations - Secure Operations & Fan Engagement
+
 - **Industry**: Sports/Entertainment
+
 - **Follow-up**: Monday if no response
+
+
 
 #### 4. Shannon McNamara - Hospitality
-- **Email**: shannon.mcnamara@1880hospitality.com
+
+- **Email**: [shannon.mcnamara@1880hospitality.com](mailto:shannon.mcnamara@1880hospitality.com)
+
 - **Send Time**: Wednesday 10:00 AM CST
+
 - **Subject**: IT Solutions for Hospitality - Enhance Guest Experience & Protect Data
+
 - **Industry**: Hospitality
+
 - **Follow-up**: Monday if no response
 
+
+
 #### 5. Laura Heffernan - Susanna Farms
-- **Email**: laura@susannafarms.net
+
+- **Email**: [laura@susannafarms.net](mailto:laura@susannafarms.net)
+
 - **Send Time**: Wednesday 11:00 AM CST
+
 - **Subject**: IT Solutions for Hospitality - Enhance Guest Experience & Protect Data
+
 - **Industry**: Hospitality
+
 - **Follow-up**: Tuesday if no response
+
+
 
 #### 6. Marcos V. Aldana - Evanston Golf Club
-- **Email**: maldana@evanstongolfclub.org
+
+- **Email**: [maldana@evanstongolfclub.org](mailto:maldana@evanstongolfclub.org)
+
 - **Send Time**: Wednesday 2:00 PM CST
+
 - **Subject**: IT Solutions for Hospitality - Enhance Guest Experience & Protect Data
+
 - **Industry**: Hospitality
+
 - **Follow-up**: Tuesday if no response
 
+
+
 #### 7. Brian Schend - onPeak
-- **Email**: brian.schend@onpeak.com
+
+- **Email**: [brian.schend@onpeak.com](mailto:brian.schend@onpeak.com)
+
 - **Send Time**: Thursday 10:00 AM CST
+
 - **Subject**: IT Solutions for Hospitality - Enhance Guest Experience & Protect Data
+
 - **Industry**: Hospitality
+
 - **Follow-up**: Wednesday if no response
+
+
 
 #### 8. Micah Melton - The Alinea Group
-- **Email**: micah@thealineagroup.com
+
+- **Email**: [micah@thealineagroup.com](mailto:micah@thealineagroup.com)
+
 - **Send Time**: Thursday 11:00 AM CST
+
 - **Subject**: IT Solutions for Hospitality - Enhance Guest Experience & Protect Data
+
 - **Industry**: Hospitality
+
 - **Follow-up**: Wednesday if no response
 
+
+
 #### 9. Rick Priest - MAR
-- **Email**: rpriest@margraphics.com
+
+- **Email**: [rpriest@margraphics.com](mailto:rpriest@margraphics.com)
+
 - **Send Time**: Thursday 2:00 PM CST
+
 - **Subject**: IT Solutions for Hospitality - Enhance Guest Experience & Protect Data
+
 - **Industry**: Hospitality
+
 - **Follow-up**: Thursday if no response
 
+
 ---
+
 
 ## Email Tracking Spreadsheet Template
 
+
 | Contact Name | Company | Email | Send Date | Subject | Status | Open? | Reply? | Meeting? | Follow-up Date | Notes |
 |--------------|---------|-------|-----------|---------|--------|-------|--------|----------|----------------|-------|
-| Amy Bonta | Freeburg Care Center | abonta@freeburgcarecenter.com | 10/22/25 | Specialized IT Support | Sent | | | | 10/28/25 | Healthcare - 20-50 employees |
-| April Anderson | Alter Asset Management | aanderson@alterassetmanagement.com | 10/22/25 | Cost-Effective IT Solutions | Sent | | | | 10/28/25 | Property Mgmt - 10-20 employees |
-| Jerry D. Shank | Prep Baseball Report | shank@prepbaseballreport.com | 10/22/25 | IT Solutions for Sports | Sent | | | | 10/28/25 | Sports - 100-250 employees |
+| Amy Bonta | Freeburg Care Center | [abonta@freeburgcarecenter.com](mailto:abonta@freeburgcarecenter.com) | 10/22/25 | Specialized IT Support | Sent | | | | 10/28/25 | Healthcare - 20-50 employees |
+| April Anderson | Alter Asset Management | [aanderson@alterassetmanagement.com](mailto:aanderson@alterassetmanagement.com) | 10/22/25 | Cost-Effective IT Solutions | Sent | | | | 10/28/25 | Property Mgmt - 10-20 employees |
+| Jerry D. Shank | Prep Baseball Report | [shank@prepbaseballreport.com](mailto:shank@prepbaseballreport.com) | 10/22/25 | IT Solutions for Sports | Sent | | | | 10/28/25 | Sports - 100-250 employees |
 
 ---
 
+
 ## Ready-to-Copy Email Templates
 
+
+
 ### Template 1: Healthcare (Amy Bonta)
+
 ```
 Subject: Specialized IT Support for Nursing Care Facilities
 
@@ -114,13 +188,15 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-benjamin@badgertechnologies.us
+[benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 (815) 367-6989
 
 Serving Illinois healthcare facilities with reliable, compliant IT solutions.
 ```
 
+
 ### Template 2: Property Management (April Anderson)
+
 ```
 Subject: Cost-Effective IT Solutions for Growing Property Management Firms
 
@@ -153,13 +229,15 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-benjamin@badgertechnologies.us
+[benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 (815) 367-6989
 
 Helping Illinois property management firms grow with reliable, affordable IT solutions.
 ```
 
+
 ### Template 3: Sports Organization (Jerry Shank)
+
 ```
 Subject: IT Solutions for Sports Organizations - Secure Operations & Fan Engagement
 
@@ -192,13 +270,15 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-benjamin@badgertechnologies.us
+[benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 (815) 367-6989
 
 Supporting Illinois sports organizations with reliable, secure technology solutions.
 ```
 
+
 ### Template 4: Hospitality (Use for Shannon, Laura, Marcos, Brian, Micah, Rick)
+
 ```
 Subject: IT Solutions for Hospitality - Enhance Guest Experience & Protect Data
 
@@ -232,7 +312,7 @@ Best regards,
 
 Benjamin Sherman
 Founder & CEO, Badger Technologies
-benjamin@badgertechnologies.us
+[benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
 (815) 367-6989
 
 Helping Illinois hospitality businesses deliver exceptional experiences through reliable technology.

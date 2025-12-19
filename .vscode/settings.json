@@ -1,0 +1,74 @@
+{
+    "htmlhint.enable": false,
+    "html.validate": false,
+    "css.validate": false,
+    "json.validate": true,
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+    "eslint.enable": false,
+    "stylelint.enable": false,
+    "html.suggest.html5": false,
+    "html.autoClosingTags": true,
+    "html.completion.attributeDefaultValue": "doublequotes",
+    "markdownlint.config": {
+        "MD033": false,
+        "MD041": false,
+        "MD013": false
+    },
+    "markdownlint.ignore": [
+        "node_modules/**",
+        "leads/email-batch-*.txt",
+        "leads/*.csv",
+        "leads/mailchimp-*.csv"
+    ],
+    "files.exclude": {
+        "leads/email-batch-*.txt": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+    "search.exclude": {
+        "leads/email-batch-*.txt": true,
+        "leads/mailchimp-*.csv": true,
+        "leads/contacts*.csv": true
+    },
+    "emmet.includeLanguages": {
+        "html": "html"
+    },
+    "files.associations": {
+        "*.txt": "plaintext",
+        "email-batch-*.txt": "plaintext",
+        ".htmlhintrc": "json"
+    },
+    "editor.formatOnSave": false,
+    "html.format.enable": false,
+    "cSpell.words": [
+        "badgertechnologies",
+        "Mailchimp",
+        "PRTG",
+        "FNAME",
+        "UNSUB",
+        "Formspree",
+        "tagname",
+        "ehthumbs",
+        "HSTS",
+        "nojekyll",
+        "mailchimp",
+        "Automations"
+    ],
+    "cSpell.ignorePaths": [
+        "node_modules/**",
+        ".git/**",
+        "leads/email-batch-*.txt",
+        "leads/*.csv",
+        "leads/mailchimp-*.csv"
+    ],
+    "cSpell.enabledLanguageIds": [
+        "markdown",
+        "html",
+        "javascript",
+        "typescript",
+        "json",
+        "css"
+    ]
+}

@@ -142,8 +142,7 @@
                 <form class="assessment-form" action="https://formspree.io/f/movkrvge" method="POST" id="assessmentForm">
                     <!-- Hidden Fields for Email -->
                     <input type="hidden" name="_subject" value="New IT Assessment Request - Badger Technologies">
-                    <input type="hidden" name="_next" value="/thank-you.html">
-                    <input type="hidden" name="_redirect" value="/thank-you.html">
+                    
                     <input type="hidden" name="_format" value="plain">
                     
                     <!-- Company Information -->
@@ -444,16 +443,12 @@
             });
             
             if (!isValid) {
-                e.preventDefault();
                 alert('Please fill in all required fields.');
                 return;
             }
             
             // Track form submission in Google Analytics
             trackAssessmentSubmission();
-            
-            // If validation passes, let the form submit naturally to Formspree
-            // Formspree will handle the redirect to the thank-you page
         });
         
         // Phone number formatting

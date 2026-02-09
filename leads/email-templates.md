@@ -30,7 +30,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-📱 (815) 367-6989
+📱 (779) 356-5377
 🌐 www.badgertechnologies.us
 
 P.S. As a fellow Illinois organization, we understand the local business environment and can provide responsive, nearby support when you need it most.
@@ -69,7 +69,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-📱 (815) 367-6989
+📱 (779) 356-5377
 🌐 www.badgertechnologies.us
 
 CompTIA A+ Certified | 3+ Years Financial Sector IT Experience
@@ -108,7 +108,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-📱 (815) 367-6989
+📱 (779) 356-5377
 🌐 www.badgertechnologies.us
 
 Serving Illinois businesses with reliable, secure IT solutions since 2025.
@@ -148,7 +148,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-📱 (815) 367-6989
+📱 (779) 356-5377
 🌐 www.badgertechnologies.us
 
 Helping Illinois hospitality businesses deliver exceptional experiences through reliable technology.

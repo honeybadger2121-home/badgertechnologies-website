@@ -11,21 +11,21 @@
 #### **Template 1 - Initial Outreach (158 chars)**
 
 ```
-Hi [NAME], this is Benjamin from Badger Technologies. We're offering free IT security assessments. 15 min call? Reply YES or call (815) 367-6989
+Hi [NAME], this is Benjamin from Badger Technologies. We're offering free IT security assessments. 15 min call? Reply YES or call (779) 356-5377
 ```
 
 
 #### **Template 2 - Security Focus (154 chars)**
 
 ```
-[NAME], cyber attacks up 35% this year. Free security check for [COMPANY]? Takes 15 mins. Worth a call? Text back or call (815) 367-6989 - Ben
+[NAME], cyber attacks up 35% this year. Free security check for [COMPANY]? Takes 15 mins. Worth a call? Text back or call (779) 356-5377 - Ben
 ```
 
 
 #### **Template 3 - Follow-up (149 chars)**
 
 ```
-Hi [NAME], Benjamin from Badger Tech. Still interested in that free IT security assessment for [COMPANY]? Quick call today? (815) 367-6989
+Hi [NAME], Benjamin from Badger Tech. Still interested in that free IT security assessment for [COMPANY]? Quick call today? (779) 356-5377
 ```
 
 ---
@@ -38,21 +38,21 @@ Hi [NAME], Benjamin from Badger Tech. Still interested in that free IT security 
 #### **Template 4 - IT Problems (157 chars)**
 
 ```
-[NAME], tired of IT headaches at [COMPANY]? We offer 24/7 support starting at $149/mo. Worth a quick chat? Call or Text (815) 367-6989 - Benjamin
+[NAME], tired of IT headaches at [COMPANY]? We offer 24/7 support starting at $149/mo. Worth a quick chat? Call or Text (779) 356-5377 - Benjamin
 ```
 
 
 #### **Template 5 - Reliability Focus (159 chars)**
 
 ```
-Hi [NAME], reliable IT support for [COMPANY] starting $149/mo. No more computer headaches. Quick consultation? Call (815) 367-6989 - Badger Tech
+Hi [NAME], reliable IT support for [COMPANY] starting $149/mo. No more computer headaches. Quick consultation? Call (779) 356-5377 - Badger Tech
 ```
 
 
 #### **Template 6 - Cost Savings (152 chars)**
 
 ```
-[NAME], businesses lose 20+ hrs/month to IT issues. We fix that for $149/mo. Quick call to discuss? (815) 367-6989 - Benjamin
+[NAME], businesses lose 20+ hrs/month to IT issues. We fix that for $149/mo. Quick call to discuss? (779) 356-5377 - Benjamin
 ```
 
 ---
@@ -65,14 +65,14 @@ Hi [NAME], reliable IT support for [COMPANY] starting $149/mo. No more computer 
 #### **Template 7 - HIPAA Focus (160 chars)**
 
 ```
-Hi [NAME], new HIPAA penalties averaging $2.2M. Free compliance check for [COMPANY]? 15 min call worth it? (815) 367-6989 - Benjamin, Badger Tech
+Hi [NAME], new HIPAA penalties averaging $2.2M. Free compliance check for [COMPANY]? 15 min call worth it? (779) 356-5377 - Benjamin, Badger Tech
 ```
 
 
 #### **Template 8 - Healthcare Security (157 chars)**
 
 ```
-[NAME], patient data breaches cost $10.9M avg. Free security audit for [COMPANY]? Quick call to discuss? (815) 367-6989 - Benjamin Sherman
+[NAME], patient data breaches cost $10.9M avg. Free security audit for [COMPANY]? Quick call to discuss? (779) 356-5377 - Benjamin Sherman
 ```
 
 ---
@@ -85,14 +85,14 @@ Hi [NAME], new HIPAA penalties averaging $2.2M. Free compliance check for [COMPA
 #### **Template 9 - Productivity Focus (156 chars)**
 
 ```
-Hi [NAME], manufacturing IT optimization can boost productivity 23%. Free assessment for [COMPANY]? Worth a call? (815) 367-6989 - Badger Tech
+Hi [NAME], manufacturing IT optimization can boost productivity 23%. Free assessment for [COMPANY]? Worth a call? (779) 356-5377 - Badger Tech
 ```
 
 
 #### **Template 10 - Downtime Prevention (153 chars)**
 
 ```
-[NAME], IT downtime costing [COMPANY] money? We prevent issues with proactive support. Quick consultation? Call (815) 367-6989 - Benjamin
+[NAME], IT downtime costing [COMPANY] money? We prevent issues with proactive support. Quick consultation? Call (779) 356-5377 - Benjamin
 ```
 
 ---
@@ -105,14 +105,14 @@ Hi [NAME], manufacturing IT optimization can boost productivity 23%. Free assess
 #### **Template 11 - Last Chance (147 chars)**
 
 ```
-[NAME], last call on free IT assessment for [COMPANY]. 3 spots left this month. Still interested? (815) 367-6989 - Benjamin
+[NAME], last call on free IT assessment for [COMPANY]. 3 spots left this month. Still interested? (779) 356-5377 - Benjamin
 ```
 
 
 #### **Template 12 - Time Sensitive (158 chars)**
 
 ```
-Hi [NAME], following up on IT security for [COMPANY]. New threats emerging daily. Quick 10-min call today? (815) 367-6989 - Badger Technologies
+Hi [NAME], following up on IT security for [COMPANY]. New threats emerging daily. Quick 10-min call today? (779) 356-5377 - Badger Technologies
 ```
 
 ---
@@ -125,14 +125,14 @@ Hi [NAME], following up on IT security for [COMPANY]. New threats emerging daily
 #### **Template 13 - Callback Request (144 chars)**
 
 ```
-Hi [NAME], you showed interest in IT services. Best time for a quick call about [COMPANY]? (815) 367-6989 - Benjamin Sherman
+Hi [NAME], you showed interest in IT services. Best time for a quick call about [COMPANY]? (779) 356-5377 - Benjamin Sherman
 ```
 
 
 #### **Template 14 - Meeting Confirmation (155 chars)**
 
 ```
-Hi [NAME], confirming our call about [COMPANY]'s IT needs. Still good for [TIME] today? If not, text new time. (815) 367-6989 - Benjamin
+Hi [NAME], confirming our call about [COMPANY]'s IT needs. Still good for [TIME] today? If not, text new time. (779) 356-5377 - Benjamin
 ```
 
 ---
@@ -145,14 +145,14 @@ Hi [NAME], confirming our call about [COMPANY]'s IT needs. Still good for [TIME]
 #### **Template 15 - Free Resources (160 chars)**
 
 ```
-Hi [NAME], promised you free IT resources for [COMPANY]. Sending checklist + templates via email now. Questions? (815) 367-6989 - Benjamin
+Hi [NAME], promised you free IT resources for [COMPANY]. Sending checklist + templates via email now. Questions? (779) 356-5377 - Benjamin
 ```
 
 
 #### **Template 16 - No Sales Approach (151 chars)**
 
 ```
-[NAME], no sales pitch - just wanted to share useful IT tips for [COMPANY]. Check your email. Questions? (815) 367-6989 - Badger Tech
+[NAME], no sales pitch - just wanted to share useful IT tips for [COMPANY]. Check your email. Questions? (779) 356-5377 - Badger Tech
 ```
 
 ---
@@ -182,7 +182,7 @@ Hi [NAME], promised you free IT resources for [COMPANY]. Sending checklist + tem
 
 4. **Call to Action:** "Call," "Text back," "Reply YES"
 
-5. **Phone Number:** (815) 367-6989 (always include)
+5. **Phone Number:** (779) 356-5377 (always include)
 
 
 

@@ -185,7 +185,7 @@ Email Address,First Name,Last Name,Company Name,Job Title,Industry,Company Size,
             <p style="margin: 0 0 10px 0; font-weight: 600;">Benjamin Sherman</p>
             <p style="margin: 0 0 5px 0; color: #94a3b8;">Founder & CEO, Badger Technologies</p>
 
-            <p style="margin: 0 0 15px 0; color: #94a3b8;">📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us) | 📱 (815) 367-6989</p>
+            <p style="margin: 0 0 15px 0; color: #94a3b8;">📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us) | 📱 (779) 356-5377</p>
 
             <p style="margin: 0; font-size: 12px; color: #64748b;">Serving Illinois businesses with reliable, secure IT solutions since 2025</p>
 

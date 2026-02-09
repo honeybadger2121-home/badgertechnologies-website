@@ -46,7 +46,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Supporting Illinois technology companies with specialized IT expertise.
 ```
@@ -90,7 +90,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 CompTIA A+ Certified | Specialized in Compliance-Focused IT Solutions
 ```
@@ -134,7 +134,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Helping Illinois technology companies expand services and drive revenue growth.
 ```
@@ -182,7 +182,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Serving Illinois healthcare organizations with strategic, compliant IT solutions.
 ```
@@ -226,7 +226,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Supporting Illinois professional services firms with secure, efficient IT solutions.
 ```
@@ -270,7 +270,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Creating comprehensive security solutions through strategic partnerships.
 ```
@@ -318,7 +318,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Supporting Illinois retail companies with optimized Salesforce and IT solutions.
 ```

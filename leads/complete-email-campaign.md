@@ -155,7 +155,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Helping Illinois hospitality businesses deliver exceptional experiences through reliable technology.
 
@@ -195,7 +195,7 @@ Best regards,
 Benjamin Sherman
 Founder & CEO, Badger Technologies
 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-(815) 367-6989
+(779) 356-5377
 
 Supporting Illinois sports organizations with reliable, secure technology solutions.
 

@@ -197,7 +197,7 @@ Your Mailchimp setup is already configured with the required custom fields. Here
 
 - **Campaign Manager:** Benjamin Sherman
 
-- **Phone:** (815) 367-6989
+- **Phone:** (779) 356-5377
 
 - **Email:** [bsherman@badgertechnologies.com](mailto:bsherman@badgertechnologies.com)
 

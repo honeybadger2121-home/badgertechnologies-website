@@ -17,7 +17,7 @@ Badger Technologies
 Securing Tomorrow's Technology Today
 
 📧 [benjamin@badgertechnologies.us](mailto:benjamin@badgertechnologies.us)
-📱 (815) 367-6989
+📱 (779) 356-5377
 🌐 https://badgertechnologies.us
 
 Professional IT Services | Cybersecurity Assessments | Cloud Solutions
@@ -393,3 +393,4 @@ Template Performance KPIs:
 
 
 *Remember: Quality relationships beat quantity every time! 🚀*
+

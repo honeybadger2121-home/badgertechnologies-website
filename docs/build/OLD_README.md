@@ -129,7 +129,7 @@ Website is automatically deployed via Cloudflare Pages:
 
 
 
-- **Phone**: (815) 367-6989
+- **Phone**: (779) 356-5377
 
 - **Email**: [info@badgertechnologies.com](mailto:info@badgertechnologies.com)
 

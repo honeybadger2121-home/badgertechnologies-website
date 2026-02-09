@@ -460,7 +460,7 @@ Best regards,
 [Your name]
 Benjamin
 Badger Technologies
-+1 (815) 367-6989
++1 (779) 356-5377
 ```
 
 
@@ -517,4 +517,5 @@ Badger Technologies
 - [ ] Case study material gathered
 
 - [ ] LinkedIn recommendation received
+
 

@@ -375,7 +375,7 @@ All templates now include your correct information:
 
 - **Title:** Founder & CEO / Owner & Founder
 
-- **Phone:** (815) 367-6989 (corrected number)
+- **Phone:** (779) 356-5377 (corrected number)
 
 - **Email:** [bsherman@badgertechnologies.com](mailto:bsherman@badgertechnologies.com)
 

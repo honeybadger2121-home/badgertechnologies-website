@@ -10,7 +10,7 @@
 **Address:** [Company Address]  
 **Contact Person:** [Your Name & Title]  
 **Email:** [careers@badgertechnologies.us](mailto:careers@badgertechnologies.us)  
-**Phone:** (815) 367-6989  
+**Phone:** (779) 356-5377  
 
 
 ## INTERN INFORMATION
@@ -315,3 +315,4 @@ On behalf of Badger Technologies, LLC, I acknowledge and agree to the terms of t
 ---
 
 *This document should be reviewed by legal counsel before use. Customize all bracketed fields [like this] before executing the agreement.*
+

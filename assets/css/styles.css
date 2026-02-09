@@ -1679,6 +1679,10 @@ section {
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .is-hidden {
+        display: none !important;
+    }
     
     .emergency-note {
         margin-top: 1rem;

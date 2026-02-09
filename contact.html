@@ -930,7 +930,8 @@
                                 <option value="">Select a service...</option>
                                 <option value="assessment">$30 IT Consultation</option>
                                 <option value="managed-it">Managed IT Services</option>
-                                <option value="cybersecurity">Cybersecurity Solutions</option>
+                                <!-- Cybersecurity option hidden -->
+                                <option value="cybersecurity" class="is-hidden">Cybersecurity Solutions</option>
                                 <option value="cloud">Cloud Services</option>
                                 <option value="network">Network Management</option>
                                 <option value="backup">Data Backup & Recovery</option>
@@ -998,7 +999,8 @@
                     </div>
                 </div>
                 
-                <div class="faq-item">
+                <div class="faq-item is-hidden">
+                    <!-- Cybersecurity FAQ hidden -->
                     <button class="faq-question" onclick="toggleFAQ(this)">
                         What makes your cybersecurity approach different?
                         <i class="fas fa-chevron-down faq-icon"></i>
@@ -1048,7 +1050,7 @@
                     <h4>Services</h4>
                     <ul>
                         <li><a href="managed-it-support.html">Managed IT Support</a></li>
-                        <li><a href="cybersecurity-services.html">Cybersecurity Services</a></li>
+                        <li class="is-hidden"><!-- Cybersecurity services link hidden --><a href="cybersecurity-services.html">Cybersecurity Services</a></li>
                         <li><a href="cloud-services.html">Cloud Services</a></li>
                         <li><a href="network-management.html">Network Management</a></li>
                     </ul>

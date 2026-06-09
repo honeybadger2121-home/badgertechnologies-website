@@ -1,6 +1,6 @@
 Contact: mailto:security@badgertechnologies.us
 Contact: mailto:info@badgertechnologies.us
-Contact: tel:+1-815-367-6989
+Contact: tel:+1-779-356-5377
 Expires: 2026-09-12T23:59:59.000Z
 Encryption: https://badgertechnologies.red-moon-31c4.workers.dev/pgp-key.txt
 Acknowledgments: https://badgertechnologies.red-moon-31c4.workers.dev/security-acknowledgments.html
@@ -12,3 +12,4 @@ Preferred-Languages: en, es
 # This file is for security researchers to report vulnerabilities
 # We take security seriously and appreciate responsible disclosure
 # Please use our security contact for any security-related issues
+

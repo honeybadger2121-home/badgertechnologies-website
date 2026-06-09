@@ -1,30 +1,55 @@
 # Phone Prospecting Scripts - IT Support Services
 
+
+
 ## COLD CALLING FUNDAMENTALS
 
+
+
 ### **Best Times to Call:**
+
 - **Tuesday-Thursday: 8:00-9:00am, 4:00-5:00pm**
+
 - **Wednesday 10am-12pm** (highest answer rate)
+
 - Avoid Monday mornings and Friday afternoons
 
+
+
 ### **Your Mindset:**
+
 - You're offering solutions to their IT headaches
+
 - Rejection is normal (expect 80%+ to say no)
+
 - Every call is practice
+
 - Goal: 50+ calls per day = 2-3 appointments
 
+
+
 ### **What You Need:**
+
 - List of prospects (names, numbers, companies)
+
 - CRM/spreadsheet to track calls
+
 - Scripts printed in front of you
+
 - Standing desk (energy comes through in voice!)
+
 - Headset (better than holding phone)
+
 
 ---
 
+
 ## SCRIPT 1: BYPASSING THE GATEKEEPER
 
+
+
 ### **When receptionist answers:**
+
 
 **Receptionist:** "ABC Company, how can I help you?"
 
@@ -34,7 +59,9 @@
 
 ---
 
+
 ### **If they ask what it's regarding:**
+
 
 **Receptionist:** "What is this regarding?"
 
@@ -46,7 +73,9 @@
 
 ---
 
+
 ### **If they say "He's not available":**
+
 
 **You:** "No problem! What's the best time to reach him/her?"
 
@@ -62,7 +91,9 @@
 
 ---
 
+
 ## SCRIPT 2: THE OPENING (When Decision Maker Answers)
+
 
 **Owner:** "Hello?"
 
@@ -80,9 +111,13 @@
 
 ---
 
+
 ## SCRIPT 3: QUALIFYING QUESTIONS
 
+
+
 ### **If they express IT frustrations:**
+
 
 **You:** "I hear that a lot. Most businesses are frustrated with slow response times and reactive IT support that only fixes problems after they happen."
 
@@ -94,7 +129,9 @@
 
 ---
 
+
 ### **The Qualifying Questions:**
+
 
 **Question 1:** "How many employees do you have?" [Establishes company size for pricing]
 
@@ -108,9 +145,13 @@
 
 ---
 
+
 ## SCRIPT 4: THE PITCH (Based on Their Answers)
 
+
+
 ### **If they have IT problems:**
+
 
 **You:** "Based on what you're telling me, it sounds like managed IT support would solve a lot of headaches for [COMPANY]."
 
@@ -124,7 +165,9 @@
 
 ---
 
+
 ### **If they're hesitant about monthly costs:**
+
 
 **You:** "I totally understand budget concerns. Let me ask you this:"
 
@@ -138,9 +181,13 @@
 
 ---
 
+
 ## SCRIPT 5: OBJECTION HANDLING
 
+
+
 ### **Objection: "We already have an IT company"**
+
 
 **You:** "That's great! Are they providing proactive monitoring and 24/7 support, or do you call them when something breaks?"
 
@@ -156,7 +203,9 @@
 
 ---
 
+
 ### **Objection: "We can't afford it right now"**
+
 
 **You:** "I understand. Can I ask - **what are you currently spending on IT per month?**"
 
@@ -172,7 +221,9 @@
 
 ---
 
+
 ### **Objection: "I need to think about it"**
+
 
 **You:** "Absolutely, this is an important decision. **Can I ask what specifically you need to think about?"**
 
@@ -186,7 +237,9 @@
 
 ---
 
+
 ### **Objection: "Just send me information"**
+
 
 **You:** "Happy to! Before I do, **can I ask two quick questions** so I send the right info?"
 
@@ -204,15 +257,21 @@
 
 ---
 
+
 ## SCRIPT 6: SETTING THE APPOINTMENT
 
+
+
 ### **Soft Close:**
+
 
 **You:** "Based on what you've told me, I think we can really help [COMPANY]. **Would you be open to a quick 30-minute consultation** where I can learn more about your setup and give you a ballpark quote?"
 
 ---
 
+
 ### **Direct Close:**
+
 
 **You:** "Here's what I'd like to do: **Let's schedule a 30-minute meeting** - I'll come to your office, take a quick look at your setup, and give you a customized proposal. No charge, no obligation."
 
@@ -222,7 +281,9 @@
 
 ---
 
+
 ### **Alternative Close:**
+
 
 **You:** "I'm booking consultations for next week. **Do mornings or afternoons work better for you?"**
 
@@ -232,7 +293,9 @@
 
 ---
 
+
 ## SCRIPT 7: VOICEMAIL SCRIPT
+
 
 **[Keep it under 30 seconds!]**
 
@@ -248,7 +311,9 @@
 
 ---
 
+
 ## SCRIPT 8: FOLLOW-UP CALL (After Sending Email)
+
 
 **You:** "Hi [FIRST NAME], Benjamin Sherman calling. I sent you an email yesterday about IT security for [COMPANY]."
 
@@ -270,7 +335,9 @@
 
 ---
 
+
 ## SCRIPT 9: REFERRAL REQUEST
+
 
 **[After good conversation, even if they don't buy:]**
 
@@ -286,38 +353,68 @@
 
 ---
 
+
 ## THE DAILY CALLING PLAN
 
+
+
 ### **Morning Prep (15 min):**
+
 - Review list of prospects
+
 - Prioritize warm leads first
+
 - Have scripts visible
+
 - Get in the right mindset (energy!)
 
+
+
 ### **Calling Blocks:**
+
 - **8:00-10:00am:** 20-25 calls (catch early birds)
+
 - **11:00am-12:00pm:** 10-15 calls
+
 - **2:00-4:00pm:** 20-25 calls
+
 - **4:00-5:00pm:** 10-15 calls (catch people at end of day)
 
+
+
 ### **Daily Goal:**
+
 - **50-75 calls**
+
 - **15-20 conversations**
+
 - **5-8 follow-up emails sent**
+
 - **2-4 appointments scheduled**
 
+
+
 ### **End of Day (15 min):**
+
 - Log all calls in CRM
+
 - Schedule follow-ups
+
 - Send emails to interested prospects
+
 - Prepare tomorrow's call list
+
 
 ---
 
+
 ## CONVERSION METRICS:
 
+
 **Expected conversion rates:**
+
 - 50 calls = 15 conversations = 5 interested = 2 appointments = 1 sale
+
 
 **That means you need to make 50 calls to get 1 client.**
 
@@ -325,23 +422,31 @@
 
 ---
 
+
 ## PRO TIPS:
 
+
+
 ### **Your Voice Matters:**
+
 ✓ **Stand up** while calling (increases energy)  
 ✓ **Smile** when you talk (they can hear it!)  
 ✓ **Speak clearly** and not too fast  
 ✓ **Match their energy** (if they're relaxed, slow down)  
 ✓ **Pause after questions** (let them answer)  
 
+
 ### **Handling Gatekeepers:**
+
 ✓ **Be friendly** but firm  
 ✓ **Sound confident** like you belong  
 ✓ **Don't say "sales call"** - say "following up"  
 ✓ **Ask for direct line/email** if blocked  
 ✓ **Call early/late** to bypass gatekeeper  
 
+
 ### **Overcoming Call Reluctance:**
+
 ✓ **Batch your calls** (easier than spreading throughout day)  
 ✓ **Start with easiest calls** to build momentum  
 ✓ **Celebrate small wins** (answered call, good conversation)  
@@ -349,22 +454,34 @@
 
 ---
 
+
 ## TRACKING TEMPLATE:
+
 
 | Date | Company | Contact | Phone | Result | Follow-Up | Notes |
 |------|---------|---------|-------|--------|-----------|-------|
 | 10/15 | ABC Corp | John Doe | 555-1234 | VM | 10/17 | Left voicemail, send email |
 | 10/15 | XYZ Inc | Jane Smith | 555-5678 | Meeting | 10/20 @ 2pm | Interested! |
 
+
 ### **Result Codes:**
+
 - **A** = Appointment scheduled ✅
+
 - **CB** = Callback scheduled
+
 - **INT** = Interested, sent info
+
 - **NI** = Not interested
+
 - **VM** = Voicemail
+
 - **NWN** = Not willing to talk now
+
 - **DNA** = Did not answer
+
 - **WN** = Wrong number
+
 
 ---
 

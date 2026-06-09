@@ -1,34 +1,63 @@
 # Door-to-Door Prospecting Scripts
+
 ## (Managed IT Services Focus)
+
+
 
 ## THE FUNDAMENTALS
 
+
+
 ### **What to Bring:**
+
 - Professional business cards (100+)
+
 - One-page managed IT services overview (printed)
+
 - Pricing sheet (Essential/Professional/Enterprise packages)
+
 - Tablet for showing website/testimonials
+
 - Professional appearance (business casual minimum)
+
 - Positive, helpful attitude!
 
+
+
 ### **Best Times to Visit:**
+
 - **Tuesday-Thursday: 10am-12pm, 2pm-4pm** (avoid lunch rush)
+
 - **Avoid Mondays** (everyone's stressed from weekend catch-up)
+
 - **Avoid Fridays after 2pm** (weekend mode activated)
 
+
+
 ### **Target Businesses:**
+
 Small professional offices (5-50 employees):
+
 - Law firms
+
 - Accounting firms
+
 - Medical/dental offices
+
 - Real estate agencies
+
 - Insurance agencies
+
 - Engineering/consulting firms
+
 - Manufacturing offices
+
 
 ---
 
+
 ## SCRIPT 1: THE OPENER (Receptionist/Gatekeeper)
+
 
 **[Walk in confidently, smile, make eye contact]**
 
@@ -44,7 +73,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **If they say YES:**
+
 
 **Receptionist:** "Let me check. One moment."
 
@@ -54,7 +85,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **If they say NO/BUSY:**
+
 
 **Receptionist:** "He's with a client / in a meeting / not available."
 
@@ -72,7 +105,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ## SCRIPT 2: MEETING THE DECISION MAKER
+
 
 **[Owner/Manager comes out to meet you]**
 
@@ -90,7 +125,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **Their Response Option 1: "We have someone who handles it"**
+
 
 **You:** "Oh great! Is that an employee, or do you have an IT company?"
 
@@ -112,7 +149,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **Their Response Option 2: "What exactly do you do?"**
+
 
 **You:** "Great question! We basically become your IT department. Here's what that means:"
 
@@ -130,7 +169,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **Their Response Option 3: "How much does it cost?"**
+
 
 **You:** "Depends on how many people you have and what you need, but most businesses your size are between **$799 and $1,499 per month**."
 
@@ -148,7 +189,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **Their Response Option 4: "We're not interested"**
+
 
 **You:** "No worries at all! Can I ask - is it because you're totally happy with your current setup, or just not thinking about IT right now?"
 
@@ -168,7 +211,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ## SCRIPT 3: THE ELEVATOR PITCH (30 Seconds)
+
 
 **Use this when:** Someone asks "What do you do?" or you have limited time.
 
@@ -204,7 +249,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **Objection: "We're too small to be targeted"**
+
 
 **You:** "That's what most small businesses think - and that's exactly why hackers target them!"
 
@@ -216,7 +263,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **Objection: "I need to think about it"**
+
 
 **You:** "Absolutely! This is an important decision. Can I ask what specifically you need to think about?"
 
@@ -230,12 +279,17 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **Objection: "Just email me information"**
+
 
 **You:** "Happy to! Before I send that over, can I ask two quick questions so I send you the right info?"
 
+
 1. **"What's your biggest IT concern right now?"** (backup? compliance? security?)
+
 2. **"Have you ever had a security incident or close call?"** (virus, ransomware attempt, breach)
+
 
 **[Based on answers, customize your follow-up email]**
 
@@ -243,35 +297,49 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ## SCRIPT 5: THE CLOSE
 
+
+
 ### **Trial Close:**
+
 
 **You:** "Based on what you've told me, I think a security assessment would be perfect for you. **Does that sound like something you'd be interested in?"**
 
 ---
 
+
 ### **Hard Close:**
+
 
 **You:** "Here's what I'd like to do: Let me come back on **[DAY]** at **[TIME]** and do a quick 30-minute site survey. I'll see your setup and give you a ballpark quote. Sound good?"
 
 ---
 
+
 ### **Assumptive Close:**
+
 
 **You:** "Great! I'm going to send you a proposal this afternoon. **Are you generally the final decision maker, or does someone else need to sign off?"**
 
 ---
 
+
 ### **Alternative Close:**
+
 
 **You:** "I have openings this week on Tuesday afternoon or Thursday morning. **Which works better for you?"**
 
 ---
 
+
 ## SCRIPT 6: LEAVING ON GOOD TERMS
 
+
+
 ### **If they're not interested:**
+
 
 **You:** "No problem at all! I appreciate your time. Here's my card - when things change or if you ever have questions about IT security, feel free to reach out."
 
@@ -283,7 +351,9 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ### **If they want to think about it:**
+
 
 **You:** "Sounds good! I'll email you that info today. **Can I give you a call on Friday** to answer any questions?"
 
@@ -295,39 +365,71 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ## THE DAILY DOOR-TO-DOOR PLAN
 
+
+
 ### **Morning Prep (30 min):**
+
 1. Research 20-30 target businesses in one area
+
 2. Map your route (cluster visits geographically)
+
 3. Print materials (business cards, one-pagers)
+
 4. Review scripts and objections
+
 5. Mental preparation (positive mindset!)
 
+
+
 ### **Visit Schedule (4 hours):**
+
 - **10:00am-12:00pm:** 8-12 visits (before lunch)
+
 - **2:00pm-4:00pm:** 8-12 visits (after lunch)
+
 - **Goal:** 15-20 businesses per day
 
+
+
 ### **End of Day (30 min):**
+
 1. Log all visits in CRM/spreadsheet
+
 2. Send follow-up emails to interested prospects
+
 3. Schedule callbacks/appointments
+
 4. Plan tomorrow's route
 
+
+
 ### **Daily Success Metrics:**
+
 - **Visits:** 15-20 businesses
+
 - **Conversations:** 10-12 decision makers
+
 - **Business cards given:** 10-15
+
 - **Follow-up emails sent:** 5-8
+
 - **Appointments scheduled:** 1-3 (goal!)
+
 - **Sales:** 0-1 (if you're good!)
+
 
 ---
 
+
 ## SUCCESS TIPS:
 
+
+
 ### **DO:**
+
 ✓ Dress professionally (business casual minimum)  
 ✓ Smile and be friendly  
 ✓ Respect their time (2-3 minutes max)  
@@ -337,7 +439,9 @@ Small professional offices (5-50 employees):
 ✓ Thank them for their time  
 ✓ Stay positive after rejections  
 
+
 ### **DON'T:**
+
 ✗ Show up unannounced at bad times (lunch, close of business)  
 ✗ Be pushy or aggressive  
 ✗ Argue with objections  
@@ -348,22 +452,36 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ## BODY LANGUAGE TIPS:
 
+
+
 - **Stand up straight** - confidence matters
+
 - **Make eye contact** - but don't stare
+
 - **Smile genuinely** - people buy from people they like
+
 - **Firm handshake** - not crushing, not limp
+
 - **Open posture** - no crossed arms
+
 - **Mirror their energy** - match their pace and tone
+
 - **Respect personal space** - don't crowd them
+
 
 ---
 
+
 ## REAL TALK: REJECTION IS NORMAL
 
+
 **Expected conversion rates:**
+
 - 20 visits = 12 conversations = 5 interested = 2 appointments = 1 sale
+
 
 **That means 19 rejections to get 1 client.**
 
@@ -371,14 +489,22 @@ Small professional offices (5-50 employees):
 
 ---
 
+
 ## FIRST WEEK GOAL:
 
+
 **Week 1 Target:**
+
 - **100 businesses visited**
+
 - **60 decision maker conversations**
+
 - **20 follow-up emails sent**
+
 - **5-10 appointments scheduled**
+
 - **1-2 signed contracts**
+
 
 **If you get 1 client in your first week of door-to-door, you're crushing it!**
 

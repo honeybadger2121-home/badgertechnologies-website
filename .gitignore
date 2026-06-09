@@ -74,3 +74,8 @@ coverage/
 # Cloudflare Pages
 functions/
 _worker.js.map
+
+# Email batch files (auto-generated)
+leads/email-batch-*.txt
+leads/*.csv
+leads/contacts.csv

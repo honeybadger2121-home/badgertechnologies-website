@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVN0HMG5ES"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MVN0HMG5ES');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Services | Badger Technologies - Complete Technology Solutions</title>
-    <meta name="description" content="Professional IT services including managed IT support, cybersecurity, cloud solutions, network management, and 24/7 helpdesk for businesses.">
-    <meta name="keywords" content="IT services, managed IT, cybersecurity, cloud services, network management, technical support, IT consulting">
+    <meta name="description" content="Professional IT services including managed IT support, cloud solutions, network management, and 24/7 helpdesk for businesses.">
+    <meta name="keywords" content="IT services, managed IT, cloud services, network management, technical support, IT consulting">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,6 +24,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        .is-hidden {
+            display: none !important;
         }
         
         body {
@@ -405,6 +417,7 @@
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="services.html" class="nav-link active">Services</a></li>
                 <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="product-overview.html" class="nav-link">Products</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -424,7 +437,7 @@
                     </h1>
                     
                     <p class="hero-description">
-                        From managed IT support to advanced cybersecurity, we provide complete technology solutions that grow with your business. Professional service, proactive monitoring, and expert support when you need it most.
+                        From managed IT support to cloud solutions, we provide complete technology services that grow with your business. Professional service, proactive monitoring, and expert support when you need it most.
                     </p>
 
                     <div class="hero-stats">
@@ -450,11 +463,14 @@
 
                 <div class="hero-visual">
                     <div class="service-grid">
+                        <!-- Cybersecurity services card hidden -->
+                        <!--
                         <div class="service-card">
                             <div class="service-icon">🛡️</div>
                             <h3>Cybersecurity</h3>
                             <p>Advanced threat protection and compliance solutions</p>
                         </div>
+                        -->
                         <div class="service-card">
                             <div class="service-icon">☁️</div>
                             <h3>Cloud Services</h3>
@@ -504,6 +520,8 @@
                     <a href="assessment-form.html" class="btn btn-primary">Learn More</a>
                 </div>
 
+                <!-- Cybersecurity services section hidden -->
+                <!--
                 <div class="service-item">
                     <div class="service-icon">
                         <i class="fas fa-shield-alt"></i>
@@ -519,6 +537,7 @@
                     </ul>
                     <a href="assessment-form.html" class="btn btn-primary">Learn More</a>
                 </div>
+                -->
 
                 <div class="service-item">
                     <div class="service-icon">
@@ -596,7 +615,7 @@
                     <p><strong>Benjamin Sherman</strong><br>
                     Founder & Owner</p>
                     <p>📧 benjamin@badgertechnologies.us<br>
-                    📱 (815) 367-6989<br>
+                    📱 (779) 356-5377<br>
                     📍 Illinois, United States</p>
                 </div>
                 
@@ -611,7 +630,7 @@
                 <div class="footer-section">
                     <h3>Services</h3>
                     <p><a href="services.html">Managed IT Support</a></p>
-                    <p><a href="services.html">Cybersecurity</a></p>
+                    <p class="is-hidden"><!-- Cybersecurity services link hidden --><a href="services.html">Cybersecurity</a></p>
                     <p><a href="services.html">Cloud Solutions</a></p>
                     <p><a href="services.html">Network Management</a></p>
                 </div>
@@ -624,3 +643,4 @@
     </footer>
 </body>
 </html>
+

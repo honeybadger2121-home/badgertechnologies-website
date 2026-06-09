@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVN0HMG5ES"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MVN0HMG5ES');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cybersecurity Services | Badger Technologies</title>
@@ -8,7 +16,8 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="is-hidden">
+  <!-- Cybersecurity services page hidden -->
   <nav>
     <div class="nav-container">
       <div class="nav-logo">
@@ -46,7 +55,7 @@
             <h4>Services</h4>
             <ul>
               <li><a href="managed-it-support.html">Managed IT Support</a></li>
-              <li><a href="cybersecurity-services.html">Cybersecurity Services</a></li>
+              <li class="is-hidden"><!-- Cybersecurity services link hidden --><a href="cybersecurity-services.html">Cybersecurity Services</a></li>
               <li><a href="cloud-services.html">Cloud Services</a></li>
               <li><a href="network-management.html">Network Management</a></li>
             </ul>
@@ -138,7 +147,7 @@
           <h4>Services</h4>
           <ul>
             <li><a href="managed-it-support.html">Managed IT Support</a></li>
-            <li><a href="cybersecurity-services.html">Cybersecurity Services</a></li>
+            <li class="is-hidden"><!-- Cybersecurity services link hidden --><a href="cybersecurity-services.html">Cybersecurity Services</a></li>
             <li><a href="cloud-services.html">Cloud Services</a></li>
             <li><a href="network-management.html">Network Management</a></li>
             <li><a href="data-management.html">Data Management</a></li>

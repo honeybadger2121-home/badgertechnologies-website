@@ -1,0 +1,20 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Badger Cleaning Services logo mark</title>
+  <desc id="desc">A navy and gold shield with a stylized cleaning badge mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="48" y1="28" x2="208" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#0B4F4A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="72" y1="60" x2="184" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#FBBF24"/>
+    </linearGradient>
+  </defs>
+  <path d="M128 18L202 58V126C202 177.333 171.333 217.333 128 238C84.6667 217.333 54 177.333 54 126V58L128 18Z" fill="url(#bg)"/>
+  <path d="M128 40L181 68V123C181 161.333 158.333 191.333 128 206C97.6667 191.333 75 161.333 75 123V68L128 40Z" fill="#102A56"/>
+  <path d="M128 62L161 79V114L128 132L95 114V79L128 62Z" fill="white"/>
+  <path d="M92 118L128 98L163 118V152L128 172L92 152V118Z" fill="url(#gold)"/>
+  <path d="M128 110L143 118V145L128 154L113 145V118L128 110Z" fill="#102A56"/>
+  <path d="M128 86L151 99V128L128 141L105 128V99L128 86Z" fill="white" opacity="0.88"/>
+</svg>
